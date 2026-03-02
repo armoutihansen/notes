@@ -8,147 +8,235 @@ created: 2026-03-02
 
 ## Purpose of This Layer
 
-This layer covers the design, integration, evaluation, and operation of large-scale pretrained models (LLMs and other foundation models) as production system components.
+This layer captures the engineering discipline required to build applications on top of pretrained foundation models.
 
-It focuses on **system-level AI engineering**, not mathematical derivations (01_foundations) and not general ML infrastructure (04_ml_engineering).
+It is aligned with the conceptual framework of modern AI engineering as structured in:
+- Foundation models
+- Evaluation
+- Prompting
+- RAG and agents
+- Finetuning
+- Dataset engineering
+- Inference optimization
+- System architecture and user feedback
 
 Guiding question:
 
-> How do we design, integrate, evaluate, and operate foundation-model-based systems in real-world settings?
+> How do we design, evaluate, optimize, and operate systems built around foundation models?
+
+This layer does NOT cover:
+- General ML pipelines (→ 04_ml_engineering)
+- Classical model selection and structured ML (→ 02_modeling)
+- Mathematical derivations (→ 01_foundations)
 
 ---
-# Subdomains
 
-## 1. Foundation Models
+## Structure
 
-**Path:** `foundation_models/`
+### 00_foundation_models/
 
-Covers:
+Understanding the underlying models.
 
-- Model families (GPT, Llama, Mistral, etc.)
-- Architecture overviews (Transformer-based LLMs, diffusion models, multimodal models)
+Includes:
+- Transformer architecture overview
+- Scaling laws
+- Sampling and decoding
+- SFT / RLHF alignment
 - Model selection trade-offs
-- Context length considerations
-- Cost-performance analysis
-- Open vs proprietary model comparisons
 
 Focus:
-Understanding models as reusable components in larger systems.
+Capabilities and constraints of foundation models.
 
 ---
-## 2. Architectures
 
-**Path:** `architectures/`
+### 01_evaluation/
 
-System-level compositions of foundation models.
-### Includes:
+Evaluation methodology for open-ended AI systems.
 
-- `rag/` – Retrieval-Augmented Generation systems  
-- `agents/` – Agentic workflows and tool-augmented reasoning  
-- `tool_use/` – Function calling, external API integration  
+Includes:
+- Language modeling metrics
+- Exact vs subjective evaluation
+- AI-as-a-judge
+- Comparative evaluation
+- Evaluation pipeline design
+- Benchmark limitations
 
 Focus:
-How models are embedded into larger pipelines and workflows.
+How to systematically evaluate generative systems.
 
 ---
-## 3. Prompting
 
-**Path:** `prompting/`
+### 02_prompt_engineering/
 
-Covers:
+Controlling models via inputs.
 
-- Prompt design patterns
+Includes:
+- Prompt anatomy
+- In-context learning
 - Structured outputs
-- Chain-of-thought prompting
-- Tool invocation prompts
-- Guardrails and prompt injection mitigation
+- Reasoning prompts
+- Prompt injection risks
+- Guardrails
 
 Focus:
-Controlling model behavior without retraining.
+Human–AI interaction design.
 
 ---
-## 4. Fine-Tuning
 
-**Path:** `fine_tuning/`
+### 03_rag_and_agents/
 
-Covers:
+Architectures that extend foundation models.
 
-- Full fine-tuning
-- LoRA / PEFT
-- Domain adaptation
-- Dataset construction
-- Overfitting and catastrophic forgetting risks
+Includes:
+- RAG systems
+- Retriever design
+- Hybrid search
+- Agent planning
+- Tool use
+- Memory systems
 
 Focus:
-Adapting foundation models to domain-specific tasks.
+System-level augmentation of foundation models.
 
 ---
-## 5. Inference
 
-**Path:** `inference/`
+### 04_finetuning/
 
-Covers:
+Modifying model weights.
 
-- Model serving strategies
-- Batching and streaming
-- Latency optimization
+Includes:
+- When to finetune vs RAG
+- Full finetuning
+- PEFT / LoRA
+- Model merging
+- Hyperparameter considerations
+
+Focus:
+Parameter adaptation strategies.
+
+---
+
+### 05_dataset_engineering/
+
+Designing datasets for adaptation.
+
+Includes:
+- Dataset design principles
+- Instruction data
+- Synthetic data
+- Data quality, coverage, quantity
+- Dataset evaluation
+
+Focus:
+Data as the core adaptation lever.
+
+---
+
+### 06_inference_optimization/
+
+Efficiency and cost optimization.
+
+Includes:
+- Latency vs throughput trade-offs
+- KV caching
 - Quantization
-- Hardware considerations
-- Caching strategies
+- Distillation
+- Batching and parallelism
+- Serving trade-offs
 
 Focus:
-Running models efficiently and reliably in production.
+Making foundation models usable at scale.
 
 ---
-## 6. Evaluation
 
-**Path:** `evaluation/`
+### 07_architecture_and_feedback/
 
-Covers:
+System-level integration.
 
-- Benchmark design
-- Automatic evaluation metrics
-- Human evaluation
-- Hallucination detection
-- Domain-specific evaluation (e.g., insurance QA systems)
+Includes:
+- AI application architectures
+- Model gateways
+- Observability for LLM systems
+- User feedback loops
+- Data flywheel
+- Build vs buy decisions
 
 Focus:
-Measuring performance, safety, and business impact.
-
----
-## 7. LLMOps
-
-**Path:** `llmops/`
-
-Covers:
-
-- Monitoring and observability
-- Versioning prompts and models
-- Cost tracking
-- Drift detection
-- Safety and compliance considerations
-
-Focus:
-Operating LLM systems over time.
-
----
-# Boundaries With Other Layers
-
-- Mathematical derivations of attention, scaling laws → `01_foundations`
-- Deep learning architectures as modeling tools → `02_modeling`
-- General ML pipelines → `04_ml_engineering`
-- Business problem framing → `06_applications`
-
-This layer is strictly about **LLM system engineering**.
+Holistic AI system design.
 
 ---
 
-# Cross-Link Expectations
+## Relationship to Other Layers
 
-Notes in this layer should:
+02_modeling:
+Model choice and evaluation for structured ML systems.
 
-- Link to modeling notes (e.g., transformer architecture)
-- Link to ML engineering notes (e.g., deployment, monitoring)
-- Link to application notes when used in specific domains
+04_ml_engineering:
+Production lifecycle for classical ML systems.
 
-This layer integrates, but does not duplicate, core knowledge.
+05_ai_engineering:
+System design around pretrained foundation models.
+
+This layer treats the foundation model as a core system component, not just a predictive model.
+
+---
+## Explicit Structure
+
+```
+05_ai_engineering/
+├── index.md
+├── 00_foundation_models/
+│   ├── transformer_architecture_overview.md
+│   ├── scaling_laws.md
+│   ├── sampling_and_decoding.md
+│   ├── alignment_sft_rlhf.md
+│   └── model_selection_tradeoffs.md
+├── 01_evaluation/
+│   ├── language_model_metrics.md
+│   ├── exact_vs_subjective_eval.md
+│   ├── ai_as_a_judge.md
+│   ├── comparative_eval.md
+│   ├── eval_pipeline_design.md
+│   └── benchmark_limitations.md
+├── 02_prompt_engineering/
+│   ├── prompt_anatomy.md
+│   ├── in_context_learning.md
+│   ├── reasoning_prompts.md
+│   ├── structured_outputs.md
+│   ├── prompt_injection_attacks.md
+│   └── guardrails.md
+├── 03_rag_and_agents/
+│   ├── rag_basics.md
+│   ├── retriever_design.md
+│   ├── term_vs_embedding_retrieval.md
+│   ├── hybrid_search.md
+│   ├── agent_planning.md
+│   ├── tool_use.md
+│   └── memory_systems.md
+├── 04_finetuning/
+│   ├── when_to_finetune_vs_rag.md
+│   ├── full_finetuning.md
+│   ├── peft_lora.md
+│   ├── model_merging.md
+│   └── hyperparameters_for_finetuning.md
+├── 05_dataset_engineering/
+│   ├── dataset_design_principles.md
+│   ├── instruction_data.md
+│   ├── synthetic_data.md
+│   ├── data_quality_coverage_quantity.md
+│   └── dataset_evaluation.md
+├── 06_inference_optimization/
+│   ├── latency_vs_throughput.md
+│   ├── kv_cache.md
+│   ├── quantization.md
+│   ├── distillation.md
+│   ├── batching_and_parallelism.md
+│   └── serving_tradeoffs.md
+├── 07_architecture_and_feedback/
+│   ├── ai_application_architecture.md
+│   ├── model_gateway.md
+│   ├── observability_for_llm_systems.md
+│   ├── user_feedback_loops.md
+│   ├── data_flywheel.md
+│   └── build_vs_buy_models.md
+```
