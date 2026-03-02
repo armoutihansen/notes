@@ -15,7 +15,7 @@ The goal is to accumulate knowledge that compounds over time: timeless theory in
 ## Structure
 
 ```
-Vault_2026/
+notes/
 ├── 00_meta/              # Vault governance: conventions, templates, dashboard, glossary
 ├── 01_foundations/       # Timeless mathematical and theoretical foundations
 ├── 02_modeling/          # Model classes and modeling strategies (framework-agnostic)
