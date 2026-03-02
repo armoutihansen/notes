@@ -1,6 +1,6 @@
-# Vault 2026
+# Notes
 
-A personal knowledge management (PKM) system for professional work in machine learning, statistics, and software engineering. Built in [Obsidian](https://obsidian.md).
+A personal knowledge management (PKM) system for professional work in data science, machine learning, and AI. Built in [Obsidian](https://obsidian.md).
 
 ---
 
@@ -50,52 +50,41 @@ Vault_2026/
 
 ---
 
-## Foundations (`01_foundations`)
-
-The most developed layer. Contains timeless theory organized into three domains:
-
-### `math/`
-
-**Calculus** (`calculus/`)
-- Core: complex numbers, limits, trigonometric functions, natural logarithm, growth/decay, vectors
-- `differentiation/` — definition of derivative, differentiation rules (power/product/quotient/sum), chain rule, common derivatives (exp/log/trig), partial derivatives, centered differences
-- `integration/` — integrals (definite/indefinite), fundamental theorem of calculus, substitution, integration by parts, partial fractions, trigonometric integrals
-- `series/` — sequences and series, geometric series, harmonic and p-series, ratio test, power series, Taylor series, L'Hôpital's rule
-- `differential_equations/` — first-order (linear, separable), second-order (homogeneous, characteristic roots, inhomogeneous), superposition principle, Wronskian, Laplace transform, Heaviside/Dirac, ODE systems, numerical methods (Euler, Runge-Kutta)
-
-**Linear Algebra** (`linear_algebra/`)
-- `matrices/` — scalars/vectors/matrices, matrix operations, inverse, special matrices, inner/outer products
-- `linear_systems/` — Gaussian elimination, RREF, elementary matrices, LU decomposition
-- `vector_spaces/` — vector spaces, span/basis/dimension, linear independence, column/null/row spaces, rank, norms, orthogonal projections, Gram-Schmidt, least squares
-- `eigenvalues/` — determinants, eigenvalues and eigenvectors, matrix diagonalization
-
-### `deep_learning_theory/` and `statistical_learning_theory/`
-Theoretical foundations for deep learning and statistical learning (in development).
-
----
-
 ## Note Types
 
-Notes follow one of two templates (see `00_meta/templates/`):
+Notes follow one of six templates (see `00_meta/templates/`), matched to their layer and purpose:
 
-**Concept note** (`type: concept`):
+**Concept note** (`type: concept`) — `01_foundations`, `02_modeling`
 ```
 Definition → Intuition → Formal Description → Applications → Trade-offs → Links
 ```
 
-**Proof note** (`type: proof`):
+**Proof note** (`type: proof`) — `01_foundations`
 ```
 Statement → Assumptions → Proof Sketch → Full Proof → Notes / Intuition → Links
 ```
 
-All notes carry frontmatter:
-```yaml
-layer: <top-level folder>
-type: concept | proof
-status: seed | growing | evergreen
-tags: [...]
-created: YYYY-MM-DD
+**Engineering note** (`type: engineering`) — `03_software_engineering`, `04_ml_engineering`
 ```
+Purpose → Architecture → Implementation Notes → Trade-offs → References → Links
+```
+
+**AI system note** (`type: ai_system`) — `05_ai_engineering`
+```
+Goal → Architecture → Components → Evaluation → Failure Modes → Cost / Latency → Links
+```
+
+**Application note** (`type: application`) — `06_applications`
+```
+Problem Definition → Domain Context → Data Requirements → Modeling Options → Deployment Constraints → Risks → Links
+```
+
+**Project overview** (`type: project`) — `07_projects`
+```
+Goal → Scope (In / Out) → Deliverables → Data → Modeling → Engineering → Timeline → Links
+```
+
+All notes carry frontmatter with at minimum: `layer`, `type`, `status` (`seed` / `growing` / `evergreen`), `tags`, and `created`.
 
 ---
 
