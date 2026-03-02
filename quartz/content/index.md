@@ -2,4 +2,4 @@
 title: Notes
 ---
 
-![[README]]
+![[README#Notes]]
