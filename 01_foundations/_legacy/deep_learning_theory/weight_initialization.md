@@ -38,6 +38,6 @@ Poor initialization can make training practically impossible or extremely slow t
 
 ## Links
 
-- [[backpropagation]]
-- [[batch_normalization]]
-- [[adaptive_optimizers]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/batch_normalization]]
+- [[01_foundations/_legacy/deep_learning_theory/adaptive_optimizers]]

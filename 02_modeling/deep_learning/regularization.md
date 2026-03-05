@@ -78,6 +78,6 @@ Effectively increases dataset size at no additional labeling cost.
 
 ## Links
 
-- [[batch_normalization]] (01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/batch_normalization]] (01_foundations/deep_learning_theory)
 - [[bias_variance_analysis]] (01_foundations/statistical_learning_theory)
 - [[transfer_learning]] (01_foundations/statistical_learning_theory)

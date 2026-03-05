@@ -24,7 +24,7 @@ Training a separate classifier per identity requires retraining when new identit
 
 **Embedding network** $f: \mathbb{R}^{H \times W \times 3} \to \mathbb{R}^d$, typically $d = 128$ or $512$; trained so $\|f(x_i) - f(x_j)\|_2$ is small for same identity, large for different.
 
-**Triplet loss:** see [[triplet_loss]] in 01_foundations/deep_learning_theory; anchor-positive-negative triplets with margin $\alpha$.
+**Triplet loss:** see [[01_foundations/_legacy/deep_learning_theory 1/triplet_loss]] in 01_foundations/deep_learning_theory; anchor-positive-negative triplets with margin $\alpha$.
 
 **Siamese networks:** two branches with shared weights processing two images; outputs compared directly.
 
@@ -43,6 +43,6 @@ Phone unlock, building access control, photo management (tagging), law enforceme
 
 ## Links
 
-- [[triplet_loss]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/triplet_loss]] (in 01_foundations/deep_learning_theory)
 - [[object_detection]]
 - [[cnn_architecture]]

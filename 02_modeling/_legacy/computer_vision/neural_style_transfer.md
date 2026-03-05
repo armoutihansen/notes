@@ -30,7 +30,7 @@ Measures activation similarity.
 
 $$J_\text{style} = \sum_l \lambda^{[l]} \|G^{[l]}_S - G^{[l]}_G\|_F^2$$
 
-Computed across multiple layers for rich style representation; see [[style_cost_function]].
+Computed across multiple layers for rich style representation; see [[01_foundations/_legacy/deep_learning_theory 1/style_cost_function]].
 
 **Total objective:**
 
@@ -53,6 +53,6 @@ Artistic image generation, video stylization, texture synthesis, domain adaptati
 
 ## Links
 
-- [[style_cost_function]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/style_cost_function]] (in 01_foundations/deep_learning_theory)
 - [[cnn_architecture]]
-- [[backpropagation]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/backpropagation]] (in 01_foundations/deep_learning_theory)

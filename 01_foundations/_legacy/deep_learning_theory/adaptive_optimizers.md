@@ -83,9 +83,9 @@ $$
 - **Epsilon sensitivity:** the $\epsilon$ stabilizer affects update magnitude when $\hat{s}_t$ is very small; too small $\epsilon$ can cause instability, too large dampens adaptation
 - **Momentum hyperparameter:** $\beta_1$ governs how much past gradients matter; high values (0.95+) can cause the optimizer to overshoot in quickly changing loss landscapes
 - **Memory overhead:** Adam stores two extra gradient moment vectors per parameter, doubling memory vs. plain SGD (significant for very large models)
-- **Learning rate schedules** still matter with Adam; cosine annealing or linear warmup + decay are common choices — see [[gradient_descent]]
+- **Learning rate schedules** still matter with Adam; cosine annealing or linear warmup + decay are common choices — see [[01_foundations/_legacy/deep_learning_theory/gradient_descent]]
 
 ## Links
 
-- [[gradient_descent]]
-- [[backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/gradient_descent]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]

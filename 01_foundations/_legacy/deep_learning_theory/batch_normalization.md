@@ -57,10 +57,10 @@ This makes inference deterministic and independent of batch composition.
 - **Train vs. test mismatch:** moving average estimates must be tracked carefully; bugs here are a common source of subtle errors
 - **Small batch sizes:** batch statistics become unreliable; prefer **Layer Normalization** (normalizes over features instead of batch) for small batches, RNNs, and Transformers
 - **Overhead:** adds parameters $(\gamma, \beta)$ and a forward-pass computation per layer, though cost is generally negligible
-- [[weight_initialization]] becomes less critical when batch norm is used, since activations are re-centered at each layer
+- [[01_foundations/_legacy/deep_learning_theory/weight_initialization]] becomes less critical when batch norm is used, since activations are re-centered at each layer
 
 ## Links
 
-- [[gradient_descent]]
-- [[weight_initialization]]
-- [[adaptive_optimizers]]
+- [[01_foundations/_legacy/deep_learning_theory/gradient_descent]]
+- [[01_foundations/_legacy/deep_learning_theory/weight_initialization]]
+- [[01_foundations/_legacy/deep_learning_theory/adaptive_optimizers]]

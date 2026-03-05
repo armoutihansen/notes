@@ -43,4 +43,4 @@ $O(T^2)$ attention scaling limits context length (addressed by sparse attention,
 - [[recurrent_networks]]
 - [[word_embeddings]]
 - [[sequence_to_sequence]]
-- [[backpropagation]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/backpropagation]] (in 01_foundations/deep_learning_theory)

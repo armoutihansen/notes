@@ -53,4 +53,4 @@ All CNN-based vision models; feature extraction for images. Modern variants incl
 ## Links
 
 - [[cnn_architecture]]
-- [[backpropagation]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/backpropagation]] (in 01_foundations/deep_learning_theory)

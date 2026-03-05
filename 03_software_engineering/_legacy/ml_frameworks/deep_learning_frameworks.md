@@ -161,6 +161,6 @@ Use `jax.jit` for compilation, `jax.vmap` for batching, `jax.pmap` for multi-dev
 - [Flax (JAX neural network library)](https://flax.readthedocs.io/)
 
 ## Links
-- [[backpropagation]] (in 01_foundations/deep_learning_theory)
-- [[gradient_descent]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/backpropagation]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/gradient_descent]] (in 01_foundations/deep_learning_theory)
 - [[02_modeling/_legacy/deep_learning/regularization]] (in 02_modeling/deep_learning)

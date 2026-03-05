@@ -35,4 +35,4 @@ Sequential processing limits parallelization (Transformers are fully parallel); 
 ## Links
 - [[transformer]]
 - [[sequence_to_sequence]]
-- [[backpropagation_through_time]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/backpropagation_through_time]] (in 01_foundations/deep_learning_theory)

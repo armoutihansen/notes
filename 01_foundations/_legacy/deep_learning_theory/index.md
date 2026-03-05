@@ -9,21 +9,21 @@ created: 2026-03-02
 # deep_learning_theory
 
 ## Core
-- [[supervised_learning]]
+- [[01_foundations/_legacy/deep_learning_theory/supervised_learning]]
 - [[01_foundations/_legacy/deep_learning_theory/logistic_regression]]
-- [[cross_entropy_loss]]
-- [[gradient_descent]]
-- [[adaptive_optimizers]]
+- [[01_foundations/_legacy/deep_learning_theory/cross_entropy_loss]]
+- [[01_foundations/_legacy/deep_learning_theory/gradient_descent]]
+- [[01_foundations/_legacy/deep_learning_theory/adaptive_optimizers]]
 
 ## Backprop + implementation
-- [[backpropagation]]
-- [[backpropagation_through_time]]
-- [[gradient_checking]]
-- [[weight_initialization]]
-- [[batch_normalization]]
-- [[vectorization]]
-- [[neural_network_notation]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation_through_time]]
+- [[01_foundations/_legacy/deep_learning_theory/gradient_checking]]
+- [[01_foundations/_legacy/deep_learning_theory/weight_initialization]]
+- [[01_foundations/_legacy/deep_learning_theory/batch_normalization]]
+- [[01_foundations/_legacy/deep_learning_theory/vectorization]]
+- [[01_foundations/_legacy/deep_learning_theory/neural_network_notation]]
 
 ## Metric learning + style transfer
-- [[triplet_loss]]
-- [[style_cost_function]]
+- [[01_foundations/_legacy/deep_learning_theory/triplet_loss]]
+- [[01_foundations/_legacy/deep_learning_theory/style_cost_function]]

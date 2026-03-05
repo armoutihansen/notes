@@ -81,10 +81,10 @@ $$
 - **Learning rate sensitivity:** too high → divergence or oscillation; too low → slow convergence or local minima
 - **Batch size vs. noise vs. compute:** small batches add beneficial noise but reduce GPU utilization; large batches converge to sharper minima (potentially worse generalization)
 - **Schedule tuning:** requires additional hyperparameter choices (decay rate, warmup steps, minimum $\alpha$); cosine annealing with warm restarts is often a strong default
-- Plain GD (no momentum) is rarely used; [[adaptive_optimizers]] typically preferred
+- Plain GD (no momentum) is rarely used; [[01_foundations/_legacy/deep_learning_theory/adaptive_optimizers]] typically preferred
 
 ## Links
 
-- [[adaptive_optimizers]]
-- [[backpropagation]]
-- [[batch_normalization]]
+- [[01_foundations/_legacy/deep_learning_theory/adaptive_optimizers]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/batch_normalization]]

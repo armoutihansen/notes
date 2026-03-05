@@ -51,4 +51,4 @@ Image classification (ResNet, VGG, EfficientNet), object detection backbones, fe
 
 - [[convolution]]
 - [[object_detection]]
-- [[weight_initialization]] (in 01_foundations/deep_learning_theory)
+- [[01_foundations/_legacy/deep_learning_theory 1/weight_initialization]] (in 01_foundations/deep_learning_theory)

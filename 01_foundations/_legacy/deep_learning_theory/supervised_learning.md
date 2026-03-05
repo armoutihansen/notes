@@ -59,5 +59,5 @@ High bias → underfitting (model too simple); high variance → overfitting (mo
 ## Links
 
 - [[01_foundations/_legacy/deep_learning_theory/logistic_regression]]
-- [[cross_entropy_loss]]
+- [[01_foundations/_legacy/deep_learning_theory/cross_entropy_loss]]
 - [[data_splits_and_distribution]] (in 01_foundations/statistical_learning_theory)

@@ -54,5 +54,5 @@ $$
 
 ## Links
 
-- [[backpropagation]]
-- [[gradient_descent]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/gradient_descent]]

@@ -19,8 +19,8 @@ Mathematical theory underpinning ML and data science.
 
 ### Deep Learning Theory
 Theoretical foundations of neural networks and optimization.
-- [[deep_learning_theory/index|deep_learning_theory/]] — full index
-  - Key notes: [[backpropagation]], [[gradient_descent]], [[adaptive_optimizers]], [[batch_normalization]], [[weight_initialization]]
+- [[01_foundations/_legacy/deep_learning_theory 1/index|deep_learning_theory/]] — full index
+  - Key notes: [[01_foundations/_legacy/deep_learning_theory 1/backpropagation]], [[01_foundations/_legacy/deep_learning_theory 1/gradient_descent]], [[01_foundations/_legacy/deep_learning_theory 1/adaptive_optimizers]], [[01_foundations/_legacy/deep_learning_theory 1/batch_normalization]], [[01_foundations/_legacy/deep_learning_theory 1/weight_initialization]]
 
 ### Statistical Learning Theory
 Theory of generalization, model selection, and ML strategy.

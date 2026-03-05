@@ -51,11 +51,11 @@ $$da^{[l-1]} = (W^{[l]})^\top dz^{[l]}$$
 
 - Requires storing all intermediate activations — memory cost scales with depth and batch size; gradient checkpointing trades recomputation for memory
 - Numerical stability degrades in very deep networks due to vanishing/exploding gradients → use gradient clipping, normalization, and careful initialization
-- Bugs most commonly manifest as shape mismatches or sign errors; use [[gradient_checking]] to verify implementations
+- Bugs most commonly manifest as shape mismatches or sign errors; use [[01_foundations/_legacy/deep_learning_theory/gradient_checking]] to verify implementations
 
 ## Links
 
-- [[gradient_descent]]
-- [[weight_initialization]]
-- [[batch_normalization]]
-- [[gradient_checking]]
+- [[01_foundations/_legacy/deep_learning_theory/gradient_descent]]
+- [[01_foundations/_legacy/deep_learning_theory/weight_initialization]]
+- [[01_foundations/_legacy/deep_learning_theory/batch_normalization]]
+- [[01_foundations/_legacy/deep_learning_theory/gradient_checking]]

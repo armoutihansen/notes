@@ -46,6 +46,6 @@ $$\frac{\partial a^{\langle T \rangle}}{\partial a^{\langle 0 \rangle}} = \prod_
 
 ## Links
 
-- [[backpropagation]]
-- [[weight_initialization]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/weight_initialization]]
 - [[recurrent_networks]] (in 02_modeling/sequence_models)

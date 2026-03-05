@@ -46,5 +46,5 @@ Unexpected broadcasting can introduce silent bugs: shape $(n,)$ and shape $(n, 1
 
 ## Links
 
-- [[neural_network_notation]]
-- [[backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/neural_network_notation]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]
