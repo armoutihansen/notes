@@ -16,7 +16,7 @@ This layer does NOT cover: general ML pipelines (→ 04_ml_engineering), classic
 
 ## AI System Lifecycle
 
-### [[00_foundation_models/index|00 — Foundation Models]]
+### [[05_ai_engineering/00_foundation_models/index|00 — Foundation Models]] 
 Model families, scaling laws, alignment (RLHF/DPO/GRPO), tokenization.
 
 ### [[01_evaluation/index|01 — Evaluation]]
