@@ -17,6 +17,7 @@ created: 2026-03-02
 - [[object_detection|Object Detection]]
 - [[face_recognition|Face Recognition]]
 - [[neural_style_transfer|Neural Style Transfer]]
+- [[style_cost_function|Style Cost Function]] — Gram matrix loss, channel correlations, NST objective
 - [[trigger_word_detection|Trigger Word Detection]]
 
 ## Links

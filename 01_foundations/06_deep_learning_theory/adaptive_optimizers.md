@@ -1,7 +1,7 @@
 ---
 layer: 01_foundations
 type: concept
-status: seed
+status: growing
 tags: [optimization, adaptive_lr, momentum, adam, rmsprop]
 created: 2026-03-02
 ---

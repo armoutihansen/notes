@@ -1,5 +1,5 @@
 ---
-layer: 01_foundations
+layer: 02_modeling
 type: concept
 status: seed
 tags: [cnn, loss, style_transfer]

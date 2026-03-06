@@ -1,7 +1,7 @@
 ---
 layer: 01_foundations
 type: concept
-status: seed
+status: growing
 tags: [initialization, optimization, deep_networks]
 created: 2026-03-02
 ---
