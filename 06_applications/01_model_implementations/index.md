@@ -43,7 +43,20 @@ This section does NOT cover:
 | [[time_series_implementation\|Time Series Models]] | Auto-ARIMA, SARIMAX, Holt-Winters ETS, walk-forward CV, LGBM features |
 
 ### Deep Learning
-*See `04_ml_engineering` for training pipelines and `05_ai_engineering` for transformer fine-tuning.*
+| Note | Description |
+|---|---|
+| [[neural_network_implementation\|Neural Network Implementation]] | PyTorch MLP, CNN, LSTM — full training loop with early stopping, validation, loss logging, model serialization |
+| [[transformer_finetuning_implementation\|Transformer Fine-tuning]] | LoRA / QLoRA with PEFT + SFTTrainer — adapter config, training args, saving and merging adapters |
+
+### Graphical Models
+| Note | Description |
+|---|---|
+| [[graphical_model_implementation\|Graphical Model Implementation]] | pgmpy BayesianNetwork construction, MLE/Bayesian parameter fitting, VariableElimination inference |
+
+### Interpretability
+| Note | Description |
+|---|---|
+| [[interpretability_implementation\|Interpretability Implementation]] | SHAP TreeExplainer/KernelExplainer, PDP, permutation feature importance with scikit-learn |
 
 ## Role in the Vault
 
