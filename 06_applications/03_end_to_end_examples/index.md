@@ -38,7 +38,11 @@ This section does NOT cover:
 *Notes to be added.*
 
 ### Foundation Model Applications
-*Notes to be added.*
+| Note | Description |
+|------|-------------|
+| [[rag_qa_system\|RAG Question-Answering System]] | Full RAG pipeline: chunking → Chroma → reranking → LLM → FastAPI + LangSmith observability |
+| [[llm_finetuning_pipeline\|LLM Fine-tuning Pipeline]] | SFT + DPO pipeline with LoRA/QLoRA, MLflow tracking, evaluation, and vLLM deployment |
+| [[production_llm_serving_with_safety\|Production LLM Serving with Safety Stack]] | vLLM + LlamaGuard + semantic cache + LangSmith gateway with fallback routing |
   
 ## Role in the Vault  
   

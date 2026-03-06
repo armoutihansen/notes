@@ -33,16 +33,36 @@ This section does NOT cover:
 | [[mlflow_experiment_tracking\|MLflow Experiment Tracking]] | Full MLflow workflow: tracking runs, comparing experiments, model registry with named aliases (3.x) |
 | [[dvc_dataset_versioning\|DVC Dataset Versioning]] | Version datasets with DVC + Git; define reproducible data pipelines with `dvc.yaml` |
 | [[distributed_training_with_accelerate\|Distributed Training with Accelerate]] | Multi-GPU training with HuggingFace Accelerate, DeepSpeed ZeRO-3, and FSDP |
+| [[peft_lora_finetuning\|PEFT and LoRA Fine-tuning]] | LoRA/QLoRA adapter training with PEFT and Axolotl; rank selection and adapter merging |
+| [[trl_preference_training\|TRL Preference Training]] | DPO alignment, GRPO reasoning training, and reward modelling with TRL |
 
 ### Serving and Integration
 | Note | Description |
 |------|-------------|
 | [[model_serving_with_fastapi\|Model Serving with FastAPI]] | Production REST inference API: model loading, Pydantic schemas, batching, health checks, Docker |
+| [[vllm_serving\|vLLM Serving]] | High-throughput LLM serving: PagedAttention, continuous batching, tensor parallelism, AWQ quantization |
+
+### Prompt Engineering and Structured Output
+| Note | Description |
+|------|-------------|
+| [[instructor_structured_outputs\|Instructor Structured Outputs]] | Type-safe LLM output extraction with Pydantic validation and automatic retry |
+| [[dspy_prompt_optimization\|DSPy Prompt Optimization]] | Declarative LM programming and data-driven prompt optimization with DSPy |
+
+### Retrieval and Memory
+| Note | Description |
+|------|-------------|
+| [[chroma_vector_store\|Chroma Vector Store]] | Embedding database setup, similarity search, metadata filtering, and LangChain/LlamaIndex integration |
 
 ### Monitoring and Feedback
 | Note | Description |
 |------|-------------|
 | [[drift_monitoring_with_evidently\|Drift Monitoring with Evidently]] | Statistical drift detection reports, test suites, and Airflow-scheduled automated alerting |
+| [[langsmith_llm_observability\|LangSmith LLM Observability]] | Tracing, evaluation datasets, LLM-as-judge scoring, and production cost monitoring |
+
+### Safety and Guardrails
+| Note | Description |
+|------|-------------|
+| [[llamaguard_content_moderation\|LlamaGuard Content Moderation]] | Input/output safety classification, vLLM deployment, and NeMo Guardrails integration |
 
 ### DevOps and Infrastructure
 | Note | Description |
