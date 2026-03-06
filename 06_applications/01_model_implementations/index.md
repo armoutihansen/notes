@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: evergreen
 tags: []
 created: 2026-03-06
 ---

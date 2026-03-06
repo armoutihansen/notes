@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [fastapi, docker, kubernetes, github-actions, ci-cd, rest-api, testing, production]
 created: 2026-03-06
 ---

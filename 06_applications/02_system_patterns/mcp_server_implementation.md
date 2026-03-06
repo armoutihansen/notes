@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [mcp, model-context-protocol, llm, tools, server, python, typescript]
 created: 2026-03-06
 ---

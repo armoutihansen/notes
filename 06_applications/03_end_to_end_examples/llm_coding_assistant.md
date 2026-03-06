@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [llm, mcp, rag, agentic, coding-assistant, code-generation, python, tools]
 created: 2026-03-06
 ---

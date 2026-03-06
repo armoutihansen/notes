@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [trl, dpo, grpo, rlhf, preference-training, alignment]
 created: 2026-03-06
 ---

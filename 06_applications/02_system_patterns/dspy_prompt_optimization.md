@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [dspy, prompt-optimization, rag, agents, declarative-prompting]
 created: 2026-03-06
 ---

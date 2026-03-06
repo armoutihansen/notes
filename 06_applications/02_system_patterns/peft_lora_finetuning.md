@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [peft, lora, qlora, fine-tuning, huggingface, axolotl]
 created: 2026-03-06
 ---

@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [fine-tuning, lora, dpo, llm, pipeline, end-to-end]
 created: 2026-03-06
 ---

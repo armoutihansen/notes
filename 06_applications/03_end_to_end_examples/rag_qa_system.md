@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [rag, llm, qa-system, chroma, langchain, end-to-end]
 created: 2026-03-06
 ---

@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [llamaguard, content-moderation, safety, guardrails, llm]
 created: 2026-03-06
 ---

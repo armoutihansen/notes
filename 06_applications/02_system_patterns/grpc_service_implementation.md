@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [grpc, protobuf, rpc, streaming, service-definition, python]
 created: 2026-03-06
 ---

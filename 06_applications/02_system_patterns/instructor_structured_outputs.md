@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [instructor, structured-outputs, pydantic, data-extraction, llm]
 created: 2026-03-06
 ---

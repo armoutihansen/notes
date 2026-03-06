@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [chroma, vector-store, rag, embeddings, similarity-search]
 created: 2026-03-06
 ---
@@ -143,6 +143,12 @@ collection.delete(where={"source": {"$eq": "outdated_source"}})
 - Existing PostgreSQL stack → `pgvector` extension
 
 ## Links
-- [[vector_stores|Vector Stores]]
-- [[rag_architecture|RAG Architecture]]
-- [[model_serving_with_fastapi|Model Serving with FastAPI]]
+
+**AI Engineering**
+- [[vector_stores|Vector Stores]] — overview of vector store options (Chroma, FAISS, pgvector, Qdrant)
+- [[rag_architecture|RAG Architecture]] — retrieval-augmented generation pipeline this pattern serves
+
+**System Patterns**
+- [[model_serving_with_fastapi|Model Serving with FastAPI]] — wrap Chroma retrieval behind a REST endpoint
+- [[rag_pipeline_pattern|RAG Pipeline Pattern]] — full chunking → embedding → retrieval → generation pipeline
+- [[vector_database_retrieval|Vector Database Retrieval]] — FAISS vs Chroma comparison and index-type selection

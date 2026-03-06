@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [vllm, serving, inference, llm, production, pagedattention]
 created: 2026-03-06
 ---

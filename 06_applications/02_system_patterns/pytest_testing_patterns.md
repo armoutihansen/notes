@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [pytest, testing, fixtures, parametrize, mocking, async, coverage]
 created: 2026-03-06
 ---

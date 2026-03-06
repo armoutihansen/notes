@@ -1,7 +1,7 @@
 ---
 layer: 06_applications
 type: application
-status: seed
+status: growing
 tags: [langsmith, observability, tracing, evaluation, llm-ops]
 created: 2026-03-06
 ---
