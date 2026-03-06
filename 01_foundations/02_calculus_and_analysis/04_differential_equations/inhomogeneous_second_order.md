@@ -61,6 +61,7 @@ For a Dirac delta forcing $g(t)=\delta(t)$, the Laplace transform gives $\mathca
 $$
 (s^{2}+3s+2)X(s)=1,\quad X(s)=\frac{1}{(s+1)(s+2)}=\frac{1}{s+1}-\frac{1}{s+2}.
 $$
+
 $$
 x(t)=e^{-t}-e^{-2t}.
 $$

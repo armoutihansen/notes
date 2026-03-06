@@ -26,6 +26,7 @@ L'Hôpital's rule handles limits that produce the indeterminate forms $\tfrac{0}
 $$
 f(x) = f(a) + (x-a)f'(a) + \frac{(x-a)^2}{2!}f''(a) + \dots
 $$
+
 $$
 g(x) = g(a) + (x-a)g'(a) + \frac{(x-a)^2}{2!}g''(a) + \dots
 $$

@@ -33,6 +33,7 @@ Within $|x| < R$, the power series may be **differentiated** or **integrated ter
 $$
 \frac{d}{dx}\sum_{n=0}^{\infty} c_n x^n = \sum_{n=1}^{\infty} n\, c_n x^{n-1},
 $$
+
 $$
 \int \left(\sum_{n=0}^{\infty} c_n x^n\right) dx = C + \sum_{n=0}^{\infty} \frac{c_n\, x^{n+1}}{n+1}.
 $$

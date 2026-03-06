@@ -30,6 +30,7 @@ Probability formalises the intuition that some outcomes are more likely than oth
 **Derived rules**
 
 $$P(A^c) = 1 - P(A)$$
+
 $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 
 **Conditional probability**

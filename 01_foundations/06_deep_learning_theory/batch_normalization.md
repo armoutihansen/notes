@@ -31,6 +31,7 @@ $$
 \mu_\mathcal{B} = \frac{1}{B}\sum_{i=1}^{B} z_i, \qquad
 \sigma_\mathcal{B}^2 = \frac{1}{B}\sum_{i=1}^{B}(z_i - \mu_\mathcal{B})^2
 $$
+
 $$
 \hat{z}_i = \frac{z_i - \mu_\mathcal{B}}{\sqrt{\sigma_\mathcal{B}^2 + \epsilon}}, \qquad
 y_i = \gamma\,\hat{z}_i + \beta

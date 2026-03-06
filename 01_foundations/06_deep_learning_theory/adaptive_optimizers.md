@@ -30,6 +30,7 @@ Let $g_t = \nabla_\theta J_t(\theta)$ be the gradient at step $t$.
 $$
 v_t \leftarrow \beta_1 v_{t-1} + (1-\beta_1)\, g_t
 $$
+
 $$
 \theta \leftarrow \theta - \alpha\, v_t
 $$
@@ -41,6 +42,7 @@ Typical $\beta_1 = 0.9$. Initialise $v_0 = 0$.
 $$
 s_t \leftarrow \beta_2 s_{t-1} + (1-\beta_2)\, g_t^2
 $$
+
 $$
 \theta \leftarrow \theta - \alpha\, \frac{g_t}{\sqrt{s_t + \epsilon}}
 $$
@@ -54,6 +56,7 @@ Maintain both 1st and 2nd moment estimates:
 $$
 v_t \leftarrow \beta_1 v_{t-1} + (1-\beta_1)\, g_t \qquad \text{(1st moment / momentum)}
 $$
+
 $$
 s_t \leftarrow \beta_2 s_{t-1} + (1-\beta_2)\, g_t^2 \qquad \text{(2nd moment / RMSProp)}
 $$

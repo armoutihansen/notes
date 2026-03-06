@@ -71,8 +71,11 @@ Typical $\beta_2 = 0.999$, $\epsilon = 10^{-8}$.
 Maintain 1st (momentum) and 2nd (RMSProp) moment estimates with bias correction:
 
 $$v_t \leftarrow \beta_1 v_{t-1} + (1-\beta_1)\, g_t$$
+
 $$s_t \leftarrow \beta_2 s_{t-1} + (1-\beta_2)\, g_t^2$$
+
 $$\hat v_t = \frac{v_t}{1-\beta_1^t}, \quad \hat s_t = \frac{s_t}{1-\beta_2^t}$$
+
 $$\theta \leftarrow \theta - \alpha\, \frac{\hat v_t}{\sqrt{\hat s_t} + \epsilon}$$
 
 **Default hyperparameters:** $\beta_1 = 0.9$, $\beta_2 = 0.999$, $\epsilon = 10^{-8}$, $\alpha = 10^{-3}$.

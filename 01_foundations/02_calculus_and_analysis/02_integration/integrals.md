@@ -37,6 +37,7 @@ The definite integral measures the signed area between the graph of $f$ and the 
 $$
 \int a f(x)\,dx = a\int f(x)\,dx,
 $$
+
 $$
 \int \bigl[f(x)+g(x)\bigr]\,dx = \int f(x)\,dx + \int g(x)\,dx.
 $$

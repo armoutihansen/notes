@@ -61,6 +61,7 @@ Multiplicative seasonality is appropriate when seasonal fluctuations are proport
 ### State-Space Models (Local Linear Trend)
 
 $$y_t = H_t \mathbf{z}_t + \varepsilon_t \quad \text{(observation equation)}$$
+
 $$\mathbf{z}_{t+1} = F_t \mathbf{z}_t + G_t \eta_t \quad \text{(state transition equation)}$$
 
 The **Kalman filter** computes $P(\mathbf{z}_t | y_1,\ldots,y_t)$ analytically for linear-Gaussian systems.
@@ -85,12 +86,12 @@ Models cross-series dependencies. Used in macroeconomics; Granger causality test
 
 ### Evaluation Metrics
 
-| Metric | Formula | Properties |
-|---|---|---|
-| MAE | $\frac{1}{T}\sum|y_t - \hat{y}_t|$ | Scale-dependent, robust to outliers |
-| RMSE | $\sqrt{\frac{1}{T}\sum(y_t - \hat{y}_t)^2}$ | Penalises large errors |
-| MAPE | $\frac{100}{T}\sum\frac{|y_t - \hat{y}_t|}{|y_t|}$ | Scale-free; undefined for $y_t=0$ |
-| MASE | MAE normalised by naive in-sample MAE | Scale-free and meaningful |
+| Metric | Formula                                     | Properties                |     |                                     |     |                                   |
+| ------ | ------------------------------------------- | ------------------------- | --- | ----------------------------------- | --- | --------------------------------- |
+| MAE    | $\frac{1}{T}\sum                            | y_t - \hat{y}_t           | $   | Scale-dependent, robust to outliers |     |                                   |
+| RMSE   | $\sqrt{\frac{1}{T}\sum(y_t - \hat{y}_t)^2}$ | Penalises large errors    |     |                                     |     |                                   |
+| MAPE   | $\frac{100}{T}\sum\frac{                    | y_t - \hat{y}_t           | }{  | y_t                                 | }$  | Scale-free; undefined for $y_t=0$ |
+| MASE   | MAE normalised by naive in-sample MAE       | Scale-free and meaningful |     |                                     |     |                                   |
 
 ## Applications
 

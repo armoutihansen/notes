@@ -27,6 +27,7 @@ $$\min_{\mathbf{w},b} \frac{1}{2}\|\mathbf{w}\|^2 \quad \text{s.t.} \quad y_i(\m
 **Dual problem** (via Lagrangian):
 
 $$\max_{\boldsymbol{\alpha}} \sum_i \alpha_i - \frac{1}{2}\sum_{i,j}\alpha_i\alpha_j y_i y_j \mathbf{x}_i^\top\mathbf{x}_j$$
+
 $$\text{s.t.} \quad \sum_i \alpha_i y_i = 0, \quad \alpha_i \geq 0$$
 
 **Support vectors:** training points with $\alpha_i > 0$ (on the margin boundaries). All other $\alpha_i = 0$.

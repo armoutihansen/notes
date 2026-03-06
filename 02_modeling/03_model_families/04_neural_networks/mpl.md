@@ -35,7 +35,9 @@ where $a^{[0]} = x$ (input), $g^{[l]}$ is the activation function at layer $l$.
 **Backpropagation:** apply the chain rule recursively from output to input to compute $\partial \mathcal{L}/\partial W^{[l]}$ and $\partial \mathcal{L}/\partial b^{[l]}$:
 
 $$\delta^{[L]} = \nabla_{a^{[L]}} \mathcal{L} \odot g'^{[L]}(z^{[L]})$$
+
 $$\delta^{[l]} = (W^{[l+1]})^\top \delta^{[l+1]} \odot g'^{[l]}(z^{[l]})$$
+
 $$\frac{\partial \mathcal{L}}{\partial W^{[l]}} = \delta^{[l]} (a^{[l-1]})^\top, \qquad \frac{\partial \mathcal{L}}{\partial b^{[l]}} = \delta^{[l]}$$
 
 Weights are updated via gradient descent (or Adam): $W^{[l]} \leftarrow W^{[l]} - \eta \partial \mathcal{L}/\partial W^{[l]}$.

@@ -14,13 +14,13 @@ The process of translating a real-world task into a well-specified ML problem: c
 
 ## Intuition
 
-Jumping directly to model selection is a common mistake. The right problem formulation determines everything downstream: what data you need, which algorithms are candidates, and how you know you've succeeded. Garbage in, garbage out — and a poorly framed problem can make even perfect modelling useless.
+Jumping directly to model selection is a common mistake. The right problem formulation determines everything downstream: what data you need, which algorithms are candidates, and how you know you've succeeded. Garbage in, garbage out — and a poorly framed problem can make even perfect modeling useless.
 
 ## Formal Description
 
 ### Supervised Learning Setup
 
-Given a dataset $\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^n$ where $\mathbf{x}_i \in \mathcal{X}$ and $y_i \in \mathcal{Y}$, find a function $f: \mathcal{X} \to \mathcal{Y}$ that minimises expected risk:
+Given a dataset $\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^n$ where $\mathbf{x}_i \in \mathcal{X}$ and $y_i \in \mathcal{Y}$, find a function $f: \mathcal{X} \to \mathcal{Y}$ that minimizes expected risk:
 
 $$R(f) = \mathbb{E}_{(\mathbf{x},y) \sim P}[\ell(f(\mathbf{x}), y)]$$
 
@@ -58,7 +58,7 @@ The gap between naive and HLP tells you how much improvement is theoretically po
 
 ### Success Criteria
 
-Define before any modelling:
+Define before any modeling:
 
 - **Primary metric**: the single metric that drives decisions (e.g., F1 @ threshold 0.5, RMSE in dollars).
 - **Constraints**: latency (< 100 ms), memory (< 2 GB), interpretability (must explain each decision), fairness (max 5 pp demographic parity gap).

@@ -55,6 +55,7 @@ For convex (not strongly convex): $O(1/T)$ convergence.
 Accumulates an exponential moving average of gradients to dampen oscillations:
 
 $$\mathbf{v}_{t+1} = \beta\mathbf{v}_t + (1-\beta)\nabla f(\boldsymbol{\theta}_t)$$
+
 $$\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta\mathbf{v}_{t+1}$$
 
 Typical $\beta = 0.9$. Nesterov momentum evaluates the gradient at the "lookahead" point $\boldsymbol{\theta}_t - \beta\mathbf{v}_t$, improving convergence rate to $O(1/T^2)$ for convex problems.
@@ -64,6 +65,7 @@ Typical $\beta = 0.9$. Nesterov momentum evaluates the gradient at the "lookahea
 Divides the learning rate by a running average of squared gradients, adapting per-parameter:
 
 $$\mathbf{s}_{t+1} = \rho\mathbf{s}_t + (1-\rho)\nabla f \odot \nabla f$$
+
 $$\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\mathbf{s}_{t+1}} + \epsilon}\nabla f$$
 
 Effective in non-stationary settings; reduces the learning rate for frequently updated parameters.
@@ -73,8 +75,11 @@ Effective in non-stationary settings; reduces the learning rate for frequently u
 Combines momentum (first moment) and RMSProp (second moment) with bias correction:
 
 $$\mathbf{m}_{t+1} = \beta_1 \mathbf{m}_t + (1-\beta_1)\nabla f$$
+
 $$\mathbf{v}_{t+1} = \beta_2 \mathbf{v}_t + (1-\beta_2)\nabla f \odot \nabla f$$
+
 $$\hat{\mathbf{m}} = \mathbf{m}_{t+1}/(1-\beta_1^{t+1}), \quad \hat{\mathbf{v}} = \mathbf{v}_{t+1}/(1-\beta_2^{t+1})$$
+
 $$\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\hat{\mathbf{v}}} + \epsilon}\hat{\mathbf{m}}$$
 
 Defaults: $\beta_1 = 0.9$, $\beta_2 = 0.999$, $\epsilon = 10^{-8}$, $\eta = 10^{-3}$.

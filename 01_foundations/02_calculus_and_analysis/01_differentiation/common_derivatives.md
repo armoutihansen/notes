@@ -58,6 +58,7 @@ Note: $x^{-1} = \frac{1}{x}$ is the only power $x^n$ not obtainable as the deriv
 $$
 \frac{d}{dx}\sin x = \cos x \left(\lim_{h \to 0}\frac{\sin h}{h}\right) + \sin x \left(\lim_{h \to 0}\frac{\cos h - 1}{h}\right),
 $$
+
 $$
 \frac{d}{dx}\cos x = -\sin x \left(\lim_{h \to 0}\frac{\sin h}{h}\right) + \cos x \left(\lim_{h \to 0}\frac{\cos h - 1}{h}\right).
 $$
@@ -70,6 +71,7 @@ The remaining four functions follow from the quotient rule applied to $\tan x = 
 $$
 \frac{d}{dx}\tan x = \sec^{2}x, \qquad \frac{d}{dx}\cot x = -\csc^{2}x,
 $$
+
 $$
 \frac{d}{dx}\sec x = \tan x \sec x, \qquad \frac{d}{dx}\csc x = -\cot x \csc x.
 $$

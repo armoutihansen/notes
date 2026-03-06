@@ -64,13 +64,13 @@ Use $F_\beta > 1$ to prioritise recall (e.g., disease detection); $F_\beta < 1$ 
 
 ### Regression Metrics
 
-| Metric | Formula | When to use |
-|---|---|---|
-| MAE | $\frac{1}{n}\sum|y_i - \hat{y}_i|$ | Robust to outliers, interpretable units |
-| RMSE | $\sqrt{\frac{1}{n}\sum(y_i-\hat{y}_i)^2}$ | Penalises large errors, same units |
-| $R^2$ | $1 - \text{SS}_{res}/\text{SS}_{tot}$ | Proportion of variance explained |
-| MAPE | $\frac{100}{n}\sum|y_i-\hat{y}_i|/|y_i|$ | Scale-free; avoid when $y_i \approx 0$ |
-| Tweedie deviance | Distribution-specific | Compound Poisson targets (insurance) |
+| Metric           | Formula                                   | When to use                          |     |                                         |     |                                        |
+| ---------------- | ----------------------------------------- | ------------------------------------ | --- | --------------------------------------- | --- | -------------------------------------- |
+| MAE              | $\frac{1}{n}\sum                          | y_i - \hat{y}_i                      | $   | Robust to outliers, interpretable units |     |                                        |
+| RMSE             | $\sqrt{\frac{1}{n}\sum(y_i-\hat{y}_i)^2}$ | Penalises large errors, same units   |     |                                         |     |                                        |
+| $R^2$            | $1 - \text{SS}_{res}/\text{SS}_{tot}$     | Proportion of variance explained     |     |                                         |     |                                        |
+| MAPE             | $\frac{100}{n}\sum                        | y_i-\hat{y}_i                        | /   | y_i                                     | $   | Scale-free; avoid when $y_i \approx 0$ |
+| Tweedie deviance | Distribution-specific                     | Compound Poisson targets (insurance) |     |                                         |     |                                        |
 
 ### Calibration
 
@@ -91,11 +91,11 @@ CalibrationDisplay.from_estimator(model, X_test, y_test, n_bins=10)
 
 ### Model Selection
 
-**AIC** (Akaike): $-2\ln\hat{L} + 2k$ — rewards goodness of fit, penalises parameters.
+**AIC** (Akaike): $-2\ln\hat{L} + 2k$ — rewards goodness of fit, penalizes parameters.
 
 **BIC** (Bayesian): $-2\ln\hat{L} + k\ln n$ — stronger penalty; consistent for model selection.
 
-**Bias-variance trade-off view:** simpler models have higher bias, lower variance; favour simpler models when data is scarce.
+**Bias-variance trade-off view:** simpler models have higher bias, lower variance; favor simpler models when data is scarce.
 
 **Statistical comparison:** use paired t-test or Wilcoxon signed-rank test on cross-validation fold scores; never compare single-split scores without uncertainty quantification.
 
@@ -108,7 +108,7 @@ CalibrationDisplay.from_estimator(model, X_test, y_test, n_bins=10)
 ## Trade-offs
 
 - **Leaky evaluation:** including future data or target information during preprocessing inside CV folds inflates performance estimates; always build preprocessing + model into a single Pipeline fitted inside the fold.
-- **Single metric pitfalls:** optimising for AUC can give a model with bad precision at the operating threshold; always inspect the full confusion matrix at the deployment threshold.
+- **Single metric pitfalls:** optimizing for AUC can give a model with bad precision at the operating threshold; always inspect the full confusion matrix at the deployment threshold.
 - **Nested CV overhead:** $k_{outer} \times k_{inner}$ model fits; often only needed when the dataset is small.
 
 ## Links
