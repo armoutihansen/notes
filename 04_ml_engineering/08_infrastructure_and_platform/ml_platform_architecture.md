@@ -39,7 +39,18 @@ Pipelines glue components together into reproducible, schedulable workflows:
 
 ### Model Registry Lifecycle
 
-A model registry tracks the state machine: `Staging → Production → Archived`. Each transition should be gated by automated evaluation (e.g., shadow test passage, A/B test result) and require human approval for production promotion. MLflow's registry exposes this via UI and REST API; SageMaker Model Registry integrates with CodePipeline for CI/CD gating.
+A model registry tracks model versions through a promotion lifecycle. Each promotion should be gated by automated evaluation (e.g., shadow test passage, A/B test result) and require human approval for production promotion. MLflow's registry exposes this via UI and REST API; SageMaker Model Registry integrates with CodePipeline for CI/CD gating.
+
+**MLflow 2.x** modeled the lifecycle as a fixed state machine: `Staging → Production → Archived`. **MLflow 3.x** deprecates fixed stages in favour of named model aliases (e.g., `champion`, `challenger`, `production-v2`). This allows multiple concurrent production variants and removes the implicit single-slot constraint:
+
+```python
+from mlflow.tracking import MlflowClient
+client = MlflowClient()
+client.set_registered_model_alias("fraud-detector", "champion", version=7)
+model = mlflow.pyfunc.load_model("models:/fraud-detector@champion")
+```
+
+See [[experiment_tracking|Experiment Tracking]] for the full alias API.
 
 ## Implementation Notes
 
@@ -84,3 +95,7 @@ Every artifact — dataset snapshot, trained model, evaluation report — should
 - [[ml_environment_management|ML Environment Management]]
 - [[retraining_strategies|Retraining Strategies]]
 - [[testing_in_production|Testing in Production]]
+- [[experiment_tracking|Experiment Tracking]]
+- [[feature_store|Feature Store]]
+- [[drift_detection|Drift Detection]]
+- [[ml_observability|ML Observability]]

@@ -141,3 +141,6 @@ In the absence of ground-truth labels (the common case — labels are delayed), 
 - [[drift_detection|Drift Detection]]
 - [[rollout_strategies|Model Rollout Strategies]]
 - [[serving_patterns|Model Serving Patterns]]
+- [[retraining_strategies|Retraining Strategies]]
+- [[testing_in_production|Testing in Production]]
+- [[ml_platform_architecture|ML Platform Architecture]]

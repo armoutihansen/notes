@@ -107,3 +107,5 @@ Data parallelism is simple and scales well but requires the model to fit on one 
 - [[offline_evaluation|Offline Evaluation]]
 - [[ml_lifecycle|ML Lifecycle]]
 - [[regularization|Regularization]]
+- [[ml_platform_architecture|ML Platform Architecture]]
+- [[model_compression|Model Compression for Deployment]]

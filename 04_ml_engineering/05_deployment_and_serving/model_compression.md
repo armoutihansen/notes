@@ -130,4 +130,4 @@ Combining techniques (e.g., distillation + INT8 quantization) is common in produ
 - [[offline_evaluation|Offline Evaluation]]
 - [[experiment_tracking|Experiment Tracking]]
 - [[distributed_training|Distributed Training]]
-- [[02_modeling/03_deep_learning/neural_network_fundamentals|Neural Network Fundamentals]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks]]
