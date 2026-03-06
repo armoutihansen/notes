@@ -43,7 +43,7 @@ notes/
 | `03_software_engineering` | How do we build robust software? | Python, Go, TypeScript, APIs, databases, testing, DevOps, AI-assisted SE |
 | `04_ml_engineering` | How do we productionize ML systems? | Feature stores, MLflow, drift detection, serving |
 | `05_ai_engineering` | How do we operate LLM systems? | RAG, LoRA fine-tuning, quantization, LangSmith |
-| `06_applications` | Why are we solving this problem? | Insurance pricing, fraud detection |
+| `06_applications` | How are models and systems implemented in practice? | Model implementations, system patterns, end-to-end ML/AI pipelines |
 | `07_projects` | What are we executing right now? | Active work, experiments |
 | `08_reading` | What have we learned from external sources? | Paper notes, book summaries |
 | `09_logs` | What happened today / this week? | Daily notes, reflections |
