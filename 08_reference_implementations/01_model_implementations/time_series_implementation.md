@@ -184,7 +184,7 @@ y = df["y"]
 
 ## Links
 
-- [[02_modeling/03_model_families/09_time_series_models/time_series_models|Time Series Models (theory)]]
+- [[03_modeling/05_time_series/01_classical_forecasting/time_series_models|Time Series Models (theory)]]
 - [[01_foundations/03_probability_and_statistics/hypothesis_testing|ADF test / hypothesis testing]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Walk-forward evaluation]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Walk-forward evaluation]]
 - [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles (LightGBM)]]

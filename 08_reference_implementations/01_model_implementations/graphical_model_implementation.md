@@ -238,7 +238,7 @@ print(result)
 ## Links
 
 **Modeling**
-- [[02_modeling/03_model_families/08_graphical_models/graphical_models|Graphical Models]] — Bayesian networks, MRFs, HMMs, d-separation theory
+- [[03_modeling/03_probabilistic_models/01_graphical_models/graphical_models|Graphical Models]] — Bayesian networks, MRFs, HMMs, d-separation theory
 - [[01_foundations/03_probability_and_statistics/bayesian_inference|Bayesian Inference]] — prior, likelihood, posterior framework
 - [[01_foundations/03_probability_and_statistics/probability_theory|Probability Theory]] — conditional probability and chain rule
 

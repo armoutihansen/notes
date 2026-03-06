@@ -245,8 +245,8 @@ accelerate launch --num_machines 2 --num_processes 8 \
 - [[01_foundations/06_deep_learning_theory/adaptive_optimizers|Adaptive Optimizers]] — AdamW, learning rate schedules
 
 **Modeling**
-- [[02_modeling/03_model_families/04_neural_networks/mpl|Multi-Layer Perceptron]] — MLP architecture
-- [[02_modeling/03_model_families/04_neural_networks/recurrent_networks|Recurrent Networks]] — LSTM/GRU for sequence tasks
+- [[03_modeling/04_deep_learning/01_mlp_and_representation_learning/mpl|Multi-Layer Perceptron]] — MLP architecture
+- [[03_modeling/04_deep_learning/03_sequence_models/recurrent_networks|Recurrent Networks]] — LSTM/GRU for sequence tasks
 
 **Model Implementations**
 - [[neural_network_implementation|Neural Network Implementation]] — standalone PyTorch training loop (without Accelerate)

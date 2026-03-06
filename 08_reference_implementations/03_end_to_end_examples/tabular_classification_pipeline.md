@@ -243,9 +243,9 @@ if n_drifted > 2:
 ## Links
 
 **Data Science & Modeling**
-- [[02_modeling/02_data_science/exploratory_data_analysis|Exploratory Data Analysis]] — EDA patterns and diagnostic plots
-- [[02_modeling/02_data_science/feature_engineering|Feature Engineering]] — encoding, scaling, imputation strategies
-- [[02_modeling/06_interpretability/shap_and_feature_attribution|SHAP and Feature Attribution]] — Shapley value theory
+- [[02_data_science/03_exploratory_data_analysis/exploratory_data_analysis|Exploratory Data Analysis]] — EDA patterns and diagnostic plots
+- [[02_data_science/04_feature_engineering/feature_engineering|Feature Engineering]] — encoding, scaling, imputation strategies
+- [[03_modeling/07_evaluation_and_model_selection/shap_and_feature_attribution|SHAP and Feature Attribution]] — Shapley value theory
 
 **Model Implementations**
 - [[tree_ensembles_implementation|Tree Ensembles Implementation]] — XGBoost, LightGBM, Optuna tuning code

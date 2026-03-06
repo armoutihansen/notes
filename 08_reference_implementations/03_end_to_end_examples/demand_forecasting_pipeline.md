@@ -187,9 +187,9 @@ sarima.update(new_train_obs)   # pmdarima supports incremental updates
 
 ## Links
 
-- [[02_modeling/03_model_families/09_time_series_models/time_series_models|Time Series Models (theory)]]
-- [[02_modeling/02_data_science/exploratory_data_analysis|EDA]]
-- [[02_modeling/02_data_science/data_preprocessing|Data Preprocessing]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Walk-forward evaluation]]
+- [[03_modeling/05_time_series/01_classical_forecasting/time_series_models|Time Series Models (theory)]]
+- [[02_data_science/03_exploratory_data_analysis/exploratory_data_analysis|EDA]]
+- [[02_data_science/05_experimentation_and_validation/data_preprocessing|Data Preprocessing]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Walk-forward evaluation]]
 - [[08_reference_implementations/01_model_implementations/time_series_implementation|Time Series Implementation]]
 - [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles (LightGBM)]]

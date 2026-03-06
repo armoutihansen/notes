@@ -215,7 +215,7 @@ print(pipe("Explain gradient descent in one sentence:", max_new_tokens=80)[0]["g
 - [[06_ai_engineering/05_finetuning/rl_finetuning|RL Fine-tuning]] — DPO / GRPO after SFT
 
 **Modeling**
-- [[02_modeling/03_model_families/07_transformers/transformer_architecture|Transformer Architecture]] — attention mechanism underpinning the base model
+- [[03_modeling/04_deep_learning/04_transformers/transformer|Transformer Architecture]] — attention mechanism underpinning the base model
 
 **System Patterns**
 - [[peft_lora_finetuning|PEFT LoRA Fine-tuning Pattern]] — deployment-ready pattern with QLoRA + evaluation gate

@@ -159,7 +159,7 @@ print(coef_df.head(10))
 
 ## Links
 
-- [[02_modeling/03_model_families/01_linear_and_glm/linear_and_glm|Linear Models & GLMs (theory)]]
-- [[02_modeling/02_data_science/data_preprocessing|Data Preprocessing (pipelines, scaling)]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Evaluation and Validation]]
+- [[03_modeling/01_supervised_learning/01_linear_and_glm/linear_and_glm|Linear Models & GLMs (theory)]]
+- [[02_data_science/05_experimentation_and_validation/data_preprocessing|Data Preprocessing (pipelines, scaling)]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Evaluation and Validation]]
 - [[01_foundations/04_optimization/gradient_descent_optimization|Gradient Descent (solver internals)]]

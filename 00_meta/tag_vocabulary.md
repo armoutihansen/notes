@@ -108,5 +108,5 @@ Use this when migrating old tags:
 | `sequence_models`, `rnn`, `lstm`, `gru`, `BPTT` | remove or `nlp` | Structural (inside transformer/RNN sublayers) |
 | `transformers`, `transformer`, `attention`, `bert`, `gpt` | remove (structural) | Inside transformer sublayers already |
 | `python`, `go`, `typescript`, `javascript` | remove | Inside language-specific sublayers |
-| `end-to-end` | remove | Folder `06_applications/03_end_to_end_examples/` encodes this |
+| `end-to-end` | remove | Folder `08_reference_implementations/03_end_to_end_examples/` encodes this |
 | `production`, `production-ml` | remove or `deployment` | Usually structural redundancy |

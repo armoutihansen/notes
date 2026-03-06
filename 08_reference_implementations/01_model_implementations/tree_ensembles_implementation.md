@@ -186,7 +186,7 @@ plt.tight_layout()
 
 ## Links
 
-- [[02_modeling/03_model_families/02_tree_ensembles/tree_ensembles|Tree Ensembles (theory)]]
-- [[02_modeling/02_data_science/feature_engineering|Feature Engineering]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Evaluation and Validation]]
-- [[02_modeling/06_interpretability/shap_and_feature_attribution|SHAP Feature Attribution]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles|Tree Ensembles (theory)]]
+- [[02_data_science/04_feature_engineering/feature_engineering|Feature Engineering]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Evaluation and Validation]]
+- [[03_modeling/07_evaluation_and_model_selection/shap_and_feature_attribution|SHAP Feature Attribution]]

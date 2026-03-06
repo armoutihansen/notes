@@ -176,7 +176,7 @@ print(f"Anomalies found: {(scores == -1).sum()}")
 
 ## Links
 
-- [[02_modeling/03_model_families/06_unsupervised_learning/unsupervised_learning|Unsupervised Learning (theory)]]
-- [[02_modeling/02_data_science/exploratory_data_analysis|EDA (initial data profiling)]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Evaluation: silhouette, metrics]]
+- [[03_modeling/02_unsupervised_learning/01_clustering/unsupervised_learning|Unsupervised Learning (theory)]]
+- [[02_data_science/03_exploratory_data_analysis/exploratory_data_analysis|EDA (initial data profiling)]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Evaluation: silhouette, metrics]]
 - [[01_foundations/01_linear_algebra/03_eigenvalues_and_decompositions/index|SVD / PCA foundations]]

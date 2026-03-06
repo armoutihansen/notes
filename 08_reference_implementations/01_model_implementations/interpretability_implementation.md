@@ -194,8 +194,8 @@ plt.tight_layout()
 ## Links
 
 **Modeling**
-- [[02_modeling/06_interpretability/shap_and_feature_attribution|SHAP and Feature Attribution]] — Shapley value theory and explainer variants
-- [[02_modeling/06_interpretability/partial_dependence_and_ale|Partial Dependence and ALE]] — marginal effect visualisation theory
+- [[03_modeling/07_evaluation_and_model_selection/shap_and_feature_attribution|SHAP and Feature Attribution]] — Shapley value theory and explainer variants
+- [[03_modeling/07_evaluation_and_model_selection/partial_dependence_ice|Partial Dependence and ALE]] — marginal effect visualisation theory
 
 **Model Implementations**
 - [[tree_ensembles_implementation|Tree Ensembles Implementation]] — XGBoost, LightGBM, RF implementation (models to explain)

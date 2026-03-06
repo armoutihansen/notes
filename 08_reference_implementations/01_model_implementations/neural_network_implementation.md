@@ -250,9 +250,9 @@ start_epoch = ckpt["epoch"] + 1
 - [[01_foundations/06_deep_learning_theory/adaptive_optimizers|Adaptive Optimizers]] — Adam, AdamW, RMSProp
 
 **Modeling**
-- [[02_modeling/03_model_families/04_neural_networks/mpl|Multi-Layer Perceptron]] — MLP architecture theory
-- [[02_modeling/03_model_families/04_neural_networks/cnn_architecture|CNN Architecture]] — convolutional feature learning
-- [[02_modeling/03_model_families/04_neural_networks/recurrent_networks|Recurrent Networks]] — LSTM / GRU theory
+- [[03_modeling/04_deep_learning/01_mlp_and_representation_learning/mpl|Multi-Layer Perceptron]] — MLP architecture theory
+- [[03_modeling/04_deep_learning/02_convolutional_networks/cnn_architecture|CNN Architecture]] — convolutional feature learning
+- [[03_modeling/04_deep_learning/03_sequence_models/recurrent_networks|Recurrent Networks]] — LSTM / GRU theory
 
 **Applications**
 - [[deep_learning_training_workflow|Deep Learning Training Workflow]] — end-to-end PyTorch + Accelerate + MLflow pipeline

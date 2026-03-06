@@ -145,7 +145,7 @@ def plot_svm_boundary(clf, X, y, ax):
 
 ## Links
 
-- [[02_modeling/03_model_families/05_kernel_methods/kernel_methods|Kernel Methods (theory)]]
+- [[03_modeling/01_supervised_learning/03_kernel_methods/kernel_methods|Kernel Methods (theory)]]
 - [[01_foundations/04_optimization/lagrangian_and_constrained_optimization|KKT / SVM Dual Derivation]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Evaluation and Validation]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Evaluation and Validation]]
 - [[08_reference_implementations/01_model_implementations/linear_models_implementation|Linear Models Implementation]]

@@ -266,7 +266,7 @@ uvicorn api:app --host 0.0.0.0 --port 8080 --workers 2
 - [[06_ai_engineering/07_inference_optimization/serving_frameworks|LLM Serving Frameworks]] — vLLM, TGI performance characteristics
 
 **Modeling**
-- [[02_modeling/03_model_families/07_transformers/transformer_architecture|Transformer Architecture]] — attention mechanism of the base model
+- [[03_modeling/04_deep_learning/04_transformers/transformer|Transformer Architecture]] — attention mechanism of the base model
 
 **Model Implementations**
 - [[transformer_finetuning_implementation|Transformer Fine-tuning Implementation]] — LoRA/QLoRA standalone fine-tuning reference

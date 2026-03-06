@@ -198,10 +198,10 @@ def score_new_batch(X_new: np.ndarray, artefacts: dict) -> np.ndarray:
 
 ## Links
 
-- [[02_modeling/03_model_families/06_unsupervised_learning/unsupervised_learning|Unsupervised Learning (theory)]]
-- [[02_modeling/03_model_families/03_probabilistic_models/probabilistic_models|Probabilistic Models (GMM)]]
-- [[02_modeling/02_data_science/exploratory_data_analysis|EDA]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Evaluation (PR-AUC, ROC-AUC)]]
+- [[03_modeling/02_unsupervised_learning/01_clustering/unsupervised_learning|Unsupervised Learning (theory)]]
+- [[03_modeling/03_probabilistic_models/03_bayesian_modeling/probabilistic_models|Probabilistic Models (GMM)]]
+- [[02_data_science/03_exploratory_data_analysis/exploratory_data_analysis|EDA]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Evaluation (PR-AUC, ROC-AUC)]]
 - [[08_reference_implementations/01_model_implementations/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
 - [[08_reference_implementations/01_model_implementations/probabilistic_models_implementation|Probabilistic Models Implementation]]
 - [[08_reference_implementations/03_end_to_end_examples/batch_ml_prediction_pipeline|Batch ML Prediction Pipeline]]

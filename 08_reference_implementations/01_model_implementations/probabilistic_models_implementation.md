@@ -147,7 +147,7 @@ print(f"Pred: {y_pred[:3]}, Std: {y_std[:3]}")
 
 ## Links
 
-- [[02_modeling/03_model_families/03_probabilistic_models/probabilistic_models|Probabilistic Models (theory)]]
+- [[03_modeling/03_probabilistic_models/03_bayesian_modeling/probabilistic_models|Probabilistic Models (theory)]]
 - [[01_foundations/03_probability_and_statistics/bayesian_inference|Bayesian Inference (MAP, conjugate priors)]]
-- [[02_modeling/05_evaluation_and_validation/evaluation_and_validation|Calibration and evaluation]]
+- [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Calibration and evaluation]]
 - [[08_reference_implementations/01_model_implementations/unsupervised_learning_implementation|Unsupervised Learning Implementation (GMM vs k-means)]]
