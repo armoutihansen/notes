@@ -1,7 +1,7 @@
 ---
 layer: 05_ai_engineering
 type: ai_system
-status: seed
+status: growing
 tags: [rag, retrieval, vector-store, chunking, embedding, llm, hallucination]
 created: 2026-03-05
 ---
@@ -114,3 +114,4 @@ Embedding cost at index time is O(D × cost_per_token) — a one-time expense pe
 - [[agentic_loop|Agentic Loop]]
 - [[prompt_injection_and_guardrails|Prompt Injection and Guardrails]]
 - [[prompting_strategies|Prompting Strategies]]
+- [[caching_strategies|Caching Strategies]]

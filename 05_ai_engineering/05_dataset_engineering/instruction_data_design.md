@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [dataset, instruction-tuning, data-quality, sft, alignment]
 created: 2026-03-05
 ---
@@ -149,3 +149,4 @@ for i, text in enumerate(instructions):
 - [[synthetic_data_generation|Synthetic Data Generation]]
 - [[finetuning_strategies|Fine-tuning Strategies]]
 - [[rl_finetuning|Reinforcement Learning Fine-tuning]]
+- [[data_labeling|Data Labeling]]

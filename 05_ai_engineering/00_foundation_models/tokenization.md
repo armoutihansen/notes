@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: huggingface-tokenizers
-status: seed
+status: growing
 tags: [tokenization, bpe, sentencepiece, tiktoken, vocabulary, nlp]
 created: 2026-03-05
 ---

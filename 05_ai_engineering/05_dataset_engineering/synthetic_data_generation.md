@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [synthetic-data, self-instruct, evol-instruct, data-flywheel, llm-judge]
 created: 2026-03-05
 ---
@@ -169,3 +169,4 @@ Building a flywheel requires production traffic, annotation infrastructure, and 
 - [[instruction_data_design|Instruction Data Design]]
 - [[finetuning_strategies|Fine-tuning Strategies]]
 - [[rl_finetuning|Reinforcement Learning Fine-tuning]]
+- [[dataset_versioning|Dataset Versioning]]

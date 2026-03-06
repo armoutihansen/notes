@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [quantization, inference, llm, memory, bitsandbytes, gptq, awq, gguf]
 created: 2026-03-05
 ---
@@ -89,3 +89,4 @@ model.save_quantized("llama3-8b-awq")
 ## Links
 - [[attention_and_kv_cache|Attention Optimization and KV Cache]]
 - [[serving_frameworks|LLM Serving Frameworks]]
+- [[model_compression|Model Compression]]

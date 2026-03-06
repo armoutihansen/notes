@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: vllm
-status: seed
+status: growing
 tags: [serving, inference, vllm, llama-cpp, ollama, tgi, production]
 created: 2026-03-05
 ---
@@ -113,3 +113,5 @@ docker run --gpus all -p 8080:80 \
 - [[quantization_overview|Quantization for LLMs]]
 - [[attention_and_kv_cache|Attention Optimization and KV Cache]]
 - [[llm_observability|LLM Observability]]
+- [[serving_patterns|Serving Patterns]]
+- [[docker_patterns|Docker Patterns]]

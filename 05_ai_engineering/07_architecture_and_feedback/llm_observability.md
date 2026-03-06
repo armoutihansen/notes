@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: langsmith
-status: seed
+status: growing
 tags: [observability, tracing, monitoring, langsmith, evaluation, production]
 created: 2026-03-05
 ---
@@ -122,3 +122,4 @@ results = evaluate(
 ## Links
 - [[ai_application_architecture|AI Application Architecture]]
 - [[serving_frameworks|LLM Serving Frameworks]]
+- [[ml_observability|ML Observability]]

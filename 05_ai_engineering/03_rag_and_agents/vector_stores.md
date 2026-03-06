@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: chroma
-status: seed
+status: growing
 tags: [vector-store, chroma, faiss, pgvector, pinecone, hnsw, similarity-search, rag]
 created: 2026-03-05
 ---
@@ -130,3 +130,4 @@ For most RAG prototypes: Chroma → pgvector (if Postgres is already in stack) o
 ## Links
 - [[rag_architecture|RAG Architecture]]
 - [[agentic_loop|Agentic Loop]]
+- [[nosql_patterns|NoSQL Patterns]]

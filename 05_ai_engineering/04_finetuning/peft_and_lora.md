@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: peft
-status: seed
+status: evergreen
 tags: [peft, lora, qlora, fine-tuning, adapters, axolotl]
 created: 2026-03-05
 ---
@@ -142,3 +142,5 @@ lora_target_modules:
 - [[finetuning_strategies|Fine-tuning Strategies]]
 - [[rl_finetuning|Reinforcement Learning Fine-tuning]]
 - [[instruction_data_design|Instruction Data Design]]
+- [[distributed_training|Distributed Training]]
+- [[model_compression|Model Compression]]

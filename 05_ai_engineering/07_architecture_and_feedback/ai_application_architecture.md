@@ -1,7 +1,7 @@
 ---
 layer: 05_ai_engineering
 type: ai_system
-status: seed
+status: growing
 tags: [architecture, system-design, llm, model-gateway, data-flywheel, production]
 created: 2026-03-05
 ---
@@ -111,3 +111,5 @@ Route to the cheapest model that satisfies quality requirements for each request
 - [[llm_observability|LLM Observability]]
 - [[safety_and_content_moderation|Safety and Content Moderation]]
 - [[serving_frameworks|LLM Serving Frameworks]]
+- [[system_design_fundamentals|System Design Fundamentals]]
+- [[fastapi_patterns|FastAPI Patterns]]

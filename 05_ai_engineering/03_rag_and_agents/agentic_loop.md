@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [agents, agentic-loop, react, planning, tools, memory, llm]
 created: 2026-03-05
 ---
@@ -118,3 +118,4 @@ As the conversation grows, old observations may need to be summarized and replac
 - [[multi_agent_systems|Multi-Agent Systems]]
 - [[rag_architecture|RAG Architecture]]
 - [[prompting_strategies|Prompting Strategies]]
+- [[agentic_coding|Agentic Coding]]

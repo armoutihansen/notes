@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [alignment, rlhf, dpo, sft, constitutional-ai, fine-tuning]
 created: 2026-03-05
 ---
@@ -116,5 +116,6 @@ RLHF remains the gold standard for frontier models but is operationally expensiv
 ## Links
 
 - [[foundation_model_overview|Foundation Model Overview]]
-- [[alignment_and_rlhf|Alignment and RLHF]] *(this note)*
 - [[tokenization|Tokenization]]
+- [[rl_finetuning|Reinforcement Learning Fine-tuning]]
+- [[distributed_training|Distributed Training]]

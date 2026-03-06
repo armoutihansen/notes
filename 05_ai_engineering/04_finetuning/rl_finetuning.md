@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: trl
-status: seed
+status: evergreen
 tags: [rlhf, dpo, grpo, ppo, alignment, trl, preference-learning]
 created: 2026-03-05
 ---
@@ -152,3 +152,6 @@ def combined_reward(completions, ground_truths):
 - [[peft_and_lora|PEFT and LoRA]]
 - [[instruction_data_design|Instruction Data Design]]
 - [[synthetic_data_generation|Synthetic Data Generation]]
+- [[alignment_and_rlhf|Alignment and RLHF]]
+- [[experiment_tracking|Experiment Tracking]]
+- [[distributed_training|Distributed Training]]

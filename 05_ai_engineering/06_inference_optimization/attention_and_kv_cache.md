@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: evergreen
 tags: [attention, flash-attention, kv-cache, inference, transformer, long-context]
 created: 2026-03-05
 ---

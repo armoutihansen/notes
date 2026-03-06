@@ -11,9 +11,14 @@ created: 2026-03-05
 Adapting model weights to specific tasks or domains.
 
 ## Notes
-- [[finetuning_strategies|Fine-tuning Strategies]]
-- [[peft_and_lora|PEFT and LoRA]]
-- [[rl_finetuning|RL Fine-tuning]]
+
+- [[finetuning_strategies|Fine-tuning Strategies]] — When and how to fine-tune vs prompt, full vs PEFT, and dataset size considerations.
+- [[peft_and_lora|PEFT and LoRA]] — Parameter-efficient fine-tuning methods, LoRA rank selection, QLoRA, and Axolotl.
+- [[rl_finetuning|RL Fine-tuning]] — RLHF, DPO, GRPO with TRL; reward modelling and preference training pipelines.
+
+## Navigation
+
+← Prev [[03_rag_and_agents/index|← RAG and Agents]] | Next → [[05_dataset_engineering/index|Dataset Engineering →]]
 
 ## Links
 - [[05_ai_engineering/index|AI Engineering]]

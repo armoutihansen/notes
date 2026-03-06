@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: instructor
-status: seed
+status: growing
 tags: [structured-outputs, pydantic, instructor, constrained-generation, json, llm]
 created: 2026-03-05
 ---

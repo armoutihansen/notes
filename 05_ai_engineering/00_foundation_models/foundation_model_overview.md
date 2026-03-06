@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [foundation-models, transformers, llm, architecture]
 created: 2026-03-05
 ---
@@ -113,3 +113,5 @@ Longer context windows (`32K–1M tokens`) enable retrieval-free document QA, lo
 - [[alignment_and_rlhf|Alignment and RLHF]]
 - [[tokenization|Tokenization]]
 - [[llm_evaluation_overview|LLM Evaluation Overview]]
+- [[distributed_training|Distributed Training]]
+- [[serving_patterns|Serving Patterns]]

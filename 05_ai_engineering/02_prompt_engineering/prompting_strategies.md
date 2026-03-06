@@ -2,7 +2,7 @@
 layer: 05_ai_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [prompting, icl, chain-of-thought, react, few-shot, llm]
 created: 2026-03-05
 ---
