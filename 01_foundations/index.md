@@ -12,7 +12,7 @@ Timeless theoretical foundations. Notes here answer: *why does this work mathema
 
 ## Sublayers
 
-### [[01_linear_algebra/index|01 — Linear Algebra]] [[01_foundations/01_linear_algebra/index|index]]
+### [[01_linear_algebra/index|01 — Linear Algebra]]
 Vectors, matrices, linear systems, eigendecomposition.
 - [[01_linear_algebra/01_vector_spaces/index|Vector Spaces]] — vector space, span, basis, null/column/row space, norms, projections
 - [[01_linear_algebra/02_matrices/index|Matrices]] — operations, inner/outer product, inverse, special matrices

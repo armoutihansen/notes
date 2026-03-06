@@ -34,9 +34,7 @@ BPE is greedy and deterministic. The merge rules are serialised alongside the vo
 
 Used by BERT and its variants. Similar to BPE but the merge criterion maximises the **likelihood of the training corpus** under a language model rather than raw pair frequency:
 
-```
-score(A, B) = freq(AB) / (freq(A) × freq(B))
-```
+$$\text{score}(A, B) = \frac{\text{freq}(A, B)}{\text{freq}(A) \times \text{freq}(B)}$$
 
 WordPiece uses a `##` prefix to mark subword continuations (e.g., `playing` → `play`, `##ing`). This makes token boundaries more linguistically interpretable but couples the tokenizer to a specific LM objective.
 

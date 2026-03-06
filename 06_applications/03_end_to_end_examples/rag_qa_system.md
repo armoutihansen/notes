@@ -20,29 +20,17 @@ End-to-end implementation of a retrieval-augmented generation (RAG) question-ans
 
 ## Architecture
 
-```
-User query
-    │
-    ▼
-[1] Embedding model (text-embedding-3-small)
-    │
-    ▼
-[2] Vector search (Chroma / pgvector)  ←── Document corpus (chunked + indexed)
-    │  top-k passages + scores
-    ▼
-[3] Reranker (cross-encoder, optional)
-    │  reranked top-3
-    ▼
-[4] Prompt assembly (system + context + query)
-    │
-    ▼
-[5] LLM generation (GPT-4o-mini / Llama-3-8B via vLLM)
-    │
-    ▼
-[6] Answer + source citations → User
-    │
-    ▼
-[7] LangSmith trace + groundedness evaluator (async)
+```mermaid
+graph TD
+    A["User query"] --> B["[1] Embedding model<br/>text-embedding-3-small"]
+    B --> C["[2] Vector search<br/>Chroma / pgvector"]
+    D["Document corpus<br/>chunked + indexed"] -.-> C
+    C --> E["[3] Reranker<br/>cross-encoder optional"]
+    E --> F["[4] Prompt assembly<br/>system + context + query"]
+    F --> G["[5] LLM generation<br/>GPT-4o-mini / Llama-3-8B"]
+    G --> H["[6] Answer + source citations"]
+    H --> I["User"]
+    H --> J["[7] LangSmith trace<br/>+ groundedness evaluator"]
 ```
 
 **Component stack:**

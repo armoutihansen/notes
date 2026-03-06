@@ -28,9 +28,7 @@ The standard code evaluation metric. For each problem in the benchmark:
 3. Record `c` = number of completions that pass all tests.
 4. Compute `pass@k` using the unbiased estimator:
 
-```
-pass@k = 1 - C(n - c, k) / C(n, k)
-```
+$$\text{pass@k} = 1 - \frac{C(n - c, k)}{C(n, k)}$$
 
 where `C(n, k)` is the binomial coefficient. This is an unbiased estimator of the probability that at least one of `k` independently sampled completions passes.
 

@@ -31,9 +31,7 @@ Fine-tune the pre-trained base model on a **curated dataset of (prompt, ideal re
 
 Train a **reward model** that predicts human preference scores. Data collection: for the same prompt, generate two or more completions; human annotators rank them. Use the **Bradley-Terry model** to convert pairwise rankings into scalar reward scores.
 
-```
-L_RM = -log σ(r(x, y_w) - r(x, y_l))
-```
+$$L_{\text{RM}} = -\log \sigma(r(x, y_w) - r(x, y_l))$$
 
 where `r` is the reward model, `y_w` is the preferred completion, `y_l` is the rejected one. The RM is typically the SFT model with its final language-model head replaced by a scalar regression head.
 
@@ -41,9 +39,7 @@ where `r` is the reward model, `y_w` is the preferred completion, `y_l` is the r
 
 Use **Proximal Policy Optimisation (PPO)** to fine-tune the SFT model to maximise reward model scores while staying close to the SFT distribution (KL divergence penalty):
 
-```
-Objective = E[r_θ(x, y)] - β · KL[π_θ(y|x) || π_SFT(y|x)]
-```
+$$\text{Objective} = \mathbb{E}[r_\theta(x, y)] - \beta \cdot \text{KL}[\pi_\theta(y|x) \| \pi_{\text{SFT}}(y|x)]$$
 
 - `β` controls the KL penalty; too low → reward hacking; too high → no improvement.
 - Requires four models in GPU memory simultaneously: policy, reference (SFT), reward, value function.
@@ -62,9 +58,7 @@ Constitutional AI reduces reliance on human annotation and makes alignment princ
 
 DPO (Rafailov et al., 2023) eliminates the reward model and RL loop entirely. It derives a **closed-form update** that directly trains the policy from (prompt, chosen, rejected) preference triples:
 
-```
-L_DPO = -E[log σ(β log(π_θ(y_w|x)/π_ref(y_w|x)) - β log(π_θ(y_l|x)/π_ref(y_l|x)))]
-```
+$$L_{\text{DPO}} = -\mathbb{E}\left[\log \sigma\left(\beta \log\frac{\pi_\theta(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log\frac{\pi_\theta(y_l|x)}{\pi_{\text{ref}}(y_l|x)}\right)\right]$$
 
 This is mathematically equivalent to RLHF with an implicit reward, but:
 - No separate reward model to train or maintain.
