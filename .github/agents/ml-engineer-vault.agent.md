@@ -388,6 +388,95 @@ Draw on deep knowledge of these tools when writing or revising notes:
 
 ---
 
+## Available Resources — Skills, MCPs, and Indexes
+
+### Skill Library
+
+A collection of deep-knowledge skill files is available at `~/.copilot/skills/<skill-name>/SKILL.md`. **Before writing any note about a specific tool or framework**, read the relevant skill file to ensure the note reflects current APIs, best practices, and real usage patterns.
+
+To read a skill: `bash cat ~/.copilot/skills/<name>/SKILL.md`
+
+Skill files are organized by tool. Use the following mapping:
+
+| Topic | Skill name(s) to read |
+|---|---|
+| MLflow experiment tracking / model registry | `mlflow` |
+| Weights & Biases runs, sweeps, artifacts | `weights-and-biases` |
+| TensorBoard logging | `tensorboard` |
+| DeepSpeed ZeRO, optimizer offload | `deepspeed` |
+| HuggingFace Accelerate distributed training | `accelerate` |
+| FSDP2 / Megatron / DDP | `accelerate` (covers unified API) |
+| LoRA / QLoRA / PEFT adapters | `peft` |
+| TRL fine-tuning (SFT, DPO, GRPO, PPO) | `trl-fine-tuning`, `grpo-rl-training` |
+| Axolotl fine-tuning | `axolotl` |
+| LLaMA-Factory fine-tuning | `llama-factory` |
+| vLLM inference server | `vllm` |
+| llama.cpp CPU inference | `llama-cpp` |
+| GGUF quantization format | `gguf` |
+| GPTQ post-training quantization | `gptq` |
+| AWQ activation-aware quantization | `awq-quantization` |
+| HQQ quantization | `hqq` |
+| bitsandbytes INT8/INT4 | `bitsandbytes` |
+| Flash Attention / SDPA | `flash-attention` |
+| LM Evaluation Harness (60+ benchmarks) | `lm-evaluation-harness` |
+| BigCode code model evaluation | `bigcode-evaluation-harness` |
+| NeMo Curator data curation | `nemo-curator` |
+| NeMo Evaluator | `nemo-evaluator` |
+| NeMo Guardrails | `nemo-guardrails` |
+| LlamaGuard content moderation | `llamaguard` |
+| Modal serverless GPU | `modal` |
+| SkyPilot multi-cloud GPU | `skypilot` |
+| Lambda Labs GPU cloud | `lambda-labs` |
+| Ray Data / Ray Train | `ray-data`, `ray-train` |
+| LangChain agents and chains | `langchain` |
+| LlamaIndex RAG framework | `llamaindex` |
+| DSPy systematic prompting | `dspy` |
+| FAISS vector search | `faiss` |
+| Chroma vector database | `chroma` |
+| Qdrant vector database | `qdrant` |
+| Pinecone vector database | `pinecone` |
+| CrewAI multi-agent | `crewai` |
+| Instructor / structured outputs | `instructor` |
+| Guidance constrained generation | `guidance` |
+| Arize Phoenix observability | `phoenix` |
+| LangSmith tracing | `langsmith` |
+| Knowledge distillation | `knowledge-distillation` |
+| Long context / RoPE extensions | `long-context` |
+| Mamba / SSM architecture | `mamba` |
+| Speculative decoding | `speculative-decoding` |
+| MoE training | `moe-training` |
+| BLIP-2 vision-language | `blip-2` |
+| CLIP vision-language | `clip` |
+| Whisper ASR | `whisper` |
+| Stable Diffusion | `stable-diffusion` |
+| Constitutional AI / RLAIF | `constitutional-ai` |
+| ML paper writing (NeurIPS/ICML/ICLR) | `20-ml-paper-writing` |
+
+### MCPs
+
+Two MCPs are available and should be used proactively:
+
+**`context7`** — retrieves current, versioned library documentation and code snippets.
+- Use for: verifying current API signatures, parameter names, and usage patterns for any library
+- How to use: first call `context7-resolve-library-id` with the library name, then call `context7-query-docs` with the returned ID and a specific query
+- Use before finalizing any note that contains function calls, configuration keys, or version-specific behaviour
+
+**`web-fetch`** — fetches any URL and returns the page as markdown or raw HTML.
+- Use for: fetching paper abstracts (arXiv), GitHub READMEs, official documentation pages, or release notes when `context7` does not have the content
+- Prefer `context7` for library docs; use `web-fetch` for papers, blog posts, or pages not indexed by Context7
+
+### 06_applications Index Files
+
+**Before starting Phase 2 work**, always read these three files to understand the existing structure, categories, and any notes already present:
+
+1. `06_applications/index.md` — layer overview, sublayer definitions, role in vault
+2. `06_applications/02_system_patterns/index.md` — existing pattern categories and notes
+3. `06_applications/03_end_to_end_examples/index.md` — existing example categories and notes
+
+This prevents duplication and ensures new notes align with the category taxonomy already defined in those indexes. If a new note you are about to create clearly fits an existing category listed in the index, place it under that category heading when updating the index.
+
+---
+
 ## Quality Standards
 
 A note meets the bar when:
@@ -486,11 +575,15 @@ Do not create a note for every possible combination. Create one only when the cl
 2. Explore the target sublayer(s) before making changes
 3. For atomization: plan the split (folder name, number, note list) before executing; confirm no naming collisions
 4. For note creation: confirm the note does not already exist elsewhere before creating
-5. For correctness evaluation: use `context7` or `web-fetch` to verify any API or technical claim you are uncertain about
+5. For correctness evaluation: use `context7` (resolve library ID first, then query docs) or `web-fetch` to verify any API or technical claim you are uncertain about; for tool-specific notes, also read the corresponding skill file at `~/.copilot/skills/<skill-name>/SKILL.md`
 6. Commit after significant work: `git add -A && git commit -m "..." ` with trailer `Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>`
 
 **Phase 2 — Populate `06_applications`:**
 
-7. Run §8a: scan `03_software_engineering/` and `04_ml_engineering/` for tool/framework candidates → create system pattern notes in `06_applications/02_system_patterns/` → update its `index.md`
-8. Run §8b: identify clusters of ≥3 notes spanning ≥2 source layers → create end-to-end example notes in `06_applications/03_end_to_end_examples/` → update its `index.md`
-9. Commit Phase 2 work separately with a descriptive message
+7. Read all three index files before writing any note:
+   - `06_applications/index.md` — understand the layer's scope and sublayer roles
+   - `06_applications/02_system_patterns/index.md` — existing categories and notes
+   - `06_applications/03_end_to_end_examples/index.md` — existing categories and notes
+8. Run §8a: scan `03_software_engineering/` and `04_ml_engineering/` for tool/framework candidates → for each, read the relevant skill file from `~/.copilot/skills/` and use `context7` to verify current APIs → create system pattern notes in `06_applications/02_system_patterns/` → update its `index.md`
+9. Run §8b: identify clusters of ≥3 notes spanning ≥2 source layers → create end-to-end example notes in `06_applications/03_end_to_end_examples/` → update its `index.md`
+10. Commit Phase 2 work separately with a descriptive message
