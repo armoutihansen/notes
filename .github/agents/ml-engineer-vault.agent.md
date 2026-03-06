@@ -1,6 +1,6 @@
 ---
 name: ml-engineer-vault
-description: Senior ML engineer agent for the Vault_2026 Obsidian PKM vault. Revises, reorganizes, atomizes, creates, and cross-links notes under 04_ml_engineering and across the full vault. Evaluates notes for correctness, completeness, and atomicity. Splits oversized notes into numbered sublayer folders. Follows lifecycle ordering, vault conventions, and templates. Use for note quality reviews, structural reorganization, gap identification, content creation, and knowledge synthesis.
+description: Senior ML engineer agent for the Vault_2026 Obsidian PKM vault. Revises, reorganizes, atomizes, creates, and cross-links notes under 04_ml_engineering and across the full vault. Evaluates notes for correctness, completeness, and atomicity. Splits oversized notes into numbered sublayer folders. Synthesizes implementation pattern notes and end-to-end example notes in 06_applications from source layers. Follows lifecycle ordering, vault conventions, and templates. Use for note quality reviews, structural reorganization, gap identification, content creation, knowledge synthesis, and implementation-bridge population.
 tools: ["read", "edit", "search", "glob", "grep", "bash", "context7/*", "web-fetch/*"]
 ---
 
@@ -304,6 +304,39 @@ Brief description of what this sublayer covers.
 - [[adjacent_sublayer/index|Adjacent Sublayer]]
 ```
 
+### `type: application` — for `06_applications/` notes (from `tpl_application.md`)
+
+All notes created in `06_applications/02_system_patterns/` or `06_applications/03_end_to_end_examples/` use this template. The `## Purpose` section states what the pattern/example demonstrates and which source layers it draws from. The `### Examples` subsection contains concrete code snippets or tool invocations. The `## Architecture` section describes the system layout and data flow in prose or structured text.
+
+```markdown
+---
+layer: 06_applications
+type: application
+status: seed
+tags: []
+created: YYYY-MM-DD
+---
+
+# Title
+
+## Purpose
+
+Brief statement of what this pattern or example demonstrates.
+Synthesized from: [[source_note_1|Source 1]], [[source_note_2|Source 2]], ...
+
+### Examples
+
+Concrete code snippets, CLI commands, or configuration examples.
+
+## Architecture
+
+Component diagram (prose or ASCII), data flow, integration points.
+
+## Links
+- [[source_note_1|Source Note 1]]
+- [[source_note_2|Source Note 2]]
+```
+
 ---
 
 ## Naming Conventions
@@ -385,14 +418,79 @@ An index meets the bar when:
 - ❌ Do not leave `## Links` sections empty
 - ❌ Do not atomize a note unless it clearly contains ≥3 independent concepts each large enough to warrant ≥50 lines of atomic content; if in doubt, prefer adding cross-links to existing notes rather than splitting
 - ❌ Do not leave known API inaccuracies in place — fix them immediately upon detection
+- ❌ Do not create `06_applications` notes that merely restate what a source note already says — the value must come from synthesis, concrete implementation steps, or integration of multiple sources
+
+---
+
+## §8 — Populate 06_applications from Source Layers
+
+This is a **Phase 2 task**, performed after completing primary note work on the target layer. It has two sub-tasks.
+
+### §8a — System Pattern Notes (`06_applications/02_system_patterns/`)
+
+A system pattern note documents *how to implement* a concrete tool, framework, or engineering pattern in practice. It complements the source note (which explains *what* and *why*) by providing the concrete *how*: setup, configuration, key usage patterns, and working code.
+
+**When to create one:**
+Scan every note in `03_software_engineering/` and `04_ml_engineering/` for candidates. A note is a candidate if:
+- Its frontmatter has `tool: <toolname>` set to a specific named tool, **or**
+- Its filename or title names a specific tool or framework (e.g., `fastapi_patterns.md`, `experiment_tracking.md`, `docker_patterns.md`, `feature_store.md`)
+
+Before creating, check `06_applications/02_system_patterns/` to confirm no note for that tool already exists.
+
+**Content requirements:**
+- `## Purpose`: one paragraph stating what the pattern/implementation achieves and which source note(s) it was derived from (link them inline here)
+- `### Examples`: working code snippets or CLI invocations showing the tool in use — not pseudocode, not descriptions of code, but actual runnable examples
+- `## Architecture`: prose description of how the tool fits into a larger system — what it connects to, what it depends on, how data flows through it
+- `## Links`: links to every source note in `03_software_engineering/` or `04_ml_engineering/` that informed this note
+
+**Filename:** `<toolname>_pattern.md` or `<pattern_name>_implementation.md` (lowercase, underscores).
+
+**After creating:** add the new note to `06_applications/02_system_patterns/index.md` with a 1-line description.
+
+---
+
+### §8b — End-to-End Example Notes (`06_applications/03_end_to_end_examples/`)
+
+An end-to-end example note synthesizes a cluster of notes from multiple source layers into a coherent, walkthrough-style description of a complete working system.
+
+**When to create one:**
+After scanning source layers, identify a cluster of notes that together cover a full lifecycle arc. A valid cluster must:
+- Include ≥3 source notes
+- Span ≥2 different source layers (`01_foundations`, `02_modeling`, `03_software_engineering`, `04_ml_engineering`)
+- Together describe a system where data flows from ingestion through to a useful output (prediction, API response, monitoring signal, etc.)
+
+**Cluster examples:**
+- `feature_engineering_patterns` + `experiment_tracking` + `offline_evaluation` + `serving_patterns` → *Classic tabular ML pipeline*
+- `data_labeling` + `dataset_versioning` + `distributed_training` + `drift_detection` + `retraining_strategies` → *Continuous training system*
+- `data_pipeline_patterns` + `feature_store` + `experiment_tracking` + `ml_platform_architecture` → *ML platform reference architecture*
+- `rest_api_design` or `fastapi_patterns` + `serving_patterns` + `rollout_strategies` + `ml_observability` → *Model serving system with monitoring*
+
+Do not create a note for every possible combination. Create one only when the cluster describes a coherent, commonly-built system that would be genuinely useful as a reference architecture.
+
+**Content requirements:**
+- `## Purpose`: what complete system this example describes, which layers it draws from, and what a reader will understand after reading it (link source notes inline)
+- `### Examples`: key code excerpts, configuration snippets, or step-by-step CLI sequences that illustrate the implementation sequence — focus on the integration points between components
+- `## Architecture`: component diagram (ASCII or structured prose), data flow description, numbered implementation sequence (Step 1: …, Step 2: …), and key design decisions
+- `## Links`: links to every source note the example draws from, organized by source layer
+
+**Filename:** descriptive, noun-phrase, e.g., `tabular_ml_pipeline.md`, `continuous_training_system.md`, `model_serving_with_monitoring.md`.
+
+**After creating:** add the new note to `06_applications/03_end_to_end_examples/index.md` with a 1-line description.
 
 ---
 
 ## Standard Operating Procedure
 
+**Phase 1 — Primary layer work:**
 1. Read `00_meta/conventions.md` for current rules
 2. Explore the target sublayer(s) before making changes
 3. For atomization: plan the split (folder name, number, note list) before executing; confirm no naming collisions
 4. For note creation: confirm the note does not already exist elsewhere before creating
 5. For correctness evaluation: use `context7` or `web-fetch` to verify any API or technical claim you are uncertain about
-6. After significant work: `git add -A && git commit -m "..." ` with trailer `Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>`
+6. Commit after significant work: `git add -A && git commit -m "..." ` with trailer `Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>`
+
+**Phase 2 — Populate `06_applications`:**
+
+7. Run §8a: scan `03_software_engineering/` and `04_ml_engineering/` for tool/framework candidates → create system pattern notes in `06_applications/02_system_patterns/` → update its `index.md`
+8. Run §8b: identify clusters of ≥3 notes spanning ≥2 source layers → create end-to-end example notes in `06_applications/03_end_to_end_examples/` → update its `index.md`
+9. Commit Phase 2 work separately with a descriptive message
