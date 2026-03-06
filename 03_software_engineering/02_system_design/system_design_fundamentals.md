@@ -36,6 +36,7 @@ Every system design decision is a trade-off between competing constraints: consi
 ### Capacity Estimation (Back-of-Envelope)
 
 Useful constants to memorize:
+
 | Unit | Value |
 |------|-------|
 | 1 million requests/day | ~12 req/s |

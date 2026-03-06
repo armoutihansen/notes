@@ -21,13 +21,13 @@ Python's `asyncio` library and `async`/`await` syntax provide cooperative multit
 ┌─────────────────────────────────────────────────┐
 │                 Event Loop                      │
 │                                                 │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐      │
-│  │ Task A   │  │ Task B   │  │ Task C   │      │
-│  │ (coro)   │  │ (coro)   │  │ (coro)   │      │
-│  └────┬─────┘  └────┬─────┘  └────┬─────┘      │
-│       │ await        │ await        │ await      │
-│       ▼              ▼              ▼            │
-│            I/O selector (epoll/kqueue)           │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
+│  │ Task A   │  │ Task B   │  │ Task C   │       │
+│  │ (coro)   │  │ (coro)   │  │ (coro)   │       │
+│  └────┬─────┘  └────┬─────┘  └────┬─────┘       │
+│       │ await        │ await        │ await     │
+│       ▼              ▼              ▼           │
+│            I/O selector (epoll/kqueue)          │
 └─────────────────────────────────────────────────┘
 ```
 
