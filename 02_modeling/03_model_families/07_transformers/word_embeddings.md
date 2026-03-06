@@ -52,3 +52,5 @@ Static embeddings assign one vector per word regardless of context ("bank" as in
 - [[sequence_to_sequence]]
 - [[02_modeling/03_model_families/04_neural_networks/recurrent_networks|Recurrent Networks]]
 - [[02_modeling/03_model_families/07_transformers/index|Transformers Index]]
+- [[01_foundations/01_linear_algebra/03_eigenvalues/svd|SVD — matrix factorization view of embedding spaces]]
+- [[01_foundations/03_probability_and_statistics/probability_theory|Probability Theory — co-occurrence statistics, pointwise MI]]

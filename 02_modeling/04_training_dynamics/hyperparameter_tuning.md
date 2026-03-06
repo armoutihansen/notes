@@ -73,3 +73,5 @@ Learning rate schedules introduce their own hyperparameters (warmup steps, decay
 - [[early_stopping|Early Stopping]]
 - [[regularization|Regularization]]
 - [[02_modeling/index|Modeling]]
+- [[01_foundations/05_statistical_learning_theory/bias_variance_analysis|Bias–Variance Analysis — model complexity trade-offs]]
+- [[01_foundations/04_optimization/gradient_descent_optimization|Gradient Descent Optimization — learning rate search]]

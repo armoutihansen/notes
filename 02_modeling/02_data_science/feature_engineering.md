@@ -163,3 +163,5 @@ A feature is **leaked** if it encodes information available only after the predi
 - [[data_validation|Data Validation]]
 - [[04_ml_engineering/03_feature_engineering/index|Feature Engineering (Production)]]
 - [[02_modeling/03_model_families/01_linear_and_glm/index|Linear Models and GLMs]]
+- [[01_foundations/01_linear_algebra/01_vector_spaces/vector_space|Vector Space — feature space geometry, basis transformations]]
+- [[01_foundations/03_probability_and_statistics/probability_distributions|Probability Distributions — normalization, encoding categorical features]]

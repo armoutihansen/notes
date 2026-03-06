@@ -52,3 +52,6 @@ Image classification (ResNet, VGG, EfficientNet), object detection backbones, fe
 - [[convolution]]
 - [[object_detection]]
 - [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]
+- [[01_foundations/06_deep_learning_theory/batch_normalization|Batch Normalization — normalizing activations between layers]]
+- [[01_foundations/06_deep_learning_theory/residual_connections|Residual Connections — skip connections, gradient highway]]
+- [[01_foundations/06_deep_learning_theory/weight_initialization|Weight Initialization — Xavier, Kaiming for deep nets]]

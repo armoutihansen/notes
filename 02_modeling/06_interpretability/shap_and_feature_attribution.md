@@ -78,3 +78,5 @@ Perturbs the input around a point, queries the model, and fits a sparse linear m
 - [[interpretability_overview|Interpretability Overview]]
 - [[partial_dependence_ice|PDP and ICE]]
 - [[02_modeling/index|Modeling]]
+- [[01_foundations/03_probability_and_statistics/probability_theory|Probability Theory — Shapley values, cooperative game theory]]
+- [[01_foundations/04_optimization/convex_optimization|Convex Optimization — linear approximation framework (LIME)]]

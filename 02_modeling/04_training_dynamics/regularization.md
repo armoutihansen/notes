@@ -72,3 +72,6 @@ Effectively increases dataset size at no additional labeling cost.
 
 - [[early_stopping|Early Stopping]]
 - [[02_modeling/index|Modeling]]
+- [[01_foundations/06_deep_learning_theory/dropout|Dropout — inverted dropout, regularization theory]]
+- [[01_foundations/06_deep_learning_theory/batch_normalization|Batch Normalization — normalization as regularizer]]
+- [[01_foundations/05_statistical_learning_theory/bias_variance_analysis|Bias–Variance Analysis — underfitting vs overfitting]]

@@ -79,3 +79,5 @@ The **accuracy–interpretability trade-off** is context-dependent: in high-stak
 - [[fairness_metrics|Fairness Metrics]]
 - [[model_risk_considerations|Model Risk Considerations]]
 - [[02_modeling/index|Modeling]]
+- [[01_foundations/05_statistical_learning_theory/bias_variance_analysis|Bias–Variance Analysis — understanding model error sources]]
+- [[01_foundations/03_probability_and_statistics/probability_theory|Probability Theory — conditional expectation, SHAP foundation]]

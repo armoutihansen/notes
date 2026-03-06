@@ -50,3 +50,5 @@ Phone unlock, building access control, photo management (tagging), law enforceme
 - [[object_detection]]
 - [[cnn_architecture]]
 - [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]
+- [[01_foundations/06_deep_learning_theory/triplet_loss|Triplet Loss — anchor/positive/negative metric learning]]
+- [[01_foundations/01_linear_algebra/03_eigenvalues/svd|SVD — embedding distance geometry, low-rank face spaces]]

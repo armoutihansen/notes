@@ -55,3 +55,5 @@ Artistic image generation, video stylization, texture synthesis, domain adaptati
 
 - [[cnn_architecture]]
 - [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]
+- [[01_foundations/06_deep_learning_theory/style_cost_function|Style Cost Function — Gram matrix loss, NST objective]]
+- [[01_foundations/06_deep_learning_theory/backpropagation|Backpropagation — pixel-level gradient descent on generated image]]

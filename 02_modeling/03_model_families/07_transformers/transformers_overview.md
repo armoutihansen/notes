@@ -73,3 +73,5 @@ All tokens are processed in parallel; queries, keys, and values are learned line
 - [[sequence_to_sequence]]
 - [[02_modeling/03_model_families/04_neural_networks/recurrent_networks|Recurrent Networks]]
 - [[02_modeling/03_model_families/07_transformers/index|Transformers Index]]
+- [[01_foundations/06_deep_learning_theory/backpropagation|Backpropagation — gradient flow through attention layers]]
+- [[01_foundations/06_deep_learning_theory/layer_normalization|Layer Normalization — normalisation in transformer blocks]]

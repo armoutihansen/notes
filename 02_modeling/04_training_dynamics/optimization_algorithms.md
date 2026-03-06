@@ -100,3 +100,6 @@ AdamW is a variant that correctly decouples weight decay from the adaptive updat
 - [[hyperparameter_tuning|Hyperparameter Tuning]]
 - [[regularization|Regularization]]
 - [[02_modeling/index|Modeling]]
+- [[01_foundations/04_optimization/gradient_descent_optimization|Gradient Descent and Variants — SGD, momentum, schedules]]
+- [[01_foundations/06_deep_learning_theory/adaptive_optimizers|Adaptive Optimizers — Adam, AdamW, RMSProp]]
+- [[01_foundations/04_optimization/convex_optimization|Convex Optimization — loss landscape theory]]

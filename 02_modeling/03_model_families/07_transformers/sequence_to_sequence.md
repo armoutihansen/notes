@@ -49,3 +49,5 @@ Vanilla seq2seq bottlenecks all information through a fixed-size context vector;
 - [[transformer]]
 - [[word_embeddings]]
 - [[02_modeling/03_model_families/07_transformers/index|Transformers Index]]
+- [[01_foundations/06_deep_learning_theory/backpropagation_through_time|Backpropagation Through Time — encoder–decoder gradient flow]]
+- [[01_foundations/03_probability_and_statistics/probability_theory|Probability Theory — conditional language model factorization]]

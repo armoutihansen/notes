@@ -93,3 +93,6 @@ Extension of binary CE that down-weights easy, well-classified examples (small l
 - [[optimization_algorithms|Optimization Algorithms]]
 - [[regularization|Regularization]]
 - [[02_modeling/index|Modeling]]
+- [[01_foundations/06_deep_learning_theory/cross_entropy_loss|Cross-Entropy Loss — categorical and binary derivation]]
+- [[01_foundations/06_deep_learning_theory/triplet_loss|Triplet Loss — metric learning losses]]
+- [[01_foundations/03_probability_and_statistics/probability_theory|Probability Theory — MLE derivation of loss functions]]
