@@ -30,6 +30,8 @@ This section does NOT cover:
 ### Data and Training Pipelines
 | Note | Description |
 |------|-------------|
+| [[feature_store_pattern\|Feature Store Pattern]] | Feast online/offline feature store, point-in-time correct joins, and low-latency online retrieval |
+| [[training_pipeline_pattern\|Training Pipeline Pattern]] | End-to-end training pipeline: data ingestion → validation → features → train → evaluation gate → registry (DVC + MLflow + Airflow) |
 | [[mlflow_experiment_tracking\|MLflow Experiment Tracking]] | Full MLflow workflow: tracking runs, comparing experiments, model registry with named aliases (3.x) |
 | [[dvc_dataset_versioning\|DVC Dataset Versioning]] | Version datasets with DVC + Git; define reproducible data pipelines with `dvc.yaml` |
 | [[distributed_training_with_accelerate\|Distributed Training with Accelerate]] | Multi-GPU training with HuggingFace Accelerate, DeepSpeed ZeRO-3, and FSDP |
@@ -41,6 +43,7 @@ This section does NOT cover:
 |------|-------------|
 | [[model_serving_with_fastapi\|Model Serving with FastAPI]] | Production REST inference API: model loading, Pydantic schemas, batching, health checks, Docker |
 | [[vllm_serving\|vLLM Serving]] | High-throughput LLM serving: PagedAttention, continuous batching, tensor parallelism, AWQ quantization |
+| [[quantization_deployment_pattern\|Quantization Deployment Pattern]] | Decision table (AWQ/GPTQ/GGUF/bitsandbytes), concrete quantization code for each format, vLLM serving |
 
 ### Prompt Engineering and Structured Output
 | Note | Description |
@@ -52,12 +55,16 @@ This section does NOT cover:
 | Note | Description |
 |------|-------------|
 | [[chroma_vector_store\|Chroma Vector Store]] | Embedding database setup, similarity search, metadata filtering, and LangChain/LlamaIndex integration |
+| [[vector_database_retrieval\|Vector Database Retrieval]] | FAISS vs Chroma decision guide; IVF and HNSW index types; batch upsert; k-NN query patterns |
+| [[rag_pipeline_pattern\|RAG Pipeline Pattern]] | Full RAG pipeline: document loading, chunking strategy, embedding, Chroma indexing, hybrid search, reranking |
 
 ### Monitoring and Feedback
 | Note | Description |
 |------|-------------|
 | [[drift_monitoring_with_evidently\|Drift Monitoring with Evidently]] | Statistical drift detection reports, test suites, and Airflow-scheduled automated alerting |
+| [[model_monitoring_system\|Model Monitoring System]] | End-to-end drift detection + Prometheus metrics export + alerting rules + automated retraining trigger |
 | [[langsmith_llm_observability\|LangSmith LLM Observability]] | Tracing, evaluation datasets, LLM-as-judge scoring, and production cost monitoring |
+| [[llm_evaluation_pipeline\|LLM Evaluation Pipeline]] | Golden dataset creation, LLM-as-judge rubrics, LangSmith evaluate(), A/B comparison, CI regression gates |
 
 ### Safety and Guardrails
 | Note | Description |
@@ -69,11 +76,16 @@ This section does NOT cover:
 |------|-------------|
 | [[pytest_testing_patterns\|pytest Testing Patterns]] | Fixture composition, parametrize, test doubles (mocker), async tests, and CI coverage integration |
 
+### Agent Architectures
+| Note | Description |
+|------|-------------|
+| [[agentic_loop_pattern\|Agentic Loop Pattern]] | ReAct single-agent loop (LangChain), multi-agent workflow (CrewAI), and MCP tool-calling example |
+| [[mcp_server_implementation\|MCP Server Implementation]] | MCP server exposing tools, resources, and prompts to AI coding assistants in Python and TypeScript |
+
 ### Service Implementation Patterns
 | Note | Description |
 |------|-------------|
 | [[grpc_service_implementation\|gRPC Service Implementation]] | Protobuf schema design, Python server/client, server-streaming, TLS, and testing gRPC services |
-| [[mcp_server_implementation\|MCP Server Implementation]] | MCP server exposing tools, resources, and prompts to AI coding assistants in Python and TypeScript |
 
 ### DevOps and Infrastructure
 | Note | Description |
