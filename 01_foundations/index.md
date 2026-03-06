@@ -48,3 +48,7 @@ Neural network theory: backpropagation, optimization, regularization, architectu
 
 ## Links
 - [[02_modeling/index|Modeling]]
+
+---
+
+**Navigation:** [[01_foundations/01_linear_algebra/index|Start with Linear Algebra →]]

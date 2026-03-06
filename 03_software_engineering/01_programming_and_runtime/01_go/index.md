@@ -26,3 +26,7 @@ Programming language notes for Go — types, concurrency, interfaces, error hand
 
 ## Links
 - [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime]]
+
+---
+
+**Navigation:** ← [[03_software_engineering/01_programming_and_runtime/00_python/index|Python]] | [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime Index]] | [[03_software_engineering/01_programming_and_runtime/02_javascript/index|JavaScript →]]

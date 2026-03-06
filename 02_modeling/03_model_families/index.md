@@ -23,3 +23,7 @@ created: 2026-03-02
 ## Links
 
 - [[02_modeling/index|Modeling]]
+
+---
+
+**Navigation:** ← [[02_modeling/index|Modeling Index]] | [[02_modeling/04_training_dynamics/index|Training Dynamics →]]

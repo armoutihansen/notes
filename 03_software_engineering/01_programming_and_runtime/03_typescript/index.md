@@ -26,3 +26,7 @@ TypeScript type system, OOP patterns, generics, and local development setup.
 ## Links
 - [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime]]
 - [[03_software_engineering/01_programming_and_runtime/02_javascript/index|JavaScript]]
+
+---
+
+**Navigation:** ← [[03_software_engineering/01_programming_and_runtime/02_javascript/index|JavaScript]] | [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime Index]]

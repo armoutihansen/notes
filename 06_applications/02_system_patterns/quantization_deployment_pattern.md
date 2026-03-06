@@ -22,6 +22,26 @@ LLM quantization reduces model memory footprint and inference latency by represe
 
 ---
 
+## Architecture
+
+Quantization operates at the **weight level**: instead of storing FP16/BF32 weights, parameters are packed into INT4/INT8 representations. The inference pipeline remains the same (tokenize → forward pass → decode), but memory bandwidth decreases and throughput increases.
+
+```
+Model weights (FP16)
+       ↓  quantize
+Model weights (INT4/INT8)  ← 2–4× smaller
+       ↓
+Load into GPU / CPU memory
+       ↓
+Dequantize on-the-fly during matmul  (done by kernel)
+       ↓
+Output logits → decode
+```
+
+The four quantization strategies differ in: whether calibration data is needed, hardware compatibility, accuracy-compression trade-off, and supported serving runtimes.
+
+---
+
 ## Format Decision Table
 
 | Format | Calibration data | GPU required | Best for |

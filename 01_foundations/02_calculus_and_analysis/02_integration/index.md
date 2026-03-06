@@ -23,3 +23,7 @@ Navigation hub for integral calculus.
 - [[01_foundations/02_calculus_and_analysis/index|Calculus and Analysis]]
 - [[01_foundations/02_calculus_and_analysis/01_differentiation/index|Differentiation]]
 - [[01_foundations/02_calculus_and_analysis/04_differential_equations/index|Differential Equations]]
+
+---
+
+**Navigation:** ← [[01_foundations/02_calculus_and_analysis/01_differentiation/index|Differentiation]] | [[01_foundations/02_calculus_and_analysis/index|Calculus & Analysis Index]] | [[01_foundations/02_calculus_and_analysis/03_series/index|Series →]]

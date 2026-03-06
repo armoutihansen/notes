@@ -1,11 +1,10 @@
 ---
 layer: 06_applications
-type: application
-status: seed
+type: index
+status: growing
 tags: []
 created: 2026-03-06
 ---
-# System Patterns  
   
 Reusable implementation patterns for building machine learning and AI systems.  
   

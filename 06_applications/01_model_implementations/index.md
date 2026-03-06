@@ -1,6 +1,6 @@
 ---
 layer: 06_applications
-type: application
+type: index
 status: evergreen
 tags: []
 created: 2026-03-06

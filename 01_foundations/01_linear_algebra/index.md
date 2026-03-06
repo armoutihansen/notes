@@ -18,3 +18,7 @@ Navigation hub for linear algebra foundations.
 
 ## Links
 - [[01_foundations/index|Foundations]]
+
+---
+
+**Navigation:** ← [[01_foundations/index|Foundations Index]] | [[01_foundations/02_calculus_and_analysis/index|Calculus & Analysis →]]

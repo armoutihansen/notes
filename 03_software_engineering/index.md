@@ -53,3 +53,7 @@ LLM code generation, MCP protocol, RAG for code, and agentic coding.
 ## Links
 - [[04_ml_engineering/index|ML Engineering]]
 - [[05_ai_engineering/index|AI Engineering]]
+
+---
+
+**Navigation:** ← [[02_modeling/index|Modeling]] | [[03_software_engineering/00_principles_and_patterns/index|Start with Principles & Patterns →]]

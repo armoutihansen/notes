@@ -32,3 +32,7 @@ Navigation hub for ordinary differential equations.
 - [[01_foundations/02_calculus_and_analysis/01_differentiation/index|Differentiation]]
 - [[01_foundations/02_calculus_and_analysis/02_integration/index|Integration]]
 - [[01_foundations/02_calculus_and_analysis/03_series/index|Series]]
+
+---
+
+**Navigation:** ← [[01_foundations/02_calculus_and_analysis/03_series/index|Series]] | [[01_foundations/02_calculus_and_analysis/index|Calculus & Analysis Index]] | [[01_foundations/02_calculus_and_analysis/05_vector_calculus/index|Vector Calculus →]]

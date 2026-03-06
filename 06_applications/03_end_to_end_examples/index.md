@@ -1,11 +1,10 @@
 ---
 layer: 06_applications
-type: application
-status: seed
+type: index
+status: growing
 tags: []
 created: 2026-03-06
 ---
-# End-to-End Examples  
   
 Small complete systems that combine modeling, software engineering, ML engineering, and AI engineering into a coherent implementation.  
   

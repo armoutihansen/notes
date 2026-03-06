@@ -21,3 +21,7 @@ Navigation hub for solving systems of linear equations.
 
 ## Links
 - [[01_foundations/01_linear_algebra/index|Linear Algebra]]
+
+---
+
+**Navigation:** ← [[01_foundations/01_linear_algebra/03_eigenvalues/index|Eigenvalues]] | [[01_foundations/01_linear_algebra/index|Linear Algebra Index]]

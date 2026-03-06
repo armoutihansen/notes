@@ -20,3 +20,7 @@ Navigation hub for matrix types, operations, and structure.
 
 ## Links
 - [[01_foundations/01_linear_algebra/index|Linear Algebra]]
+
+---
+
+**Navigation:** ← [[01_foundations/01_linear_algebra/01_vector_spaces/index|Vector Spaces]] | [[01_foundations/01_linear_algebra/index|Linear Algebra Index]] | [[01_foundations/01_linear_algebra/03_eigenvalues/index|Eigenvalues →]]

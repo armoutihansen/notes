@@ -20,3 +20,7 @@ Navigation hub for vector calculus and geometric analysis.
 - [[01_foundations/02_calculus_and_analysis/index|Calculus and Analysis]]
 - [[01_foundations/01_linear_algebra/index|Linear Algebra]]
 - [[01_foundations/02_calculus_and_analysis/01_differentiation/index|Differentiation]]
+
+---
+
+**Navigation:** ← [[01_foundations/02_calculus_and_analysis/04_differential_equations/index|Differential Equations]] | [[01_foundations/02_calculus_and_analysis/index|Calculus & Analysis Index]]

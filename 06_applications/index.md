@@ -1,10 +1,7 @@
 ---
 layer: 06_applications
-type: application
-domain:
-stakeholders: []
-regulatory: []
-status: seed
+type: index
+status: growing
 tags: []
 created: 2026-03-05
 ---

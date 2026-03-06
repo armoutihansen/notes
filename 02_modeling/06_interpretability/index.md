@@ -19,3 +19,7 @@ created: 2026-03-02
 ## Links
 
 - [[02_modeling/index|Modeling]]
+
+---
+
+**Navigation:** ← [[02_modeling/05_evaluation_and_validation/index|Evaluation & Validation]] | [[02_modeling/index|Modeling Index]]

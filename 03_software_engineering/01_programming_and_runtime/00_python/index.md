@@ -20,3 +20,7 @@ Core language, data model, async programming, and tooling for the Python ecosyst
 ## Links
 - [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime]]
 - [[testing_strategies|Testing Strategies]]
+
+---
+
+**Navigation:** ← [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime Index]] | [[03_software_engineering/01_programming_and_runtime/01_go/index|Go →]]

@@ -27,3 +27,7 @@ Navigation hub for differential calculus.
 - [[01_foundations/02_calculus_and_analysis/02_integration/index|Integration]]
 - [[01_foundations/02_calculus_and_analysis/03_series/index|Series]]
 - [[01_foundations/01_linear_algebra/index|Linear Algebra]]
+
+---
+
+**Navigation:** ← [[01_foundations/02_calculus_and_analysis/index|Calculus & Analysis Index]] | [[01_foundations/02_calculus_and_analysis/02_integration/index|Integration →]]

@@ -30,3 +30,7 @@ Navigation hub.
 
 ## Links
 - [[01_foundations/index|Foundations]]
+
+---
+
+**Navigation:** ← [[01_foundations/04_optimization/index|Optimization]] | [[01_foundations/index|Foundations Index]] | [[01_foundations/06_deep_learning_theory/index|Deep Learning Theory →]]

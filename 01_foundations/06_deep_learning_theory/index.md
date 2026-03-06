@@ -46,3 +46,7 @@ Navigation hub.
 
 ## Links
 - [[01_foundations/index|Foundations]]
+
+---
+
+**Navigation:** ← [[01_foundations/05_statistical_learning_theory/index|Statistical Learning Theory]] | [[01_foundations/index|Foundations Index]]

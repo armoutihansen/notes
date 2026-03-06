@@ -1,5 +1,5 @@
 ---
-layer: 02_modeling
+layer: 01_foundations
 type: concept
 status: seed
 tags: [cnn, loss, style_transfer]
@@ -53,4 +53,4 @@ Gram matrix discards all spatial information by design — good for style, bad i
 ## Links
 
 - [[neural_style_transfer]] (in 02_modeling/computer_vision)
-- [[01_foundations/06_deep_learning_theory/backpropagation]]
+- [[01_foundations/_legacy/deep_learning_theory/backpropagation]]

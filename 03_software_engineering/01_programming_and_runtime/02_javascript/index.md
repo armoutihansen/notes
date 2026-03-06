@@ -23,3 +23,7 @@ Core language features, async patterns, module system, and runtime environments 
 ## Links
 - [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime]]
 - [[03_software_engineering/01_programming_and_runtime/03_typescript/index|TypeScript]]
+
+---
+
+**Navigation:** ← [[03_software_engineering/01_programming_and_runtime/01_go/index|Go]] | [[03_software_engineering/01_programming_and_runtime/index|Programming & Runtime Index]] | [[03_software_engineering/01_programming_and_runtime/03_typescript/index|TypeScript →]]

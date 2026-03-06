@@ -20,3 +20,7 @@ Navigation hub for determinants, eigenvalues, and matrix diagonalization.
 
 ## Links
 - [[01_foundations/01_linear_algebra/index|Linear Algebra]]
+
+---
+
+**Navigation:** ← [[01_foundations/01_linear_algebra/02_matrices/index|Matrices]] | [[01_foundations/01_linear_algebra/index|Linear Algebra Index]] | [[01_foundations/01_linear_algebra/04_linear_systems/index|Linear Systems →]]

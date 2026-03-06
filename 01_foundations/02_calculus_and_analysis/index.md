@@ -22,3 +22,7 @@ Navigation hub for calculus and mathematical analysis.
 
 ## Links
 - [[01_foundations/01_linear_algebra/index|Linear Algebra]]
+
+---
+
+**Navigation:** ← [[01_foundations/01_linear_algebra/index|Linear Algebra]] | [[01_foundations/index|Foundations Index]] | [[01_foundations/03_probability_and_statistics/index|Probability & Statistics →]]

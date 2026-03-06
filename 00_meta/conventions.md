@@ -203,23 +203,30 @@ Productionization and integration of foundation models and LLM-based systems. Co
 ## 06_applications  
 
 ### Purpose  
-Domain-specific and business-oriented knowledge.    
-### Contains  
-- Insurance industry structure  
-- Regulatory frameworks  
-- Underwriting processes  
-- Risk modeling case studies  
-- Fraud detection problem framing  
-- Experimentation design in business context  
-- Stakeholder and deployment constraints  
+Synthesis layer bridging foundations, modeling, and engineering into working implementations and end-to-end systems.
+
+### Contains
+- Model implementation notes (concrete runnable code for each model family)
+- System pattern notes (how to build production patterns: feature stores, training pipelines, RAG, monitoring, agents, quantization)
+- End-to-end example notes (complete ML/AI systems spanning multiple source layers)
+
 ### Does NOT Contain  
 - Core mathematical derivations  
-- Algorithmic definitions  
-- Tool-specific instructions  
+- Algorithmic definitions (the "what" and "why" → 02_modeling)
+- Infrastructure-only tooling notes (→ 04_ml_engineering)
+
+### Sublayer Structure
+```
+06_applications/
+├── 01_model_implementations/   ← runnable code per model family
+├── 02_system_patterns/         ← production pattern implementations
+└── 03_end_to_end_examples/     ← complete ML/AI system walkthroughs
+```
+
 ### Guiding Question  
-**Why are we solving this problem and under which constraints?**  
-  
-Applications integrate knowledge from all other layers.  
+**How do we implement and integrate this knowledge into a working system?**
+
+Applications synthesize knowledge from all other layers into concrete implementations.  
   
 ---  
 # 3. Projects (07_projects)  
@@ -418,6 +425,8 @@ Avoid:
 ---  
 ## Engineering Notes
 
+Used in `03_software_engineering/`, `04_ml_engineering/`, `05_ai_engineering/`.
+
 ```
 ## Purpose
 
@@ -428,11 +437,29 @@ Avoid:
 ## Trade-offs
 
 ## References
+
+## Links
 ```
 
----    
-## Application Notes
+**Note on language-level notes**: For programming language reference notes (e.g., Go control flow, JS collections, TypeScript generics), `## Architecture` may be omitted when it is not meaningful. These notes use `## Implementation Notes` as the primary section.
 
+
+
+Used in `06_applications/`. Three sub-types share the same template structure:
+
+```
+## Purpose
+
+### Examples
+
+## Architecture
+
+## Links
+```
+
+Notes in `01_model_implementations/` and `02_system_patterns/` typically expand `## Architecture` with concrete implementation sections (setup, code examples, configuration). Notes in `03_end_to_end_examples/` use `## Architecture` for a component diagram and add a step-by-step implementation sequence.
+
+**Legacy domain-specific format** (for business/domain problem framing, if needed):
 ```
 ## Problem Definition
 

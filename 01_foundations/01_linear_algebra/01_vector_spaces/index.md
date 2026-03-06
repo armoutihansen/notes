@@ -24,3 +24,7 @@ Navigation hub for vector spaces, subspaces, bases, and orthogonality.
 
 ## Links
 - [[01_foundations/01_linear_algebra/index|Linear Algebra]]
+
+---
+
+**Navigation:** ← [[01_foundations/01_linear_algebra/index|Linear Algebra Index]] | [[01_foundations/01_linear_algebra/02_matrices/index|Matrices →]]
