@@ -49,4 +49,4 @@ Phone unlock, building access control, photo management (tagging), law enforceme
 
 - [[object_detection]]
 - [[cnn_architecture]]
-- [[index|Neural Networks Index]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]

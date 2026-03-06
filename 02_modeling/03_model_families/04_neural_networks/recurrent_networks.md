@@ -34,6 +34,6 @@ Sequential processing limits parallelization (Transformers are fully parallel); 
 
 ## Links
 
-- [[index|Neural Networks Index]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]
 - [[02_modeling/03_model_families/07_transformers/transformer|Transformer]]
 - [[02_modeling/03_model_families/07_transformers/attention_mechanism|Attention Mechanism]]

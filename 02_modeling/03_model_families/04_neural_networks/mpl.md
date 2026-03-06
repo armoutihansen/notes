@@ -62,4 +62,4 @@ Tabular data classification and regression (often outperformed by gradient boost
 
 - [[cnn_architecture]]
 - [[recurrent_networks]]
-- [[index|Neural Networks Index]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]

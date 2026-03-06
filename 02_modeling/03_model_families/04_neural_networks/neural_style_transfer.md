@@ -54,4 +54,4 @@ Artistic image generation, video stylization, texture synthesis, domain adaptati
 ## Links
 
 - [[cnn_architecture]]
-- [[index|Neural Networks Index]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]

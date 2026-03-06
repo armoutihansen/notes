@@ -53,4 +53,4 @@ All CNN-based vision models; feature extraction for images. Modern variants incl
 ## Links
 
 - [[cnn_architecture]]
-- [[index|Neural Networks Index]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]

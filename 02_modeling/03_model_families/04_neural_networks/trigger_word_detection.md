@@ -37,4 +37,4 @@ Model must be small enough to run continuously on device (low FLOPs, low memory)
 ## Links
 
 - [[recurrent_networks]]
-- [[index|Neural Networks Index]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]

@@ -48,4 +48,4 @@ Vanilla seq2seq bottlenecks all information through a fixed-size context vector;
 - [[02_modeling/03_model_families/04_neural_networks/recurrent_networks|Recurrent Networks]]
 - [[transformer]]
 - [[word_embeddings]]
-- [[index|Transformers Index]]
+- [[02_modeling/03_model_families/07_transformers/index|Transformers Index]]

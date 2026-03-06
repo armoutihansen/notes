@@ -54,4 +54,4 @@ $O(T_x \cdot T_y)$ alignment computation can be expensive; attention is not a si
 - [[sequence_to_sequence]]
 - [[transformer]]
 - [[02_modeling/03_model_families/04_neural_networks/recurrent_networks|Recurrent Networks]]
-- [[index|Transformers Index]]
+- [[02_modeling/03_model_families/07_transformers/index|Transformers Index]]

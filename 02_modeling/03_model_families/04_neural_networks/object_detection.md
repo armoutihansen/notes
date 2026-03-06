@@ -55,4 +55,4 @@ Autonomous driving (pedestrian/vehicle detection), surveillance, medical imaging
 - [[convolution]]
 - [[cnn_architecture]]
 - [[face_recognition]]
-- [[index|Neural Networks Index]]
+- [[02_modeling/03_model_families/04_neural_networks/index|Neural Networks Index]]

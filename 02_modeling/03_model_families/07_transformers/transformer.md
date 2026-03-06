@@ -57,4 +57,4 @@ $O(T^2)$ attention scaling limits context length (addressed by sparse attention,
 - [[sequence_to_sequence]]
 - [[02_modeling/03_model_families/04_neural_networks/recurrent_networks|Recurrent Networks]]
 - [[transformers_overview]]
-- [[index|Transformers Index]]
+- [[02_modeling/03_model_families/07_transformers/index|Transformers Index]]
