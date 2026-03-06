@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: concept
 status: growing
-tags: [design, readability, maintainability, principles]
+tags: [pattern]
 created: 2026-03-05
 ---
 

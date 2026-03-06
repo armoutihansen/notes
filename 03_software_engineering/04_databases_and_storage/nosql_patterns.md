@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: NoSQL
 status: growing
-tags: [nosql, mongodb, redis, cassandra, neo4j, vector-db, databases]
+tags: [pattern, retrieval]
 created: 2026-03-05
 ---
 

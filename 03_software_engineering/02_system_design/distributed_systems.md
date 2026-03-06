@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: concept
 status: growing
-tags: [distributed-systems, consensus, consistency, fault-tolerance, patterns]
+tags: [distributed, pattern]
 created: 2026-03-05
 ---
 

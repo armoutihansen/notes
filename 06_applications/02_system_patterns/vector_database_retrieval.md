@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [vector-database, faiss, chroma, similarity-search, ann, index-types, embeddings]
+tags: [pattern, retrieval, llm]
 created: 2026-05-10
 ---
 

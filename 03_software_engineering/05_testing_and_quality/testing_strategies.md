@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: pytest
 status: growing
-tags: [testing, pytest, test-doubles, coverage, ci, quality]
+tags: [workflow]
 created: 2026-03-05
 ---
 

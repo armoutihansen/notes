@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [llm, mcp, rag, agentic, coding-assistant, code-generation, python, tools]
+tags: [workflow, retrieval, reasoning, llm]
 created: 2026-03-06
 ---
 

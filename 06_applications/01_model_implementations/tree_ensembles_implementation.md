@@ -5,7 +5,7 @@ domain: supervised-learning
 stakeholders: []
 regulatory: []
 status: growing
-tags: [sklearn, xgboost, lightgbm, random-forest, gradient-boosting, python]
+tags: [algorithm, tabular, classification, regression]
 created: 2026-03-06
 ---
 

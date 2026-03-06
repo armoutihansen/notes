@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: typescript
 status: evergreen
-tags: [typescript, utility-types]
+tags: []
 created: 2026-03-02
 ---
 

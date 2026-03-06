@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: Redis/Memcached
 status: growing
-tags: [caching, redis, performance, distributed-systems, invalidation]
+tags: [pattern, distributed]
 created: 2026-03-05
 ---
 

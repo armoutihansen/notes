@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [distributed-training, accelerate, deepspeed, fsdp, pytorch, huggingface]
+tags: [pattern, distributed, training]
 created: 2026-03-10
 ---
 

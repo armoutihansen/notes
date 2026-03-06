@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [pytest, testing, fixtures, parametrize, mocking, async, coverage]
+tags: [pattern, mlops]
 created: 2026-03-06
 ---
 

@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: typescript
 status: evergreen
-tags: [typescript, type-narrowing, type-guards]
+tags: []
 created: 2026-03-02
 ---
 

@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [llamaguard, content-moderation, safety, guardrails, llm]
+tags: [pattern, safety, llm]
 created: 2026-03-06
 ---
 

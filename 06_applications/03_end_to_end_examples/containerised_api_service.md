@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [fastapi, docker, kubernetes, github-actions, ci-cd, rest-api, testing, production]
+tags: [workflow, deployment, mlops]
 created: 2026-03-06
 ---
 

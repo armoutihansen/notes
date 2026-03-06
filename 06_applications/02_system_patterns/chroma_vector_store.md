@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [chroma, vector-store, rag, embeddings, similarity-search]
+tags: [pattern, retrieval, llm]
 created: 2026-03-06
 ---
 

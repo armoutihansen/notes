@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [docker, containerization, ml-pipelines, reproducibility, nvidia-docker]
+tags: [pattern, deployment, mlops]
 created: 2026-03-10
 ---
 

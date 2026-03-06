@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: FastAPI
 status: growing
-tags: [fastapi, python, api, async, pydantic, dependency-injection, ml-serving]
+tags: [pattern, deployment]
 created: 2026-03-05
 ---
 

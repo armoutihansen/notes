@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [pytorch, neural-networks, mlp, cnn, rnn, training-loop, early-stopping]
+tags: [algorithm, training]
 created: 2026-05-10
 ---
 

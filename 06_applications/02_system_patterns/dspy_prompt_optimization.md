@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [dspy, prompt-optimization, rag, agents, declarative-prompting]
+tags: [pattern, retrieval, reasoning, llm]
 created: 2026-03-06
 ---
 

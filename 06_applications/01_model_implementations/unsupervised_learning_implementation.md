@@ -5,7 +5,7 @@ domain: unsupervised-learning
 stakeholders: []
 regulatory: []
 status: growing
-tags: [sklearn, kmeans, dbscan, pca, tsne, umap, anomaly-detection, python]
+tags: [algorithm, clustering, anomaly-detection]
 created: 2026-03-06
 ---
 

@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: Python
 status: growing
-tags: [python, data-model, dunders, protocols, oop]
+tags: [pattern]
 created: 2026-03-05
 ---
 

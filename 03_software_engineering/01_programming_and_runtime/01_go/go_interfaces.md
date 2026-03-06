@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: go
 status: evergreen
-tags: [go, interfaces]
+tags: []
 created: 2026-03-02
 ---
 

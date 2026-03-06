@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: concept
 status: growing
-tags: [scalability, sharding, caching, rate-limiting, replication, stateless]
+tags: [pattern, distributed]
 created: 2026-03-05
 ---
 

@@ -513,3 +513,60 @@ Any structural change requires:
 - Update to this document
 
 This vault is a professional knowledge architecture, not a casual note collection.
+
+---
+# 12. Tag Governance
+
+Tags are lightweight, cross-cutting metadata. They must **not** duplicate the folder hierarchy; they capture attributes that cut across multiple layers.
+
+## Purpose of Tags
+
+Folders encode *where a note belongs epistemically*. Tags encode *what kind of thing it is* and *what cross-cutting attribute it has*. Use tags to enable discovery across layers — e.g., "show me all `retrieval` notes regardless of layer."
+
+## Controlled Vocabulary
+
+All tags must come from the approved list in [[00_meta/tag_vocabulary|Tag Vocabulary]]. The vocabulary is organized into five orthogonal dimensions:
+
+| Dimension | Tags |
+|-----------|------|
+| **Concept type** | `algorithm`, `pattern`, `theory`, `workflow` |
+| **Lifecycle stage** | `data`, `feature-engineering`, `training`, `evaluation`, `deployment`, `monitoring` |
+| **Domain / modality** | `llm`, `nlp`, `vision`, `time-series`, `tabular`, `multimodal`, `recommendation` |
+| **Capability / task** | `classification`, `regression`, `clustering`, `generation`, `retrieval`, `reasoning`, `forecasting`, `anomaly-detection`, `interpretability` |
+| **Infra / system concern** | `mlops`, `llmops`, `distributed`, `quantization`, `fine-tuning`, `safety` |
+
+## Rules
+
+1. **No structural redundancy.** Never tag a note with an attribute already encoded by its folder path. Examples of forbidden tags:
+   - `python` on notes inside `03_software_engineering/01_programming_and_runtime/00_python/`
+   - `deep-learning` on notes inside `01_foundations/06_deep_learning_theory/`
+   - `mlops` on notes inside `04_ml_engineering/`
+   - `llm` on notes inside `05_ai_engineering/` (unless the note is also relevant from another layer's perspective)
+
+2. **No tool-specific tags.** Never use tags like `mlflow`, `langchain`, `xgboost`, `shap`, `pytorch`. Use the concept/capability tags instead (e.g., `workflow`, `retrieval`, `algorithm`, `interpretability`).
+
+3. **`llm` exception.** `llm` is the single permitted technology-name tag. Use it when a note is specifically about large language model systems and lives outside `05_ai_engineering/` (e.g., an LLM serving pattern in `06_applications/`).
+
+4. **Kebab-case only.** All tags are lowercase with hyphens: `fine-tuning`, not `finetuning` or `fine_tuning`.
+
+5. **Maximum 4 tags per note.** Prefer 1–3 tags. Over-tagging defeats filtering utility.
+
+6. **Index files must have `tags: []`.** They are navigation nodes, not content.
+
+## What Not to Tag
+
+- Folder-level attributes (already encoded by path)
+- Specific algorithm names (`svd`, `kmeans`, `adam`) — use `algorithm` instead
+- Specific model names (`bert`, `gpt`, `resnet`) — use the domain/capability tag instead
+- Lifecycle-stage words that restate the layer (`training` in `04_ml_engineering/04_model_development/` is redundant)
+
+## Tag Application Guidelines
+
+When assigning tags to a note, ask:
+1. **Does this note describe a specific named algorithm?** → `algorithm`
+2. **Does this note describe an architectural/design pattern?** → `pattern`
+3. **Does this note describe mathematical/statistical theory?** → `theory`
+4. **Does this note describe an operational process?** → `workflow`
+5. **What stage of the ML/AI lifecycle does it serve?** → lifecycle stage tag (if not already encoded by folder)
+6. **What data modality or domain does it target?** → domain tag (if not already encoded by folder)
+7. **What task does it enable?** → capability tag

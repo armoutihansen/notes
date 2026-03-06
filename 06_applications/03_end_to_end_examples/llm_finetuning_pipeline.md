@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [fine-tuning, lora, dpo, llm, pipeline, end-to-end]
+tags: [workflow, fine-tuning, llm]
 created: 2026-03-06
 ---
 

@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [drift-detection, evidently, monitoring, data-drift, mlops]
+tags: [pattern, monitoring, mlops]
 created: 2026-03-10
 ---
 

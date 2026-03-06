@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [continuous-training, retraining, drift, mlops, end-to-end, automation]
+tags: [workflow, training, monitoring, mlops]
 created: 2026-03-10
 ---
 

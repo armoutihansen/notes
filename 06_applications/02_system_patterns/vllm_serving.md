@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [vllm, serving, inference, llm, production, pagedattention]
+tags: [pattern, deployment, llm]
 created: 2026-03-06
 ---
 

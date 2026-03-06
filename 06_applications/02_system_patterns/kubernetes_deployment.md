@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [kubernetes, k8s, deployment, service, ingress, helm, scaling]
+tags: [pattern, deployment]
 created: 2026-03-06
 ---
 

@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [transformers, lora, peft, sfttrainer, finetuning, qlora, adapter, huggingface]
+tags: [algorithm, nlp, fine-tuning]
 created: 2026-05-10
 ---
 

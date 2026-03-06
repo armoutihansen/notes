@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: SQL/PostgreSQL
 status: growing
-tags: [sql, postgresql, databases, query-optimization, indexing, transactions]
+tags: [pattern]
 created: 2026-03-05
 ---
 

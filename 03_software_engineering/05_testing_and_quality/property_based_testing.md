@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: Hypothesis
 status: growing
-tags: [testing, hypothesis, property-based-testing, fuzzing, invariants]
+tags: [algorithm]
 created: 2026-03-05
 ---
 

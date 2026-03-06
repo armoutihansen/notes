@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [mlflow, experiment-tracking, model-registry, mlops]
+tags: [pattern, training, mlops]
 created: 2026-03-10
 ---
 

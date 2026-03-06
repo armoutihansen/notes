@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [shap, interpretability, feature-attribution, pdp, permutation-importance, xai, scikit-learn]
+tags: [algorithm, interpretability, tabular]
 created: 2026-05-10
 ---
 

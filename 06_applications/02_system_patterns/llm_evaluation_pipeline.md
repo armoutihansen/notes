@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [llm-evaluation, langsmith, ai-as-judge, evaluation-dataset, regression-testing, ci]
+tags: [pattern, evaluation, llm]
 created: 2026-05-10
 ---
 

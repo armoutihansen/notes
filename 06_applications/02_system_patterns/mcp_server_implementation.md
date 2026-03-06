@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [mcp, model-context-protocol, llm, tools, server, python, typescript]
+tags: [pattern, reasoning, llm]
 created: 2026-03-06
 ---
 

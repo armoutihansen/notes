@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: javascript
 status: evergreen
-tags: [javascript, async, promises, event-loop]
+tags: [pattern]
 created: 2026-03-02
 ---
 

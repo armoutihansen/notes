@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [langsmith, observability, tracing, evaluation, llm-ops]
+tags: [pattern, evaluation, llmops]
 created: 2026-03-06
 ---
 

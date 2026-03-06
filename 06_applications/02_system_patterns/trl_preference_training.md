@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [trl, dpo, grpo, rlhf, preference-training, alignment]
+tags: [pattern, fine-tuning, llm]
 created: 2026-03-06
 ---
 

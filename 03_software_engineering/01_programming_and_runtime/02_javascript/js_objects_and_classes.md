@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: javascript
 status: evergreen
-tags: [javascript, objects, classes, prototypes]
+tags: []
 created: 2026-03-02
 ---
 

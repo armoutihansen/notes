@@ -5,7 +5,7 @@ domain: anomaly-detection
 stakeholders: [data-scientist, ml-engineer]
 regulatory: []
 status: growing
-tags: [anomaly-detection, unsupervised, isolation-forest, pca, sklearn, python, end-to-end]
+tags: [workflow, tabular, anomaly-detection]
 created: 2026-03-06
 ---
 

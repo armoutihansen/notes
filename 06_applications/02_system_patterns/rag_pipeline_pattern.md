@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [rag, chunking, embedding, retrieval, reranking, llamaindex, chroma, hybrid-search]
+tags: [pattern, retrieval, llm]
 created: 2026-05-10
 ---
 

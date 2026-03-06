@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [rag, llm, qa-system, chroma, langchain, end-to-end]
+tags: [workflow, retrieval, llm]
 created: 2026-03-06
 ---
 

@@ -3,7 +3,7 @@ layer: 03_software_engineering
 type: engineering
 tool: Python
 status: growing
-tags: [python, tooling, packaging, testing, linting, mypy, pytest, ruff]
+tags: [workflow]
 created: 2026-03-05
 ---
 

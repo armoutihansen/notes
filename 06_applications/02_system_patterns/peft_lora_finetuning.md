@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [peft, lora, qlora, fine-tuning, huggingface, axolotl]
+tags: [pattern, fine-tuning, llm]
 created: 2026-03-06
 ---
 

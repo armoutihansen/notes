@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [monitoring, drift-detection, evidently, prometheus, alerting, retraining, mlops]
+tags: [pattern, monitoring, mlops]
 created: 2026-05-10
 ---
 

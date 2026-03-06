@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [agents, agentic-loop, react, crewai, langchain, mcp, tool-calling, multi-agent]
+tags: [pattern, reasoning, llm]
 created: 2026-05-10
 ---
 

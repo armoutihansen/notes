@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [quantization, awq, gptq, gguf, bitsandbytes, deployment, inference, hardware]
+tags: [pattern, quantization, deployment]
 created: 2026-05-10
 ---
 

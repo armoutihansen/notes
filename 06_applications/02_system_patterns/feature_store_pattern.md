@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [feature-store, feast, online-offline, point-in-time, training-serving-skew]
+tags: [pattern, feature-engineering]
 created: 2026-05-10
 ---
 

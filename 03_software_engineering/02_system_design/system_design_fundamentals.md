@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: concept
 status: growing
-tags: [system-design, architecture, scalability, databases, caching]
+tags: [pattern]
 created: 2026-03-05
 ---
 

@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [nlp, text-classification, transformer, lora, peft, sfttrainer, vllm, fastapi, end-to-end]
+tags: [workflow, nlp, fine-tuning, classification]
 created: 2026-05-10
 ---
 

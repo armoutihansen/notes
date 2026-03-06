@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [dvc, dataset-versioning, data-lineage, reproducibility, mlops]
+tags: [pattern, data, mlops]
 created: 2026-03-10
 ---
 

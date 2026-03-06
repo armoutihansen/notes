@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [pytorch, deep-learning, accelerate, mlflow, training, multi-gpu, end-to-end]
+tags: [workflow, training, distributed]
 created: 2026-05-10
 ---
 

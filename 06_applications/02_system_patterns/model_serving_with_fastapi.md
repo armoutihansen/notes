@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [fastapi, model-serving, inference-api, pydantic, mlops, rest]
+tags: [pattern, deployment, mlops]
 created: 2026-03-10
 ---
 

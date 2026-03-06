@@ -5,7 +5,7 @@ domain: supervised-learning
 stakeholders: []
 regulatory: []
 status: growing
-tags: [sklearn, naive-bayes, gmm, em, probabilistic, python]
+tags: [algorithm, tabular, clustering, classification]
 created: 2026-03-06
 ---
 

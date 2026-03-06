@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [cicd, github-actions, mlops, automated-testing, model-validation]
+tags: [pattern, mlops, deployment]
 created: 2026-03-10
 ---
 

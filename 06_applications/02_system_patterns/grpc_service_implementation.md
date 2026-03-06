@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [grpc, protobuf, rpc, streaming, service-definition, python]
+tags: [pattern, deployment]
 created: 2026-03-06
 ---
 

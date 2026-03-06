@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [llm, serving, safety, vllm, llamaguard, observability, end-to-end]
+tags: [workflow, deployment, safety, llm]
 created: 2026-03-06
 ---
 

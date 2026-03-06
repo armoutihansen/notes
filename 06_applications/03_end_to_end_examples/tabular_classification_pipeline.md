@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [tabular, classification, xgboost, mlflow, shap, fastapi, evidently, mlops, end-to-end]
+tags: [workflow, tabular, classification, mlops]
 created: 2026-05-10
 ---
 

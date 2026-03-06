@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [pgmpy, bayesian-network, graphical-models, inference, structure-learning, probabilistic]
+tags: [algorithm, reasoning]
 created: 2026-05-10
 ---
 

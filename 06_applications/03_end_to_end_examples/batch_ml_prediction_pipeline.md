@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [batch-ml, prediction-pipeline, tabular, end-to-end, mlops]
+tags: [workflow, tabular, mlops]
 created: 2026-03-10
 ---
 

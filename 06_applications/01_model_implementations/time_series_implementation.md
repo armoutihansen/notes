@@ -5,7 +5,7 @@ domain: forecasting
 stakeholders: []
 regulatory: []
 status: growing
-tags: [statsmodels, pmdarima, arima, prophet, time-series, python, sklearn]
+tags: [algorithm, time-series, forecasting]
 created: 2026-03-06
 ---
 

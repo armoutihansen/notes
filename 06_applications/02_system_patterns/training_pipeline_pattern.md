@@ -2,7 +2,7 @@
 layer: 06_applications
 type: application
 status: growing
-tags: [training-pipeline, mlops, dvc, mlflow, airflow, data-ingestion, evaluation-gate]
+tags: [pattern, training, mlops]
 created: 2026-05-10
 ---
 
