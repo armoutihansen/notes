@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [residual-connections, skip-connections, resnet, gradient-highway, deep-learning]
+tags: [algorithm]
 created: 2026-03-06
 ---
 

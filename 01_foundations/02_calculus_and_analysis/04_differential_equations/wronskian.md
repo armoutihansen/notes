@@ -2,8 +2,7 @@
 layer: 01_foundations
 type: proof
 status: seed
-tags:
-  - math/calculus/differential_equations
+tags: [theory]
 created: 2026-03-01
 ---
 

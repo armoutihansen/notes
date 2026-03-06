@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: index
 status: evergreen
-tags: [decision-tree, random-forest, gradient-boosting, xgboost, lightgbm]
+tags: []
 created: 2026-03-06
 ---
 

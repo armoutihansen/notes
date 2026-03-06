@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [neural_networks, mlp, feedforward, backpropagation, universal_approximation]
+tags: [algorithm]
 created: 2026-03-02
 ---
 

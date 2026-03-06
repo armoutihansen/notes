@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [optimization, adaptive_lr, momentum, adam, rmsprop]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

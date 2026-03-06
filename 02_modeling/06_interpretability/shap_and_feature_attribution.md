@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [shap, shapley-values, feature-attribution, lime, integrated-gradients, interpretability, xai]
+tags: [interpretability, algorithm]
 created: 2026-03-02
 ---
 

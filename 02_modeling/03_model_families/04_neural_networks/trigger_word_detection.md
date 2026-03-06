@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [speech, sequence_models, keyword_spotting]
+tags: [algorithm, nlp]
 created: 2026-03-02
 ---
 

@@ -2,8 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags:
-  - math/calculus/series
+tags: [theory]
 created: 2026-03-01
 ---
 

@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [generalization, rademacher-complexity, uniform-convergence, pac-bayes, structural-risk-minimization]
+tags: [theory]
 created: 2026-03-06
 ---
 

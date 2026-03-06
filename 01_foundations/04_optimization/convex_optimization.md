@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [convex-optimization, convex-set, convex-function, local-minimum, global-minimum]
+tags: [theory]
 created: 2026-03-06
 ---
 

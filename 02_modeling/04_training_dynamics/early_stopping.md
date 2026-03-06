@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [early-stopping, regularization, overfitting, validation, training, checkpointing]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

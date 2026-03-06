@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [initialization, optimization, deep_networks]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

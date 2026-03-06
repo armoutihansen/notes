@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [interpretability, explainability, xai, transparency, post-hoc, intrinsic, local, global]
+tags: [interpretability, algorithm]
 created: 2026-03-02
 ---
 

@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [supervised-learning, empirical-risk-minimization, bias-variance, classification, regression]
+tags: [theory, classification, regression]
 created: 2026-03-02
 ---
 

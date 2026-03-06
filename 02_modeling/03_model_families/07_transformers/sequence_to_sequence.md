@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [sequence_models, seq2seq, beam_search, bleu, machine_translation]
+tags: [algorithm, nlp]
 created: 2026-03-02
 ---
 

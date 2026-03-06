@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: index
 status: evergreen
-tags: [naive-bayes, gaussian-mixture, probabilistic, generative]
+tags: []
 created: 2026-03-06
 ---
 

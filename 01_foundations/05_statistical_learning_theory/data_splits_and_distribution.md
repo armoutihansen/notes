@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [data-splits, train-dev-test, distribution-mismatch, evaluation]
+tags: [evaluation, workflow]
 created: 2026-03-02
 ---
 

@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [time-series, arima, stationary, autocorrelation, forecasting, state-space, lstm]
+tags: [algorithm, forecasting]
 created: 2026-03-06
 ---
 

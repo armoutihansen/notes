@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [visualization, matplotlib, seaborn, plotly, charts, diagnostic-plots]
+tags: [data, workflow]
 created: 2026-03-06
 ---
 

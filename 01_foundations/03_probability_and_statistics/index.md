@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: index
 status: evergreen
-tags: [probability, statistics, inference, distributions]
+tags: []
 created: 2026-03-06
 ---
 

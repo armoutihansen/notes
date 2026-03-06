@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [debugging, optimization, backpropagation]
+tags: [workflow, training]
 created: 2026-03-02
 ---
 

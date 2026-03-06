@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [bayes, posterior, prior, likelihood, mle, map, conjugate]
+tags: [theory, algorithm]
 created: 2026-03-06
 ---
 

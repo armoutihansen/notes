@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: index
 status: evergreen
-tags: [optimization, gradient-descent, convex-optimization, lagrangian]
+tags: []
 created: 2026-03-06
 ---
 

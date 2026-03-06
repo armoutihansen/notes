@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [hypothesis-testing, p-value, type-i-error, type-ii-error, confidence-interval, t-test, chi-squared]
+tags: [theory, evaluation]
 created: 2026-03-06
 ---
 

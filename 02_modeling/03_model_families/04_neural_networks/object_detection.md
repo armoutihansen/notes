@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [computer_vision, detection, yolo, anchor_boxes]
+tags: [algorithm, vision]
 created: 2026-03-02
 ---
 

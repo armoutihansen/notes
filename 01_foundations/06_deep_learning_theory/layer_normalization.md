@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [layer-normalization, normalization, transformer, rms-norm, pre-norm, post-norm]
+tags: [algorithm, training]
 created: 2026-03-06
 ---
 

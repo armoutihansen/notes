@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [data-validation, schema, distribution-shift, great-expectations, pandera]
+tags: [data, workflow]
 created: 2026-03-06
 ---
 

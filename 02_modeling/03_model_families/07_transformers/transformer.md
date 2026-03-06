@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [transformers, sequence_models, self_attention, multi_head_attention]
+tags: [algorithm, nlp]
 created: 2026-03-02
 ---
 

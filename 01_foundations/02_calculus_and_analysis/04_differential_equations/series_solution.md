@@ -2,8 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags:
-  - math/calculus/differential_equations
+tags: [algorithm]
 created: 2026-03-01
 ---
 

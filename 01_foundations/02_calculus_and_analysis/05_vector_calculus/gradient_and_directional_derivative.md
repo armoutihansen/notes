@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [gradient, directional-derivative, vector-calculus, optimization, level-set]
+tags: [theory, training]
 created: 2026-03-06
 ---
 

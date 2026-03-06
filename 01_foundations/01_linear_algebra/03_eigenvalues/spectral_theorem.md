@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [spectral-theorem, symmetric-matrix, psd, positive-semidefinite, eigendecomposition]
+tags: [theory]
 created: 2026-03-06
 ---
 

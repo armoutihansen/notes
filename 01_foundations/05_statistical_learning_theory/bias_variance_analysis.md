@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [bias, variance, human-level-performance, avoidable-bias, diagnostics]
+tags: [theory, evaluation]
 created: 2026-03-02
 ---
 

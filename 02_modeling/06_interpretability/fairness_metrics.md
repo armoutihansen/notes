@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [fairness, bias, demographic-parity, equalized-odds, calibration, group-fairness, individual-fairness, ethics, regulation]
+tags: [interpretability, evaluation, safety]
 created: 2026-03-02
 ---
 

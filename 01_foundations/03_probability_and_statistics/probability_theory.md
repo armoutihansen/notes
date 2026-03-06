@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [probability, sample-space, conditional-probability, independence, bayes-theorem]
+tags: [theory]
 created: 2026-03-06
 ---
 

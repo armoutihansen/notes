@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [metric_learning, loss, embeddings]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

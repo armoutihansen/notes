@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [bayesian-network, pgm, directed-graphical-model, markov-random-field, inference, belief-propagation]
+tags: [algorithm, theory]
 created: 2026-03-06
 ---
 

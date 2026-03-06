@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: index
 status: evergreen
-tags: [linear-regression, logistic-regression, glm, regularization]
+tags: []
 created: 2026-03-06
 ---
 

@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [error-analysis, diagnostics, dev-set, mislabeling]
+tags: [evaluation, workflow]
 created: 2026-03-02
 ---
 

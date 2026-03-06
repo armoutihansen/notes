@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [dropout, regularization, stochastic-depth, mc-dropout, ensemble]
+tags: [algorithm, training]
 created: 2026-03-06
 ---
 

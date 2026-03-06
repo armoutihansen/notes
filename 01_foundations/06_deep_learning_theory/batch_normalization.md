@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [normalization, optimization, preprocessing]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

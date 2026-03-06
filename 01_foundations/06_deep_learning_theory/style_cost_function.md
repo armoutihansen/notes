@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [cnn, loss, style_transfer]
+tags: [algorithm, vision, training]
 created: 2026-03-02
 ---
 

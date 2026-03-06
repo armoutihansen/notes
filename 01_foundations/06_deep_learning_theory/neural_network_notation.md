@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [notation, deep_learning, linear_algebra, implementation]
+tags: [theory]
 created: 2026-03-02
 ---
 

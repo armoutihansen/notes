@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: index
 status: evergreen
-tags: [svm, kernel, rbf, support-vector-machine]
+tags: []
 created: 2026-03-06
 ---
 

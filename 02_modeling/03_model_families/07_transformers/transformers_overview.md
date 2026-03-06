@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [transformers, architecture, bert, gpt, self_attention, pretraining]
+tags: [algorithm, nlp]
 created: 2026-03-02
 ---
 

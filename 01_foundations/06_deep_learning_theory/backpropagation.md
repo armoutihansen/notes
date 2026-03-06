@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [backpropagation, autodiff, computation-graph, chain-rule, gradients]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

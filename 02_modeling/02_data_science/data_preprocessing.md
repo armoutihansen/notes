@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [preprocessing, scaling, encoding, imputation, pipelines]
+tags: [data, workflow]
 created: 2026-03-06
 ---
 

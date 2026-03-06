@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [nlp, embeddings, word2vec, glove, fairness]
+tags: [algorithm, nlp]
 created: 2026-03-02
 ---
 

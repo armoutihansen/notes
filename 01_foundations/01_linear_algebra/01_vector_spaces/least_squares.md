@@ -2,8 +2,7 @@
 layer: 01_foundations
 type: proof
 status: seed
-tags:
-  - math/linear_algebra/vector_spaces
+tags: [algorithm, regression]
 created: 2026-03-01
 ---
 

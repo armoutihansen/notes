@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [linear-regression, logistic-regression, glm, regularization, generalized-linear-models]
+tags: [algorithm, tabular, regression, classification]
 created: 2026-03-06
 ---
 

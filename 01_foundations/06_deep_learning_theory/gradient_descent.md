@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [optimization, gradient_descent, training, schedules]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

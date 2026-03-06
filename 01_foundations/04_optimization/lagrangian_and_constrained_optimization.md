@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [lagrangian, constrained-optimization, kkt, duality, lagrange-multipliers]
+tags: [theory]
 created: 2026-03-06
 ---
 

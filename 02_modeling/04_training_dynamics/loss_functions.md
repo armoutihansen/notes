@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [loss-functions, cross-entropy, mse, mae, hinge-loss, focal-loss, training, objective]
+tags: [algorithm, training, evaluation]
 created: 2026-03-02
 ---
 

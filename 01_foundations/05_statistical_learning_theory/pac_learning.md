@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [pac-learning, statistical-learning-theory, sample-complexity, learnability]
+tags: [theory]
 created: 2026-03-06
 ---
 

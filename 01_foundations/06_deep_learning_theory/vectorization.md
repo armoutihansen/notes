@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [numpy, linear_algebra, vectorization, implementation]
+tags: [algorithm]
 created: 2026-03-02
 ---
 

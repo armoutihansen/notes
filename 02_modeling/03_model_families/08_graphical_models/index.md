@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: index
 status: evergreen
-tags: [graphical-model, bayesian-network, hmm, pgm, markov-random-field]
+tags: []
 created: 2026-03-06
 ---
 

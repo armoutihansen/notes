@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [evaluation, metrics, satisficing, optimizing, model-selection]
+tags: [evaluation]
 created: 2026-03-02
 ---
 

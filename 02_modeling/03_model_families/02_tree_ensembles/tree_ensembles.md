@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [decision-tree, random-forest, gradient-boosting, xgboost, lightgbm, ensemble]
+tags: [algorithm, tabular, classification, regression]
 created: 2026-03-06
 ---
 

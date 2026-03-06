@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [problem-formulation, supervised-learning, regression, classification, success-criteria, baseline]
+tags: [workflow, classification, regression]
 created: 2026-03-06
 ---
 

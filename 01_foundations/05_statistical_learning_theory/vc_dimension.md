@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [vc-dimension, shattering, growth-function, statistical-learning-theory, fundamental-theorem]
+tags: [theory]
 created: 2026-03-06
 ---
 

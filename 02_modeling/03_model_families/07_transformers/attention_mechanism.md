@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [attention, sequence_models, seq2seq]
+tags: [algorithm, nlp]
 created: 2026-03-02
 ---
 

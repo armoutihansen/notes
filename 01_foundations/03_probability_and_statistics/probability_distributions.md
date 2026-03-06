@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [distributions, gaussian, binomial, poisson, exponential, beta, dirichlet]
+tags: [theory]
 created: 2026-03-06
 ---
 

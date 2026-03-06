@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [svm, support-vector-machine, kernel-trick, rbf-kernel, kernel-regression]
+tags: [algorithm, classification, regression]
 created: 2026-03-06
 ---
 

@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [computer_vision, generative, style_transfer]
+tags: [algorithm, vision, generation]
 created: 2026-03-02
 ---
 

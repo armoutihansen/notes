@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [pdp, ice, ale, partial-dependence, interpretability, feature-effects, global-explanation]
+tags: [interpretability, algorithm]
 created: 2026-03-02
 ---
 

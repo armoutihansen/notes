@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [cnn, computer_vision, convolution, pooling]
+tags: [algorithm, vision]
 created: 2026-03-02
 ---
 

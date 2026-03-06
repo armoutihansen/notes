@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [activation-functions, relu, gelu, sigmoid, nonlinearity, universal-approximation]
+tags: [algorithm]
 created: 2026-03-06
 ---
 

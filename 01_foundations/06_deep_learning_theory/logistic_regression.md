@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [logistic-regression, classification, sigmoid, cross-entropy, gradient-descent]
+tags: [algorithm, classification, training]
 created: 2026-03-02
 ---
 

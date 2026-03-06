@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [eda, exploratory-data-analysis, data-quality, distributions, outliers]
+tags: [data, workflow]
 created: 2026-03-06
 ---
 

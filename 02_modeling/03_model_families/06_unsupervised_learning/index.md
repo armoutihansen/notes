@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: index
 status: evergreen
-tags: [clustering, dimensionality-reduction, anomaly-detection, unsupervised]
+tags: []
 created: 2026-03-06
 ---
 

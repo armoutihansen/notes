@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [multi-task-learning, shared-representations, negative-transfer, regularization]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

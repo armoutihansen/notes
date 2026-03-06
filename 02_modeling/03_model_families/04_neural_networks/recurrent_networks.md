@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [sequence_models, rnn, gru, lstm]
+tags: [algorithm, nlp]
 created: 2026-03-02
 ---
 

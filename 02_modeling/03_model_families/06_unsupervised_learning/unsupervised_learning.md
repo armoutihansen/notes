@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [unsupervised-learning, k-means, dbscan, pca, dimensionality-reduction, anomaly-detection, clustering]
+tags: [algorithm, clustering, anomaly-detection]
 created: 2026-03-06
 ---
 

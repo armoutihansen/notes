@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [cross-entropy, loss-function, softmax, KL-divergence, maximum-likelihood]
+tags: [theory, training, evaluation]
 created: 2026-03-02
 ---
 

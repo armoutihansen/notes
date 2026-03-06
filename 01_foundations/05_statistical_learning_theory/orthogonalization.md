@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [orthogonalization, ml-process, debugging, early-stopping]
+tags: [workflow]
 created: 2026-03-02
 ---
 

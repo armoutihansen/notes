@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [feature-engineering, interaction-features, polynomial, binning, embeddings, leakage]
+tags: [feature-engineering, tabular]
 created: 2026-03-06
 ---
 

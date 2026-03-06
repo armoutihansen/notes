@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [hyperparameter-tuning, grid-search, random-search, bayesian-optimization, learning-rate, batch-size, architecture-search]
+tags: [algorithm, training, workflow]
 created: 2026-03-02
 ---
 

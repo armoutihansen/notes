@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [svd, singular-value-decomposition, matrix-factorization, pca, pseudoinverse]
+tags: [algorithm]
 created: 2026-03-06
 ---
 

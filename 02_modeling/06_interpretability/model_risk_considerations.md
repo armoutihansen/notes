@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [model-risk, model-governance, validation, backtesting, concept-drift, sr11-7, eu-ai-act, regulation]
+tags: [interpretability, evaluation, monitoring]
 created: 2026-03-02
 ---
 

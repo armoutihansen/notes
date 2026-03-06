@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [regularization, overfitting, l2, weight-decay, dropout, early-stopping, data-augmentation, deep-learning]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

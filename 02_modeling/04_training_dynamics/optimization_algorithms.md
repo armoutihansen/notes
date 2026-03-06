@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: seed
-tags: [optimization, gradient-descent, sgd, momentum, adam, rmsprop, learning-rate, training]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

@@ -2,8 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags:
-  - math/linear_algebra/linear_systems
+tags: [theory]
 created: 2026-03-01
 ---
 

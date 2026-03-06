@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: index
 status: evergreen
-tags: [training-dynamics, optimization, regularization, loss-functions, hyperparameters]
+tags: []
 created: 2026-03-02
 ---
 

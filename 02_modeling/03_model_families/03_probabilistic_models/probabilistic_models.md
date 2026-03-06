@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [naive-bayes, gaussian-mixture-model, gmm, em-algorithm, probabilistic-classifier]
+tags: [algorithm, classification, clustering]
 created: 2026-03-06
 ---
 

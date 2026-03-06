@@ -2,7 +2,7 @@
 layer: 02_modeling
 type: concept
 status: growing
-tags: [cross-validation, metrics, calibration, model-selection, roc, auc, f1, precision, recall]
+tags: [algorithm, evaluation]
 created: 2026-03-06
 ---
 

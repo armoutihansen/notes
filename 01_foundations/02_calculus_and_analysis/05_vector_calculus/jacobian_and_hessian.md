@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [jacobian, hessian, second-order, vector-calculus, optimization, curvature]
+tags: [theory]
 created: 2026-03-06
 ---
 

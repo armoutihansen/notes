@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [BPTT, RNN, recurrent-networks, vanishing-gradient, exploding-gradient]
+tags: [algorithm, training]
 created: 2026-03-02
 ---
 

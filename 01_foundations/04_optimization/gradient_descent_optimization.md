@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: growing
-tags: [gradient-descent, sgd, momentum, adam, learning-rate, convergence]
+tags: [algorithm, training]
 created: 2026-03-06
 ---
 

@@ -2,7 +2,7 @@
 layer: 01_foundations
 type: concept
 status: seed
-tags: [transfer-learning, fine-tuning, pretraining, negative-transfer]
+tags: [algorithm, fine-tuning]
 created: 2026-03-02
 ---
 
