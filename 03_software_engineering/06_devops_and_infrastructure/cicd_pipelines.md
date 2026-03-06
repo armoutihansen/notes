@@ -15,14 +15,28 @@ CI/CD automates the path from a developer's commit to a running service. Continu
 
 ## Architecture
 
-```mermaid
-graph TD
-  A["Developer push / PR"] --> B["CI: Test"]
-  B --> |lint, unit tests,<br/>integration tests,<br/>type checks| C["CI: Build Image"]
-  C --> |docker build +<br/>push to registry| D["CD: Deploy Staging"]
-  D --> |apply K8s manifests /<br/>Helm upgrade| E["Smoke Tests"]
-  E --> F["CD: Deploy Production"]
-  F --> |manual gate or<br/>automatic| G["Running in Production"]
+```
+  Developer push / PR
+         │
+         ▼
+  ┌─────────────┐
+  │  CI: Test   │  lint, unit tests, integration tests, type checks
+  └──────┬──────┘
+         │ pass
+         ▼
+  ┌──────────────────┐
+  │  CI: Build Image │  docker build + push to registry
+  └──────┬───────────┘
+         │ on merge to main
+         ▼
+  ┌─────────────────────┐
+  │  CD: Deploy Staging │  apply K8s manifests / Helm upgrade
+  └──────┬──────────────┘
+         │ smoke tests pass
+         ▼
+  ┌──────────────────────────┐
+  │  CD: Deploy Production   │  manual gate or automatic
+  └──────────────────────────┘
 ```
 
 ## Implementation Notes
