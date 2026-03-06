@@ -61,8 +61,8 @@ The PR is "open" while under review, and "merged" or "closed" once resolved.
 - [GitLab Docs: Merge Requests](https://docs.gitlab.com/ee/user/project/merge_requests/)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_branching|Git Branching]]
-- [[03_software_engineering/version_control/git/git_merge|Git Merge]]
-- [[03_software_engineering/version_control/git/git_rebase|Git Rebase]]
-- [[03_software_engineering/version_control/git/git_workflow|Git Workflow]]
-- [[03_software_engineering/version_control/git/git_remotes|Git Remotes]]
+- [[git_branching|Git Branching]]
+- [[git_merge|Git Merge]]
+- [[git_rebase|Git Rebase]]
+- [[git_workflow|Git Workflow]]
+- [[git_remotes|Git Remotes]]

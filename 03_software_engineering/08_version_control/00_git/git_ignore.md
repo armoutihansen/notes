@@ -95,5 +95,5 @@ git update-index --assume-unchanged <file>
 - [gitignore.io](https://www.toptal.com/developers/gitignore) — generate `.gitignore` for any language/tool
 
 ## Links
-- [[03_software_engineering/version_control/git/git_staging|Git Staging Area]]
-- [[03_software_engineering/version_control/git/git_workflow|Git Workflow]]
+- [[git_staging|Git Staging Area]]
+- [[git_workflow|Git Workflow]]

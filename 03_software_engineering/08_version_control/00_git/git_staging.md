@@ -69,6 +69,6 @@ git rm --cached <file>               # remove from index only (stop tracking)
 - [git-commit documentation](https://git-scm.com/docs/git-commit)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_internals|Git Internals]]
-- [[03_software_engineering/version_control/git/git_stash|Git Stash]]
-- [[03_software_engineering/version_control/git/git_log|Git Log]]
+- [[git_internals|Git Internals]]
+- [[git_stash|Git Stash]]
+- [[git_log|Git Log]]

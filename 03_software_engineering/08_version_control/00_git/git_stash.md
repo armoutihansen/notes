@@ -67,5 +67,5 @@ git stash branch <branch-name>          # create branch at stash point, apply st
 - [git-stash documentation](https://git-scm.com/docs/git-stash)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_staging|Git Staging Area]]
-- [[03_software_engineering/version_control/git/git_branching|Git Branching]]
+- [[git_staging|Git Staging Area]]
+- [[git_branching|Git Branching]]

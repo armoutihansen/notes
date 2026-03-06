@@ -68,5 +68,5 @@ The tree listed in a commit can itself be inspected to see which blobs (files) i
 - [Git Internals — Git Objects (Pro Git)](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_staging|Git Staging Area]]
-- [[03_software_engineering/version_control/git/git_log|Git Log]]
+- [[git_staging|Git Staging Area]]
+- [[git_log|Git Log]]

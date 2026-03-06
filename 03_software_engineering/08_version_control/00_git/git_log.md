@@ -84,6 +84,6 @@ HEAD~3        # three commits before HEAD
 - [git-log documentation](https://git-scm.com/docs/git-log)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_internals|Git Internals]]
-- [[03_software_engineering/version_control/git/git_staging|Git Staging Area]]
-- [[03_software_engineering/version_control/git/git_reset|Git Reset]]
+- [[git_internals|Git Internals]]
+- [[git_staging|Git Staging Area]]
+- [[git_reset|Git Reset]]

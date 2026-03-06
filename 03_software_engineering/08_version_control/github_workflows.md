@@ -154,6 +154,6 @@ Dependabot opens PRs to bump outdated dependencies. Merge them to keep your supp
 - [[github_actions|GitHub Actions]]
 - [[github_permissions|GitHub Permissions]]
 - [[github_repository_management|GitHub Repository Management]]
-- [[00_git/git_workflow|Git Workflow]]
-- [[00_git/git_pull_requests|Git Pull Requests]]
+- [[git_workflow|Git Workflow]]
+- [[git_pull_requests|Git Pull Requests]]
 - [[cicd_pipelines|CI/CD Pipelines]]

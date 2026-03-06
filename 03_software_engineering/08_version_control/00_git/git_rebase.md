@@ -81,6 +81,6 @@ git config --global pull.rebase true
 - [Merging vs. Rebasing (Atlassian)](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_merge|Git Merge]]
-- [[03_software_engineering/version_control/git/git_branching|Git Branching]]
-- [[03_software_engineering/version_control/git/git_workflow|Git Workflow]]
+- [[git_merge|Git Merge]]
+- [[git_branching|Git Branching]]
+- [[git_workflow|Git Workflow]]

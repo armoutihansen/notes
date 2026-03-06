@@ -91,8 +91,8 @@ Format: `<type>: <short imperative description>`
 - [Conventional Commits](https://www.conventionalcommits.org/)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_branching|Git Branching]]
-- [[03_software_engineering/version_control/git/git_merge|Git Merge]]
-- [[03_software_engineering/version_control/git/git_rebase|Git Rebase]]
-- [[03_software_engineering/version_control/git/git_remotes|Git Remotes]]
-- [[03_software_engineering/version_control/git/git_pull_requests|Pull Requests]]
+- [[git_branching|Git Branching]]
+- [[git_merge|Git Merge]]
+- [[git_rebase|Git Rebase]]
+- [[git_remotes|Git Remotes]]
+- [[git_pull_requests|Pull Requests]]

@@ -83,7 +83,7 @@ git commit
 - [git-merge documentation](https://git-scm.com/docs/git-merge)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_branching|Git Branching]]
-- [[03_software_engineering/version_control/git/git_rebase|Git Rebase]]
-- [[03_software_engineering/version_control/git/git_workflow|Git Workflow]]
-- [[03_software_engineering/version_control/git/git_pull_requests|Pull Requests]]
+- [[git_branching|Git Branching]]
+- [[git_rebase|Git Rebase]]
+- [[git_workflow|Git Workflow]]
+- [[git_pull_requests|Pull Requests]]

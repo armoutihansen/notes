@@ -76,6 +76,6 @@ Prefer `git fetch` + explicit `git merge`/`git rebase` over bare `git pull` for 
 - [git-fetch documentation](https://git-scm.com/docs/git-fetch)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_branching|Git Branching]]
-- [[03_software_engineering/version_control/git/git_workflow|Git Workflow]]
-- [[03_software_engineering/version_control/git/git_pull_requests|Pull Requests]]
+- [[git_branching|Git Branching]]
+- [[git_workflow|Git Workflow]]
+- [[git_pull_requests|Pull Requests]]

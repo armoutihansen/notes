@@ -75,6 +75,6 @@ git branch -m master main
 - [git-switch documentation](https://git-scm.com/docs/git-switch)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_merge|Git Merge]]
-- [[03_software_engineering/version_control/git/git_rebase|Git Rebase]]
-- [[03_software_engineering/version_control/git/git_workflow|Git Workflow]]
+- [[git_merge|Git Merge]]
+- [[git_rebase|Git Rebase]]
+- [[git_workflow|Git Workflow]]

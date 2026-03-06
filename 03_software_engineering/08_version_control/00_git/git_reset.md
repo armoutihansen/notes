@@ -73,6 +73,6 @@ git reset --hard <recovered-hash>
 - [git-reflog documentation](https://git-scm.com/docs/git-reflog)
 
 ## Links
-- [[03_software_engineering/version_control/git/git_staging|Git Staging Area]]
-- [[03_software_engineering/version_control/git/git_log|Git Log]]
-- [[03_software_engineering/version_control/git/git_rebase|Git Rebase]]
+- [[git_staging|Git Staging Area]]
+- [[git_log|Git Log]]
+- [[git_rebase|Git Rebase]]
