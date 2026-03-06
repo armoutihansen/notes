@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: onnx
-status: seed
+status: growing
 tags: [compression, quantization, pruning, distillation, onnx, optimization]
 created: 2026-03-05
 ---
@@ -127,3 +127,7 @@ Combining techniques (e.g., distillation + INT8 quantization) is common in produ
 ## Links
 - [[serving_patterns|Model Serving Patterns]]
 - [[rollout_strategies|Model Rollout Strategies]]
+- [[offline_evaluation|Offline Evaluation]]
+- [[experiment_tracking|Experiment Tracking]]
+- [[distributed_training|Distributed Training]]
+- [[02_modeling/03_deep_learning/neural_network_fundamentals|Neural Network Fundamentals]]

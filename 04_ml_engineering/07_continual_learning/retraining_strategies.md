@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [retraining, continual-learning, data-drift, mlops]
 created: 2026-03-05
 ---
@@ -72,3 +72,7 @@ Every retrained model must be linked to: (1) the exact training data snapshot (v
 ## Links
 - [[testing_in_production|Testing in Production]]
 - [[ml_platform_architecture|ML Platform Architecture]]
+- [[drift_detection|Drift Detection]]
+- [[ml_observability|ML Observability]]
+- [[experiment_tracking|Experiment Tracking]]
+- [[rollout_strategies|Model Rollout Strategies]]

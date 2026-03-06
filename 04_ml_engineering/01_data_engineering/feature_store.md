@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: feast
-status: seed
+status: growing
 tags: [feature-store, feast, training-serving-skew, online-offline]
 created: 2026-03-05
 ---

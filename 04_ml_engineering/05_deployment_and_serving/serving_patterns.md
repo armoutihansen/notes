@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [serving, deployment, batch, streaming, edge, inference]
 created: 2026-03-05
 ---
@@ -80,3 +80,5 @@ The model runs directly on the end-user device or at a network edge node, elimin
 - [[rollout_strategies|Model Rollout Strategies]]
 - [[drift_detection|Drift Detection]]
 - [[ml_observability|ML Observability]]
+- [[feature_store|Feature Store]]
+- [[experiment_tracking|Experiment Tracking]]

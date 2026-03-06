@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: mlflow
-status: seed
+status: growing
 tags: [experiment-tracking, mlflow, reproducibility, model-registry, dvc]
 created: 2026-03-05
 ---
@@ -37,12 +37,17 @@ with mlflow.start_run():
 
 **3. MLflow Models**: a standard format for packaging models with a `MLmodel` manifest that declares supported flavors (sklearn, pytorch, pyfunc). Enables framework-agnostic serving and loading.
 
-**4. MLflow Model Registry**: a centralized model catalog. Models progress through lifecycle stages:
-- **Staging**: candidate model under evaluation.
-- **Production**: the model currently serving live traffic.
-- **Archived**: retired models retained for audit and rollback.
+**4. MLflow Model Registry**: a centralized model catalog. In MLflow 2.x, models progress through lifecycle stages: `Staging` → `Production` → `Archived`. In **MLflow 3.x**, named **aliases** replace fixed stages (e.g., `client.set_registered_model_alias("my_model", "champion", version=3)`), allowing arbitrary promotion labels and multiple concurrent aliases per model. Prefer aliases for new projects.
 
-Registry integrates with CI/CD pipelines: a promotion to Production can trigger automated redeployment.
+```python
+client = mlflow.tracking.MlflowClient()
+# MLflow 3.x: assign alias
+client.set_registered_model_alias("fraud_detector", "champion", version="5")
+# Load by alias
+model = mlflow.pyfunc.load_model("models:/fraud_detector@champion")
+```
+
+Registry integrates with CI/CD pipelines: promoting an alias can trigger automated redeployment.
 
 ### What to Track
 

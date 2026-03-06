@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [ml-systems, system-design, technical-debt, production-ml]
 created: 2026-03-05
 ---
@@ -72,3 +72,7 @@ Before writing a single line of model code, answer:
 - [[regularization|Regularization]]
 - [[interpretability_overview|Interpretability Overview]]
 - [[model_risk_considerations|Model Risk Considerations]]
+- [[fairness_metrics|Fairness Metrics]]
+- [[drift_detection|Drift Detection]]
+- [[ml_observability|ML Observability]]
+- [[data_pipeline_patterns|Data Pipeline Patterns]]

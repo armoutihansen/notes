@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [ml-lifecycle, mlops, project-scoping, iterative-development]
 created: 2026-03-05
 ---

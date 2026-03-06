@@ -11,8 +11,10 @@ created: 2026-03-05
 Platform-level concerns enabling ML engineering.
 
 ## Notes
-- [[ml_platform_architecture|ML Platform Architecture]]
-- [[ml_environment_management|ML Environment Management]]
+- [[ml_platform_architecture|ML Platform Architecture]] — orchestration (Airflow/Prefect/Kubeflow), model registry integration, and end-to-end platform design
+- [[ml_environment_management|ML Environment Management]] — reproducible environments (conda/Docker/devcontainer), dependency pinning, and containerised training
 
 ## Links
-- [[04_ml_engineering/index|ML Engineering]]
+- [[04_ml_engineering/index|↑ ML Engineering]]
+- Prev: [[07_continual_learning/index|← 07 — Continual Learning]]
+- [[03_software_engineering/06_devops_and_infrastructure/index|SE: DevOps & Infrastructure]]

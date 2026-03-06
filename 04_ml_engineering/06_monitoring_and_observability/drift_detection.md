@@ -2,7 +2,7 @@
 layer: 04_ml_engineering
 type: engineering
 tool: general
-status: seed
+status: growing
 tags: [drift, monitoring, statistics, data-quality, retraining, mlops]
 created: 2026-03-05
 ---
@@ -116,3 +116,6 @@ Drift detection is an input to, not a substitute for, retraining decisions. A re
 - [[ml_observability|ML Observability]]
 - [[rollout_strategies|Model Rollout Strategies]]
 - [[serving_patterns|Model Serving Patterns]]
+- [[retraining_strategies|Retraining Strategies]]
+- [[testing_in_production|Testing in Production]]
+- [[offline_evaluation|Offline Evaluation]]
