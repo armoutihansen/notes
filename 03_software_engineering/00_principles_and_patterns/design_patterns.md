@@ -1,7 +1,7 @@
 ---
 layer: 03_software_engineering
 type: concept
-status: seed
+status: growing
 tags: [design, patterns, oop, architecture]
 created: 2026-03-05
 ---

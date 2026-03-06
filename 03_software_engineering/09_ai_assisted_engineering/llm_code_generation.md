@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Copilot/LLM
-status: seed
+status: growing
 tags: [llm, code-generation, copilot, ai-tools, productivity]
 created: 2026-03-05
 ---

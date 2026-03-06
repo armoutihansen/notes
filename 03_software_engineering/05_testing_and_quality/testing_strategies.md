@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: pytest
-status: seed
+status: growing
 tags: [testing, pytest, test-doubles, coverage, ci, quality]
 created: 2026-03-05
 ---
@@ -331,3 +331,5 @@ project/
 ## Links
 - [[test_driven_development|TDD]]
 - [[property_based_testing|Property Testing]]
+- [[cicd_pipelines|CI/CD Pipelines]]
+- [[04_ml_engineering/00_principles_and_lifecycle/ml_testing_principles|ML Testing Principles]]

@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Python
-status: seed
+status: growing
 tags: [python, tooling, packaging, testing, linting, mypy, pytest, ruff]
 created: 2026-03-05
 ---
@@ -239,6 +239,7 @@ ruff format --check .        # check formatting without changing files
 ```
 
 Most useful rule sets to enable:
+
 | Code | Plugin | What it catches |
 |------|--------|----------------|
 | `E`, `W` | pycodestyle | PEP 8 style |

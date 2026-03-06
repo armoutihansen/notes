@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: GitHub Actions
-status: seed
+status: growing
 tags: [ci-cd, github-actions, devops, automation, ml-ops]
 created: 2026-03-05
 ---
@@ -390,3 +390,5 @@ GPU jobs can't run on GitHub-hosted runners. Use self-hosted runners registered 
 ## Links
 - [[docker_patterns|Docker]]
 - [[kubernetes_basics|Kubernetes]]
+- [[github_actions|GitHub Actions]]
+- [[04_ml_engineering/05_deployment_and_serving/rollout_strategies|Rollout Strategies]]

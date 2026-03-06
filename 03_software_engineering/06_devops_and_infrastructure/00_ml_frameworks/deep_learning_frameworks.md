@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: pytorch
-status: seed
+status: growing
 tags:
   - deep_learning
   - pytorch
@@ -161,6 +161,8 @@ Use `jax.jit` for compilation, `jax.vmap` for batching, `jax.pmap` for multi-dev
 - [Flax (JAX neural network library)](https://flax.readthedocs.io/)
 
 ## Links
-- [[01_foundations/_legacy/deep_learning_theory 1/backpropagation]] (in 01_foundations/deep_learning_theory)
-- [[01_foundations/_legacy/deep_learning_theory 1/gradient_descent]] (in 01_foundations/deep_learning_theory)
-- [[regularization]] (in 02_modeling/deep_learning)
+- [[pytorch_patterns|PyTorch Patterns]]
+- [[framework_comparison|Framework Comparison]]
+- [[huggingface_usage|HuggingFace Usage]]
+- [[04_ml_engineering/04_model_development/distributed_training|Distributed Training]]
+- [[05_ai_engineering/04_finetuning/peft_and_lora|PEFT and LoRA]]

@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: pytest
-status: seed
+status: growing
 tags: [tdd, testing, pytest, design, bdd, refactoring]
 created: 2026-03-05
 ---
@@ -309,3 +309,5 @@ the test file to understand what broke.
 
 ## Links
 - [[testing_strategies|Testing Strategies]]
+- [[property_based_testing|Property-Based Testing]]
+- [[solid_principles|SOLID Principles]]

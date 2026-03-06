@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: NoSQL
-status: seed
+status: growing
 tags: [nosql, mongodb, redis, cassandra, neo4j, vector-db, databases]
 created: 2026-03-05
 ---
@@ -333,3 +333,5 @@ Documents with flexible schema, rich queries? → MongoDB
 ## Links
 - [[sql_patterns|SQL Patterns]]
 - [[caching_strategies|Caching Strategies]]
+- [[distributed_systems|Distributed Systems]]
+- [[05_ai_engineering/03_rag_and_agents/vector_stores|Vector Stores]]

@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: SQL/PostgreSQL
-status: seed
+status: growing
 tags: [sql, postgresql, databases, query-optimization, indexing, transactions]
 created: 2026-03-05
 ---
@@ -348,3 +348,5 @@ SELECT * FROM products WHERE name % 'posgres';  -- trigram similarity
 
 ## Links
 - [[nosql_patterns|NoSQL Patterns]]
+- [[caching_strategies|Caching Strategies]]
+- [[04_ml_engineering/01_data_engineering/feature_stores|Feature Stores]]

@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Redis/Memcached
-status: seed
+status: growing
 tags: [caching, redis, performance, distributed-systems, invalidation]
 created: 2026-03-05
 ---
@@ -316,3 +316,5 @@ def warm_cache():
 ## Links
 - [[nosql_patterns|NoSQL Patterns]]
 - [[scalability_patterns|Scalability Patterns]]
+- [[distributed_systems|Distributed Systems]]
+- [[05_ai_engineering/03_rag_and_agents/vector_stores|Vector Stores]]

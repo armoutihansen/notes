@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: git
-status: seed
+status: growing
 tags:
   - git
 created: 2026-03-02

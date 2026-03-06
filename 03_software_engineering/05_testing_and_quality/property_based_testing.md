@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Hypothesis
-status: seed
+status: growing
 tags: [testing, hypothesis, property-based-testing, fuzzing, invariants]
 created: 2026-03-05
 ---
@@ -390,3 +390,4 @@ are natural — encoding, validation, data transformations, mathematical operati
 
 ## Links
 - [[testing_strategies|Testing Strategies]]
+- [[test_driven_development|TDD]]

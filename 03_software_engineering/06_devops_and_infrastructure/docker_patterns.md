@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Docker
-status: seed
+status: growing
 tags: [docker, containers, devops, infrastructure, ml-ops]
 created: 2026-03-05
 ---
@@ -314,3 +314,4 @@ RUN --mount=type=secret,id=pip_token \
 ## Links
 - [[kubernetes_basics|Kubernetes]]
 - [[cicd_pipelines|CI/CD]]
+- [[04_ml_engineering/08_infrastructure_and_platform/ml_environment_management|ML Environment Management]]

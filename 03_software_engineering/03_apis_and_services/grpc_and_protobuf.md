@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: gRPC
-status: seed
+status: growing
 tags: [grpc, protobuf, rpc, streaming, microservices, code-generation]
 created: 2026-03-05
 ---

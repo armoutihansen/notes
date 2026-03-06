@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Python
-status: seed
+status: growing
 tags: [python, async, concurrency, asyncio, coroutines]
 created: 2026-03-05
 ---

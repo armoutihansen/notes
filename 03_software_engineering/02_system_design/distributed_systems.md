@@ -1,7 +1,7 @@
 ---
 layer: 03_software_engineering
 type: concept
-status: seed
+status: growing
 tags: [distributed-systems, consensus, consistency, fault-tolerance, patterns]
 created: 2026-03-05
 ---
@@ -165,3 +165,7 @@ Beyond Raft, simpler leader election can use:
 
 ## Links
 - [[system_design_fundamentals|System Design]]
+- [[scalability_patterns|Scalability Patterns]]
+- [[caching_strategies|Caching Strategies]]
+- [[nosql_patterns|NoSQL Patterns]]
+- [[04_ml_engineering/01_data_engineering/data_pipeline_patterns|Data Pipeline Patterns]]

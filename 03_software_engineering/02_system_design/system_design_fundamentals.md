@@ -1,7 +1,7 @@
 ---
 layer: 03_software_engineering
 type: concept
-status: seed
+status: growing
 tags: [system-design, architecture, scalability, databases, caching]
 created: 2026-03-05
 ---

@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Kubernetes
-status: seed
+status: growing
 tags: [kubernetes, k8s, containers, orchestration, devops, ml-ops]
 created: 2026-03-05
 ---
@@ -478,3 +478,5 @@ spec:
 
 ## Links
 - [[docker_patterns|Docker]]
+- [[cicd_pipelines|CI/CD]]
+- [[04_ml_engineering/08_infrastructure_and_platform/ml_environment_management|ML Environment Management]]

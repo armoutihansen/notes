@@ -1,7 +1,7 @@
 ---
 layer: 03_software_engineering
 type: concept
-status: seed
+status: growing
 tags: [scalability, sharding, caching, rate-limiting, replication, stateless]
 created: 2026-03-05
 ---
@@ -204,3 +204,6 @@ Distributed rate limiting requires atomic operations. Redis `INCR` + `EXPIRE` fo
 ## Links
 - [[distributed_systems|Distributed Systems]]
 - [[caching_strategies|Caching]]
+- [[nosql_patterns|NoSQL Patterns]]
+- [[kubernetes_basics|Kubernetes]]
+- [[04_ml_engineering/05_deployment_and_serving/serving_patterns|Model Serving Patterns]]

@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: RAG/Embeddings
-status: seed
+status: growing
 tags: [rag, embeddings, code-search, retrieval, vector-search]
 created: 2026-03-05
 ---
@@ -301,4 +301,6 @@ def answer_code_question(query: str, collection, llm_client, top_k: int = 8) -> 
 
 ## Links
 - [[mcp_protocol|MCP]]
-- [[rag_architecture|RAG Architecture]]
+- [[agentic_coding|Agentic Coding]]
+- [[05_ai_engineering/03_rag_and_agents/rag_architecture|RAG Architecture]]
+- [[04_databases_and_storage/nosql_patterns|NoSQL Patterns (vector DBs)]]

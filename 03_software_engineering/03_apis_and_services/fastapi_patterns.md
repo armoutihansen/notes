@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: FastAPI
-status: seed
+status: growing
 tags: [fastapi, python, api, async, pydantic, dependency-injection, ml-serving]
 created: 2026-03-05
 ---
@@ -374,3 +374,7 @@ async def predict(
 
 ## Links
 - [[rest_api_design|REST Design]]
+- [[grpc_and_protobuf|gRPC and Protobuf]]
+- [[docker_patterns|Docker Patterns]]
+- [[testing_strategies|Testing Strategies]]
+- [[04_ml_engineering/05_deployment_and_serving/serving_patterns|Model Serving Patterns]]

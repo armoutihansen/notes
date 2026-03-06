@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: REST
-status: seed
+status: growing
 tags: [rest, api-design, http, openapi, authentication, pagination]
 created: 2026-03-05
 ---

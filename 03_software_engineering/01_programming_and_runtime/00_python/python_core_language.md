@@ -2,7 +2,7 @@
 layer: 03_software_engineering
 type: engineering
 tool: Python
-status: seed
+status: growing
 tags: [python, language, types, generators, decorators]
 created: 2026-03-05
 ---

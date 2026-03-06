@@ -256,4 +256,4 @@ const result = await loadUser(42);
 - [[js_functions]]
 - [[js_modules]]
 - [[js_runtimes]]
-- [[03_software_engineering/languages/javascript/index]]
+- [[03_software_engineering/01_programming_and_runtime/index|index]]
