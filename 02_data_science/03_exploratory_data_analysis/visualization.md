@@ -130,6 +130,77 @@ importance.sort_values().tail(20).plot(kind='barh', figsize=(8, 8))
 plt.title('Top 20 Feature Importances')
 ```
 
+### Learning Curves
+
+Learning curves plot training and validation performance as a function of training set size — the primary visual tool for diagnosing the bias-variance tradeoff.
+
+```python
+from sklearn.model_selection import LearningCurveDisplay
+
+LearningCurveDisplay.from_estimator(
+    model, X_train, y_train,
+    train_sizes=np.linspace(0.1, 1.0, 10),
+    scoring='roc_auc',
+    cv=5,
+    n_jobs=-1
+)
+plt.title('Learning Curve')
+```
+
+**Interpretation:**
+- **High bias (underfitting)**: both training and validation scores are low and converge to a similar low value. Adding more data won't help — increase model complexity.
+- **High variance (overfitting)**: training score is high, validation score is much lower, and a gap persists. Adding more data may help; also try regularisation.
+- **Good fit**: training and validation scores are close and both high.
+
+### Embedding Visualisation (t-SNE / UMAP)
+
+High-dimensional embeddings (e.g., from neural network layers, sentence transformers, or feature matrices) can be projected to 2-D for visual inspection.
+
+```python
+from sklearn.manifold import TSNE
+import umap
+import matplotlib.pyplot as plt
+
+# t-SNE (better for local cluster structure)
+reducer = TSNE(n_components=2, perplexity=30, random_state=42, init='pca')
+Z = reducer.fit_transform(X)  # X: (n_samples, d)
+
+# UMAP (faster, preserves global structure better)
+reducer = umap.UMAP(n_components=2, random_state=42)
+Z = reducer.fit_transform(X)
+
+# Plot coloured by label
+plt.figure(figsize=(8, 6))
+scatter = plt.scatter(Z[:, 0], Z[:, 1], c=y, cmap='tab10', alpha=0.6, s=10)
+plt.colorbar(scatter, label='Class')
+plt.title('UMAP Embedding')
+plt.tight_layout()
+```
+
+Use cases: checking whether classes are linearly separable, visualising cluster quality, debugging representations before a downstream task.
+Caveat: distances in t-SNE output are not interpretable; only cluster membership is meaningful.
+
+### SHAP Summary Plot
+
+SHAP (SHapley Additive exPlanations) summary plots show feature impact across the entire dataset — a global explanation built from local attributions.
+
+```python
+import shap
+
+explainer = shap.TreeExplainer(model)   # or shap.Explainer(model, X_train)
+shap_values = explainer.shap_values(X_test)
+
+# Beeswarm plot: feature importance + direction of effect
+shap.summary_plot(shap_values, X_test, feature_names=feature_names)
+
+# Bar chart: mean absolute SHAP values (magnitude only)
+shap.summary_plot(shap_values, X_test, feature_names=feature_names, plot_type='bar')
+```
+
+Each dot represents one prediction; colour indicates feature value (red = high). Points to the right increase the prediction; points to the left decrease it.
+
+See [[03_modeling/07_evaluation_and_model_selection/partial_dependence_ice|PDP, ICE, and ALE]] for marginal effect alternatives.
+
 ### Interactive Visualisation with Plotly
 
 ```python
@@ -153,10 +224,16 @@ Plotly is preferred for exploratory reports and dashboards; matplotlib/seaborn f
 - Interactive visualisations (Plotly, Bokeh) are better for exploration but harder to embed in PDFs; use matplotlib for reports.
 - Pair plots are $O(d^2)$ — intractable for many features; use correlation heatmap or PCA visualisation instead.
 
+## References
+
+- Tufte, E. R. (2001). *The Visual Display of Quantitative Information* (2nd ed.). Graphics Press.
+- Wickham, H. (2010). "A Layered Grammar of Graphics." *Journal of Computational and Graphical Statistics*.
+- Lundberg & Lee (2017). "A Unified Approach to Interpreting Model Predictions." NeurIPS. (SHAP)
+
 ## Links
 
-- [[exploratory_data_analysis|Exploratory Data Analysis]]
-- [[feature_engineering|Feature Engineering]]
+- [[02_data_science/03_exploratory_data_analysis/exploratory_data_analysis|Exploratory Data Analysis]]
+- [[02_data_science/04_feature_engineering/feature_engineering|Feature Engineering]]
 - [[03_modeling/07_evaluation_and_model_selection/partial_dependence_ice|PDP, ICE, and ALE]]
 - [[03_modeling/07_evaluation_and_model_selection/index|Evaluation and Validation]]
 - [[01_foundations/03_probability_and_statistics/probability_distributions|Probability Distributions — density plots, histograms, Q-Q plots]]

@@ -111,6 +111,57 @@ df['target'].value_counts(normalize=True)
 
 **Imbalanced classes (< 10% minority):** evaluate with PR-AUC or F1, not accuracy. Consider stratified sampling, SMOTE, class weights.
 
+### Target Leakage Detection
+
+Leakage occurs when a feature contains information that would not be available at prediction time, causing unrealistically high offline performance.
+
+**Symptoms:**
+- A feature with Pearson |r| or mutual information far above all others.
+- Model performance that is suspiciously high (AUC > 0.99 on an unstructured problem).
+- A feature that is derived from or recorded after the event being predicted.
+
+**Detection:**
+```python
+# Flag suspiciously high correlations with target
+corr_with_target = df.corr()['target'].abs().sort_values(ascending=False)
+high_corr = corr_with_target[corr_with_target > 0.9]
+print("Potential leakage candidates:\n", high_corr)
+```
+
+Common leakage patterns:
+1. **Temporal leakage**: a feature computed using data from after the prediction timestamp.
+2. **Group leakage**: an aggregate feature (e.g., mean target per group) computed over the full dataset, leaking future information into the past.
+3. **Proxy leakage**: a feature that encodes the target indirectly (e.g., `claim_settled_flag` in a model predicting `claim_filed`).
+
+### Temporal EDA
+
+For time-series and event-based data, standard EDA must be supplemented with time-aware analysis.
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+
+# Sort and set index
+df = df.sort_values('timestamp').set_index('timestamp')
+
+# Plot the series
+df['value'].plot(figsize=(12, 4), title='Time Series Overview')
+
+# Autocorrelation (ACF) and Partial Autocorrelation (PACF)
+fig, axes = plt.subplots(1, 2, figsize=(12, 4))
+plot_acf(df['value'].dropna(), lags=40, ax=axes[0])
+plot_pacf(df['value'].dropna(), lags=40, ax=axes[1])
+plt.tight_layout()
+```
+
+Key checks:
+- **Trend**: linear or non-linear upward/downward drift → differencing may be needed.
+- **Seasonality**: repeating cycle (weekly, annual) → visible in ACF at lag = season length.
+- **Stationarity**: ADF test (`statsmodels.tsa.stattools.adfuller`) — p < 0.05 → reject unit root.
+- **Missing timestamps**: check for gaps in the index; irregular series require special models.
+- **Train/test distribution shift**: compare feature statistics of training and holdout sets — significant divergence is a red flag.
+
 ### Distribution Shape
 
 | Characteristic | Detection | Action |
@@ -131,10 +182,16 @@ df['target'].value_counts(normalize=True)
 - EDA is open-ended — time-box it. Use automated tools (e.g., `ydata-profiling`) for initial scans, then dig deeper into anomalies manually.
 - Do not use the test set during EDA; restrict to training data only.
 
+## References
+
+- Tukey, J. W. (1977). *Exploratory Data Analysis*. Addison-Wesley.
+- Breck et al. (2019). "Data Validation for Machine Learning." SysML.
+- Kohavi & Longbotham (2017). "Online Controlled Experiments and A/B Testing." *Encyclopedia of Machine Learning*.
+
 ## Links
 
-- [[feature_engineering|Feature Engineering]]
-- [[data_preprocessing|Data Preprocessing]]
+- [[02_data_science/04_feature_engineering/feature_engineering|Feature Engineering]]
+- [[02_data_science/05_experimentation_and_validation/data_preprocessing|Data Preprocessing]]
 - [[02_data_science/01_problem_framing/problem_framing|Problem Formulation]]
 - [[01_foundations/03_probability_and_statistics/probability_distributions|Probability Distributions]]
 - [[05_ml_engineering/02_data_engineering/index|Data Engineering]]
