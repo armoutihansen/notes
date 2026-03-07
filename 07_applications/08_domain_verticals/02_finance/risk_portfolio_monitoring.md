@@ -117,8 +117,8 @@ Breach alert → PM/risk team → position adjustment or limit override request
 - [[03_modeling/02_unsupervised_learning/index|Unsupervised Learning]] — anomaly detection, PCA factor decomposition
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
-- [[08_reference_implementations/02_system_patterns/drift_monitoring_with_evidently|Drift Monitoring with Evidently]]
+- [[03_modeling/02_unsupervised_learning/01_clustering/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
+- [[08_implementations/01_system_patterns/drift_monitoring_with_evidently|Drift Monitoring with Evidently]]
 
 **Adjacent Applications**
 - [[algorithmic_trading_signals|Algorithmic Trading Signals]]

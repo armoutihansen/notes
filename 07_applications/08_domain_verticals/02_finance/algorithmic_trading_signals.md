@@ -124,8 +124,8 @@ Model performance monitoring → retrain trigger → research cycle
 - [[03_modeling/01_supervised_learning/02_tree_based_models/gradient_boosting|Gradient Boosting]] — cross-sectional signal generation
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/time_series_implementation|Time Series Implementation]]
-- [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]]
+- [[03_modeling/05_time_series/01_classical_forecasting/time_series_implementation|Time Series Implementation]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]]
 
 **Adjacent Applications**
 - [[risk_portfolio_monitoring|Portfolio Risk Monitoring]]

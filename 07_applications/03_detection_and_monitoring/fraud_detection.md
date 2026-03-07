@@ -134,8 +134,8 @@ The ML model operates **alongside a rules engine**, not instead of it. Rules pro
 - [[05_ml_engineering/07_monitoring_and_observability/index|Monitoring and Observability]] — fraud rate and model drift
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]]
-- [[08_reference_implementations/02_system_patterns/drift_monitoring_with_evidently|Drift Monitoring with Evidently]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]]
+- [[08_implementations/01_system_patterns/drift_monitoring_with_evidently|Drift Monitoring with Evidently]]
 
 **Adjacent Applications**
 - [[anomaly_detection_operations|Anomaly Detection — Operations]]

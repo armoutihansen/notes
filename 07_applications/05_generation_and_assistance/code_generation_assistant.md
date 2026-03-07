@@ -141,9 +141,9 @@ Engineer copies code → tests → iterates
 - [[06_ai_engineering/02_evaluation/index|LLM Evaluation]] — HumanEval, MBPP benchmarks
 
 **Reference Implementations**
-- [[08_reference_implementations/03_end_to_end_examples/llm_coding_assistant|LLM Coding Assistant]]
-- [[08_reference_implementations/02_system_patterns/rag_pipeline_pattern|RAG Pipeline Pattern]]
-- [[08_reference_implementations/01_model_implementations/transformer_finetuning_implementation|Transformer Fine-tuning Implementation]]
+- [[08_implementations/02_end_to_end_examples/llm_coding_assistant|LLM Coding Assistant]]
+- [[08_implementations/01_system_patterns/rag_pipeline_pattern|RAG Pipeline Pattern]]
+- [[06_ai_engineering/05_finetuning/transformer_finetuning_implementation|Transformer Fine-tuning Implementation]]
 
 **Adjacent Applications**
 - [[document_summarization|Document Summarization]]

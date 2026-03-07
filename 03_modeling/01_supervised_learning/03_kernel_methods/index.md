@@ -13,6 +13,7 @@ Methods that operate via kernel functions to learn non-linear decision boundarie
 ## Notes
 
 - [[03_modeling/01_supervised_learning/03_kernel_methods/kernel_methods|Kernel Methods and SVMs]] — hard/soft-margin SVM, kernel trick, RBF kernel, SVR, kernel ridge regression
+- [[03_modeling/01_supervised_learning/03_kernel_methods/kernel_methods_implementation|Kernel Methods — Implementation]] — scikit-learn SVC/SVR, kernel selection, hyperparameter tuning, decision boundary visualisation
 
 ## Links
 

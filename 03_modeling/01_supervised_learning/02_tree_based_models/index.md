@@ -13,6 +13,7 @@ Decision trees and ensemble methods (random forests and gradient boosting). The 
 ## Notes
 
 - [[tree_ensembles|Tree Ensembles]] — decision trees, random forests, gradient boosting, XGBoost, LightGBM, hyperparameters
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles — Implementation]] — XGBoost, LightGBM, RandomForest with scikit-learn, early stopping, SHAP feature importance
 
 ## Links
 

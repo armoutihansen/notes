@@ -52,7 +52,7 @@ LLM code generation, MCP protocol, RAG for code, and agentic coding workflows.
 - ← [[03_modeling/index|Modeling]] — algorithm and model families that SE implements
 - → [[05_ml_engineering/index|ML Engineering]] — production ML systems built on SE patterns
 - → [[06_ai_engineering/index|AI Engineering]] — LLM systems and AI app architecture
-- → [[08_reference_implementations/index|Reference Implementations]] — concrete end-to-end examples synthesizing SE patterns
+- → [[08_implementations/index|Reference Implementations]] — concrete end-to-end examples synthesizing SE patterns
 
 ---
 

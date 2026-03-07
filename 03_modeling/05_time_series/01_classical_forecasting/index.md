@@ -13,6 +13,7 @@ Statistical time series analysis: stationarity, ARIMA family, exponential smooth
 ## Notes
 
 - [[03_modeling/05_time_series/01_classical_forecasting/time_series_models|Time Series Models]] — stationarity, ARIMA, seasonal decomposition (STL), ETS/exponential smoothing, VAR, Kalman filter (overview), neural approaches, MAPE/RMSE evaluation
+- [[03_modeling/05_time_series/01_classical_forecasting/time_series_implementation|Time Series Models — Implementation]] — statsmodels ARIMA/SARIMA, ETS/Prophet, evaluation metrics, backtesting framework
 
 ## Links
 

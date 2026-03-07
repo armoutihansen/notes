@@ -124,8 +124,8 @@ Actual demand + actual replenishment → forecast accuracy feedback
 - [[03_modeling/01_supervised_learning/02_tree_based_models/gradient_boosting|Gradient Boosting]] — LightGBM demand forecast
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/time_series_implementation|Time Series Implementation]]
-- [[08_reference_implementations/03_end_to_end_examples/demand_forecasting_pipeline|Demand Forecasting Pipeline]]
+- [[03_modeling/05_time_series/01_classical_forecasting/time_series_implementation|Time Series Implementation]]
+- [[08_implementations/02_end_to_end_examples/demand_forecasting_pipeline|Demand Forecasting Pipeline]]
 
 **Adjacent Applications**
 - [[personalized_pricing|Personalized Pricing]]

@@ -129,8 +129,8 @@ Metadata: source (collaborative / content / trending / sponsored)
 - [[05_ml_engineering/06_deployment_and_serving/index|Deployment and Serving]] — real-time inference at QPS scale
 
 **Reference Implementations**
-- [[08_reference_implementations/02_system_patterns/vector_database_retrieval|Vector Database Retrieval]]
-- [[08_reference_implementations/02_system_patterns/feature_store_pattern|Feature Store Pattern]]
+- [[08_implementations/01_system_patterns/vector_database_retrieval|Vector Database Retrieval]]
+- [[08_implementations/01_system_patterns/feature_store_pattern|Feature Store Pattern]]
 
 **Adjacent Applications**
 - [[content_ranking|Content Ranking]]

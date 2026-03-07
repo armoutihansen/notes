@@ -16,6 +16,7 @@ Measuring model performance, selecting between model candidates, and assessing m
 - [[03_modeling/07_evaluation_and_model_selection/shap_and_feature_attribution|SHAP and Feature Attribution]] — Shapley values, TreeSHAP, DeepSHAP, LIME, integrated gradients, permutation importance
 - [[03_modeling/07_evaluation_and_model_selection/partial_dependence_ice|PDP, ICE, and ALE]] — partial dependence plots, individual conditional expectation, accumulated local effects
 - [[03_modeling/07_evaluation_and_model_selection/model_risk_considerations|Model Risk Considerations]] — SR 11-7, EU AI Act, model validation framework, concept drift, governance
+- [[03_modeling/07_evaluation_and_model_selection/interpretability_implementation|Interpretability — Implementation (SHAP, PDP, Permutation Importance)]] — SHAP TreeExplainer/KernelExplainer, waterfall/beeswarm plots, PartialDependenceDisplay, permutation importance
 
 ## Links
 

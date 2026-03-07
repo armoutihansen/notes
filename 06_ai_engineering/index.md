@@ -44,9 +44,9 @@ AI application architecture, LLM observability (LangSmith), safety (LlamaGuard),
 
 - **05_ml_engineering** — production ML infrastructure that AI engineering builds on for foundation-model-specific concerns
 - **04_software_engineering** — general software patterns applied to LLM system design
-- **08_reference_implementations** — concrete implementations synthesizing this layer's concepts into working code
+- **08_implementations** — concrete implementations synthesizing this layer's concepts into working code
 
 ## Links
 - [[05_ml_engineering/index|ML Engineering]]
 - [[04_software_engineering/index|Software Engineering]]
-- [[08_reference_implementations/index|Reference Implementations]]
+- [[08_implementations/index|Reference Implementations]]

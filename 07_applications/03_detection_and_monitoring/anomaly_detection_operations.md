@@ -137,9 +137,9 @@ Model retraining on confirmed anomaly labels (semi-supervised)
 - [[05_ml_engineering/01_data_engineering/index|Data Engineering]] — streaming data pipelines
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
-- [[08_reference_implementations/02_system_patterns/model_monitoring_system|Model Monitoring System]]
-- [[08_reference_implementations/03_end_to_end_examples/anomaly_detection_pipeline|Anomaly Detection Pipeline]]
+- [[03_modeling/02_unsupervised_learning/01_clustering/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
+- [[08_implementations/01_system_patterns/model_monitoring_system|Model Monitoring System]]
+- [[08_implementations/02_end_to_end_examples/anomaly_detection_pipeline|Anomaly Detection Pipeline]]
 
 **Adjacent Applications**
 - [[fraud_detection|Fraud Detection]]

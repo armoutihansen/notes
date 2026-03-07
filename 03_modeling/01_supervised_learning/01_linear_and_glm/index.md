@@ -13,6 +13,7 @@ Parametric models where the response is a function of a linear combination of fe
 ## Notes
 
 - [[linear_and_glm|Linear and Generalised Linear Models]] — OLS, Ridge, Lasso, logistic regression, GLM families, Tweedie, IRLS
+- [[03_modeling/01_supervised_learning/01_linear_and_glm/linear_models_implementation|Linear Models — Implementation]] — scikit-learn OLS/Ridge/Lasso/Logistic, statsmodels GLM, scikit-learn Pipeline, evaluation
 
 ## Links
 

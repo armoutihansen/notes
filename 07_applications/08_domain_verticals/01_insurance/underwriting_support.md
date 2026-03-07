@@ -134,8 +134,8 @@ Claims development vs technical price → model performance feedback
 - [[03_modeling/07_evaluation_and_model_selection/index|Evaluation and Model Selection]] — Gini, Lorenz curve
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/linear_models_implementation|Linear Models Implementation]]
-- [[08_reference_implementations/01_model_implementations/interpretability_implementation|Interpretability Implementation]]
+- [[03_modeling/01_supervised_learning/01_linear_and_glm/linear_models_implementation|Linear Models Implementation]]
+- [[03_modeling/07_evaluation_and_model_selection/interpretability_implementation|Interpretability Implementation]]
 
 **Adjacent Applications**
 - [[claims_automation|Claims Automation]]

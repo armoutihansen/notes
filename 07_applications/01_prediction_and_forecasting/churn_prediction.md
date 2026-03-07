@@ -89,7 +89,7 @@ Churn prediction is an **input to a tiered intervention strategy**. The economic
 
 **Recommended**: LightGBM with SHAP explanations for score reasoning. Survival analysis (Kaplan-Meier + Cox PH) for cohort-level churn rate forecasting in finance reporting. Calibrate with Platt scaling.
 
-See [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]] for code.
+See [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]] for code.
 
 ## Deployment Constraints
 
@@ -139,8 +139,8 @@ See [[08_reference_implementations/01_model_implementations/tree_ensembles_imple
 - [[05_ml_engineering/07_monitoring_and_observability/index|Monitoring and Observability]] — prediction drift, label freshness
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]]
-- [[08_reference_implementations/03_end_to_end_examples/tabular_classification_pipeline|Tabular Classification Pipeline]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]]
+- [[08_implementations/02_end_to_end_examples/tabular_classification_pipeline|Tabular Classification Pipeline]]
 
 **Adjacent Applications**
 - [[demand_forecasting|Demand Forecasting]]

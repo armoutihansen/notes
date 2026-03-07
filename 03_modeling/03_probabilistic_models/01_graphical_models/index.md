@@ -13,6 +13,7 @@ Probabilistic graphical models representing joint distributions via graph struct
 ## Notes
 
 - [[graphical_models|Graphical Models]] — Bayesian networks, MRFs, HMMs, d-separation, belief propagation, Viterbi
+- [[03_modeling/03_probabilistic_models/01_graphical_models/graphical_model_implementation|Graphical Models — Implementation (pgmpy)]] — BayesianNetwork construction, BayesianEstimator fitting, VariableElimination inference
 
 ## Links
 

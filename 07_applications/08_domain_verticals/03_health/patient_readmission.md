@@ -115,8 +115,8 @@ Monthly model performance review → recalibrate if AUC drifts
 - [[03_modeling/07_evaluation_and_model_selection/index|Evaluation and Model Selection]] — calibration, fairness
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]]
-- [[08_reference_implementations/01_model_implementations/interpretability_implementation|Interpretability Implementation]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]]
+- [[03_modeling/07_evaluation_and_model_selection/interpretability_implementation|Interpretability Implementation]]
 
 **Adjacent Applications**
 - [[clinical_decision_support|Clinical Decision Support]]

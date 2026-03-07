@@ -13,6 +13,7 @@ Generative models that explicitly represent probability distributions, enabling 
 ## Notes
 
 - [[probabilistic_models|Probabilistic Models]] — Naive Bayes, GMM, EM algorithm, Bayesian linear regression
+- [[03_modeling/03_probabilistic_models/03_bayesian_modeling/probabilistic_models_implementation|Probabilistic Models — Implementation]] — Gaussian Naive Bayes, GMM with EM, Bayesian linear regression, calibration with scikit-learn
 
 ## Links
 

@@ -120,7 +120,7 @@ Outcome: sales, revenue, conversion logged → model training data
 - [[03_modeling/01_supervised_learning/02_tree_based_models/gradient_boosting|Gradient Boosting]] — demand modelling
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]]
 
 **Adjacent Applications**
 - [[inventory_optimization|Inventory Optimization]]

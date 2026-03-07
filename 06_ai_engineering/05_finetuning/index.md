@@ -15,6 +15,7 @@ Adapting model weights to specific tasks or domains.
 - [[finetuning_strategies|Fine-tuning Strategies]] — When and how to fine-tune vs prompt, full vs PEFT, and dataset size considerations.
 - [[peft_and_lora|PEFT and LoRA]] — Parameter-efficient fine-tuning methods, LoRA rank selection, QLoRA, and Axolotl.
 - [[rl_finetuning|RL Fine-tuning]] — RLHF, DPO, GRPO with TRL; reward modelling and preference training pipelines.
+- [[06_ai_engineering/05_finetuning/transformer_finetuning_implementation|Transformer Fine-tuning — Implementation (LoRA / PEFT)]] — HuggingFace PEFT + TRL SFTTrainer, LoRA config, tokenizer setup, adapter saving and merging
 
 ## Navigation
 

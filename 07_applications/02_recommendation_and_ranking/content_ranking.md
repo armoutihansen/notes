@@ -123,7 +123,7 @@ Serve to user → log interactions → online feedback to ranking model
 - [[06_ai_engineering/03_prompt_engineering/index|Prompt Engineering]] — LLM-based content quality scoring
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]]
 
 **Adjacent Applications**
 - [[product_recommendation|Product Recommendation]]

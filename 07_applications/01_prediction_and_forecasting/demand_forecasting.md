@@ -87,7 +87,7 @@ The forecast is an **input to a constrained optimisation** (replenishment / allo
 
 **Recommended starting point**: LightGBM with lag features + calendar + promotion dummies. Hierarchically reconcile using MinT (shrinkage). Add DeepAR for high-velocity SKUs if compute budget allows.
 
-See [[08_reference_implementations/01_model_implementations/time_series_implementation|Time Series Implementation]] and [[08_reference_implementations/03_end_to_end_examples/demand_forecasting_pipeline|Demand Forecasting Pipeline]] for code.
+See [[03_modeling/05_time_series/01_classical_forecasting/time_series_implementation|Time Series Implementation]] and [[08_implementations/02_end_to_end_examples/demand_forecasting_pipeline|Demand Forecasting Pipeline]] for code.
 
 ## Deployment Constraints
 
@@ -137,8 +137,8 @@ See [[08_reference_implementations/01_model_implementations/time_series_implemen
 - [[05_ml_engineering/07_monitoring_and_observability/index|Monitoring and Observability]] — forecast accuracy tracking
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/time_series_implementation|Time Series Implementation]]
-- [[08_reference_implementations/03_end_to_end_examples/demand_forecasting_pipeline|Demand Forecasting Pipeline]]
+- [[03_modeling/05_time_series/01_classical_forecasting/time_series_implementation|Time Series Implementation]]
+- [[08_implementations/02_end_to_end_examples/demand_forecasting_pipeline|Demand Forecasting Pipeline]]
 
 **Adjacent Applications**
 - [[churn_prediction|Churn Prediction]]

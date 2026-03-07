@@ -124,8 +124,8 @@ User query → Embed query (same model)
 - [[06_ai_engineering/04_rag_and_agents/rag_architecture|RAG Architecture]] — retrieval pipeline design
 
 **Reference Implementations**
-- [[08_reference_implementations/02_system_patterns/vector_database_retrieval|Vector Database Retrieval]]
-- [[08_reference_implementations/02_system_patterns/chroma_vector_store|Chroma Vector Store]]
+- [[08_implementations/01_system_patterns/vector_database_retrieval|Vector Database Retrieval]]
+- [[08_implementations/01_system_patterns/chroma_vector_store|Chroma Vector Store]]
 
 **Adjacent Applications**
 - [[rag_knowledge_assistant|RAG Knowledge Assistant]]

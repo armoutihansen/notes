@@ -128,8 +128,8 @@ User feedback (thumbs up/down) → log → fine-tuning dataset
 - [[05_ml_engineering/06_deployment_and_serving/index|Deployment and Serving]] — async document processing pipeline
 
 **Reference Implementations**
-- [[08_reference_implementations/02_system_patterns/rag_pipeline_pattern|RAG Pipeline Pattern]]
-- [[08_reference_implementations/03_end_to_end_examples/rag_qa_system|RAG Q&A System]]
+- [[08_implementations/01_system_patterns/rag_pipeline_pattern|RAG Pipeline Pattern]]
+- [[08_implementations/02_end_to_end_examples/rag_qa_system|RAG Q&A System]]
 
 **Adjacent Applications**
 - [[code_generation_assistant|Code Generation Assistant]]

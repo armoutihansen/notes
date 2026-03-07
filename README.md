@@ -24,7 +24,7 @@ notes/
 ├── 05_ml_engineering/              # ML production lifecycle: data, training, deployment, monitoring
 ├── 06_ai_engineering/              # Foundation model systems: RAG, fine-tuning, inference, LLMOps
 ├── 07_applications/                # Domain use cases and business application patterns
-├── 08_reference_implementations/   # Runnable code: model implementations, system patterns, end-to-end examples
+├── 08_implementations/   # Cross-layer executable patterns: system patterns and end-to-end examples (concept-specific impl lives with the concept)
 ├── 09_projects/                    # Time-bound execution instances
 │   ├── _active/
 │   ├── _completed/
@@ -47,7 +47,7 @@ notes/
 | `05_ml_engineering` | How do we productionize ML systems? | Feature stores, MLflow, drift detection, serving |
 | `06_ai_engineering` | How do we operate LLM systems? | RAG, LoRA fine-tuning, quantization, LangSmith |
 | `07_applications` | Why are we solving this problem? | Fraud detection, churn prediction, document intelligence |
-| `08_reference_implementations` | How is this implemented in code? | Model implementations, system patterns, end-to-end pipelines |
+| `08_implementations` | How is this cross-cutting executable pattern implemented? | Reusable system patterns, end-to-end reference architectures (concept-specific impl → home layer) |
 | `09_projects` | What are we executing right now? | Active work, experiments |
 | `10_reading` | What have we learned from external sources? | Paper notes, book summaries |
 | `11_logs` | What happened today / this week? | Daily notes, reflections |
@@ -68,8 +68,8 @@ Notes follow templates matched to their layer (see `00_meta/templates/`):
 | `tpl_ml_system.md` | 05_ml_engineering | Purpose → Architecture → Data/Feature Flow → Operational Considerations → Trade-offs |
 | `tpl_ai_system.md` | 06_ai_engineering | Use Case → Model Strategy → Evaluation → Guardrails → Architecture → Cost/Latency |
 | `tpl_application.md` | 07_applications | Problem → Stakeholders → Domain Context → Inputs/Outputs → Modeling Options → Risks |
-| `tpl_reference_implementation.md` | 08_reference_implementations | Goal → Conceptual Counterpart → Dependencies → Code Pattern → Practical Notes |
-| `tpl_end_to_end_example.md` | 08_reference_implementations | Goal → Problem Setup → Data → Design → Implementation → Evaluation → Extensions |
+| `tpl_reference_implementation.md` | 08_implementations | Goal → Conceptual Counterpart → Dependencies → Code Pattern → Practical Notes |
+| `tpl_end_to_end_example.md` | 08_implementations | Goal → Problem Setup → Data → Design → Implementation → Evaluation → Extensions |
 | `tpl_project_overview.md` | 09_projects | Goal → Scope → Deliverables → Data → Modeling → Engineering → Timeline |
 | `tpl_reading_note.md` | 10_reading | Source → Type → Why It Matters → Key Ideas → Relevance to Vault |
 

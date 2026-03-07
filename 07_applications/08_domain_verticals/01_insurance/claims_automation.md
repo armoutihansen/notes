@@ -129,8 +129,8 @@ Settlement outcome → training data for models
 - [[07_applications/07_multimodal_systems/document_intelligence|Document Intelligence]]
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/linear_models_implementation|Linear Models Implementation]]
-- [[08_reference_implementations/01_model_implementations/tree_ensembles_implementation|Tree Ensembles Implementation]]
+- [[03_modeling/01_supervised_learning/01_linear_and_glm/linear_models_implementation|Linear Models Implementation]]
+- [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles_implementation|Tree Ensembles Implementation]]
 
 **Adjacent Applications**
 - [[underwriting_support|Underwriting Support]]

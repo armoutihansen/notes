@@ -120,9 +120,9 @@ Failure events (if they occur) → confirmed label → retraining
 - [[03_modeling/02_unsupervised_learning/index|Unsupervised Learning]] — anomaly detection
 
 **Reference Implementations**
-- [[08_reference_implementations/01_model_implementations/time_series_implementation|Time Series Implementation]]
-- [[08_reference_implementations/01_model_implementations/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
-- [[08_reference_implementations/03_end_to_end_examples/anomaly_detection_pipeline|Anomaly Detection Pipeline]]
+- [[03_modeling/05_time_series/01_classical_forecasting/time_series_implementation|Time Series Implementation]]
+- [[03_modeling/02_unsupervised_learning/01_clustering/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
+- [[08_implementations/02_end_to_end_examples/anomaly_detection_pipeline|Anomaly Detection Pipeline]]
 
 **Adjacent Applications**
 - [[route_optimization|Route Optimization]]

@@ -13,6 +13,7 @@ Fully connected feedforward networks — the simplest deep learning building blo
 ## Notes
 
 - [[03_modeling/04_deep_learning/01_mlp_and_representation_learning/mpl|Multi-Layer Perceptron (MLP)]] — architecture, activation functions, forward and backward pass, depth vs width trade-offs
+- [[03_modeling/04_deep_learning/01_mlp_and_representation_learning/neural_network_implementation|Neural Networks — Implementation (PyTorch)]] — MLP, CNN, RNN training loops with PyTorch, early stopping, validation loop, model serialisation
 
 ## Links
 

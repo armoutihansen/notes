@@ -136,8 +136,8 @@ Processed document metadata stored (audit trail)
 - [[03_modeling/04_deep_learning/index|Deep Learning]] — LayoutLM, CNN-based document models
 
 **Reference Implementations**
-- [[08_reference_implementations/02_system_patterns/instructor_structured_outputs|Instructor Structured Outputs]]
-- [[08_reference_implementations/01_model_implementations/transformer_finetuning_implementation|Transformer Fine-tuning Implementation]]
+- [[08_implementations/01_system_patterns/instructor_structured_outputs|Instructor Structured Outputs]]
+- [[06_ai_engineering/05_finetuning/transformer_finetuning_implementation|Transformer Fine-tuning Implementation]]
 
 **Adjacent Applications**
 - [[visual_inspection|Visual Inspection]]

@@ -12,7 +12,7 @@
 
 ## Applications & Implementations
 - [[07_applications/index|07 — Applications]]
-- [[08_reference_implementations/index|08 — Reference Implementations]]
+- [[08_implementations/index|08 — Reference Implementations]]
 
 ## Active Projects
 

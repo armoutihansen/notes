@@ -122,9 +122,9 @@ User query → ACL context attached
 - [[06_ai_engineering/08_architecture_and_feedback/index|Architecture and Feedback]] — LLMOps for production
 
 **Reference Implementations**
-- [[08_reference_implementations/03_end_to_end_examples/rag_qa_system|RAG Q&A System]]
-- [[08_reference_implementations/02_system_patterns/rag_pipeline_pattern|RAG Pipeline Pattern]]
-- [[08_reference_implementations/02_system_patterns/langsmith_llm_observability|LangSmith LLM Observability]]
+- [[08_implementations/02_end_to_end_examples/rag_qa_system|RAG Q&A System]]
+- [[08_implementations/01_system_patterns/rag_pipeline_pattern|RAG Pipeline Pattern]]
+- [[08_implementations/01_system_patterns/langsmith_llm_observability|LangSmith LLM Observability]]
 
 **Adjacent Applications**
 - [[semantic_search|Semantic Search]]

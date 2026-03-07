@@ -28,7 +28,7 @@ Navigation hub.
 - [[adaptive_optimizers|Adaptive Optimizers]] — Momentum, RMSProp, Adam, AdamW
 - [[gradient_checking|Gradient Checking]] — numerical gradient verification
 
-**Regularisation and normalisation**
+**Regularization and normalization**
 
 - [[dropout|Dropout]] — inverted dropout, MC dropout, ensemble interpretation
 - [[batch_normalization|Batch Normalization]] — normalise over batch, scale/shift, covariate shift

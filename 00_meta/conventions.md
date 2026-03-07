@@ -25,7 +25,7 @@ Top-level structure:
 05_ml_engineering
 06_ai_engineering
 07_applications
-08_reference_implementations
+08_implementations
 09_projects
 10_reading
 11_logs
@@ -94,7 +94,7 @@ Practical analytical reasoning: how to turn raw data into insight, decisions, an
 - Specific model family descriptions (→ 03_modeling)
 - Production ML pipelines (→ 05_ml_engineering)
 - Mathematical derivations (→ 01_foundations)
-- Code implementations (→ 08_reference_implementations)
+- Cross-layer executable reference architectures (→ 08_implementations)
 
 ### Guiding Question
 **How do we reason from data to decisions?**
@@ -133,7 +133,7 @@ Model families, training objectives, and model selection — framework-agnostic 
 - Production ML infrastructure (→ 05_ml_engineering)
 - Business problem framing (→ 02_data_science)
 - Mathematical derivations (→ 01_foundations)
-- Code implementations (→ 08_reference_implementations)
+- Cross-layer executable reference architectures (→ 08_implementations)
 
 ### Guiding Question
 **Which model should we use and why?**
@@ -309,7 +309,7 @@ Real-world use cases, business functions, and domain vertical patterns. This lay
 - Domain verticals (insurance, finance, health, e-commerce, mobility, operations)
 
 ### Does NOT Contain
-- Code implementations (→ 08_reference_implementations)
+- Cross-layer executable reference architectures (→ 08_implementations)
 - General model family descriptions (→ 03_modeling)
 - Infrastructure/MLOps tooling (→ 05_ml_engineering)
 
@@ -337,30 +337,35 @@ Real-world use cases, business functions, and domain vertical patterns. This lay
 
 ---
 
-## 08_reference_implementations
+## 08_implementations
 
 ### Purpose
-Concrete, runnable implementations that bridge conceptual knowledge (03_modeling, 05_ml_engineering, 06_ai_engineering) into working code patterns.
+Cross-layer, reusable executable reference architectures: system patterns that integrate multiple layers, and end-to-end examples that span data ingestion through deployment.
+
+**Key placement rule:** *Implementation notes live with the concept unless they are cross-cutting reference architectures that integrate multiple layers.*
+
+- If an implementation note is primarily the code expression of **one concept**, it lives with that concept in its home layer (e.g., XGBoost code → `03_modeling/01_supervised_learning/02_tree_based_models/`; SHAP workflow → `03_modeling/07_evaluation_and_model_selection/`; LoRA fine-tuning → `06_ai_engineering/05_finetuning/`).
+- If an implementation note is **reusable across layers** and represents a broader executable architecture or production pattern, it belongs here.
 
 ### Contains
-- Model implementation notes (concrete runnable code for each model family)
-- System pattern notes (production patterns: feature stores, training pipelines, RAG, monitoring, agents, quantization)
+- System pattern notes (production patterns integrating ≥2 layers: feature stores, training pipelines, RAG, monitoring, agents, quantization)
 - End-to-end example notes (complete ML/AI systems spanning multiple source layers)
 
 ### Does NOT Contain
-- Core mathematical derivations
-- Algorithmic definitions (the "what" and "why" → 03_modeling)
+- Concept-specific model implementation notes (→ home layer alongside the concept)
+- Core mathematical derivations (→ 01_foundations)
+- Algorithmic definitions and model selection rationale (→ 03_modeling)
 - Business domain problem framing (→ 07_applications)
+- Cross-layer executable reference architectures that are project-specific (→ 09_projects)
 
 ### Guiding Question
-**How do we implement this in code?**
+**How is this cross-cutting executable pattern or end-to-end system implemented in code?**
 
 ### Sublayer Structure
 ```
-08_reference_implementations/
-├── 01_model_implementations/   ← runnable code per model family
-├── 02_system_patterns/         ← production pattern implementations
-└── 03_end_to_end_examples/     ← complete ML/AI system walkthroughs
+08_implementations/
+├── 01_system_patterns/         ← production pattern implementations spanning ≥2 layers
+└── 02_end_to_end_examples/     ← complete ML/AI system walkthroughs
 ```
 
 ---
@@ -513,7 +518,7 @@ When unsure where a note belongs, ask:
 | How do we productionize ML systems? | 05_ml_engineering |
 | How do we integrate and operate LLM systems? | 06_ai_engineering |
 | Why are we solving this problem in this domain? | 07_applications |
-| How is this implemented in code? | 08_reference_implementations |
+| How is this cross-cutting executable pattern or end-to-end system implemented? | 08_implementations |
 | Is this a concrete execution instance? | 09_projects |
 | Is this intake from external material? | 10_reading |
 | Is this temporary thought or reflection? | 11_logs |
@@ -523,7 +528,8 @@ When unsure where a note belongs, ask:
 - Feature store as production system → `05_ml_engineering/04_feature_engineering/`
 - SHAP for communicating to stakeholders → `02_data_science/06_interpretability_and_communication/`
 - SHAP post-hoc model analysis → `03_modeling/07_evaluation_and_model_selection/`
-- SHAP implementation code → `08_reference_implementations/`
+- SHAP implementation code → `03_modeling/07_evaluation_and_model_selection/interpretability_implementation` (concept-specific, lives with the concept)
+- MLflow training pipeline pattern (cross-layer) → `08_implementations/01_system_patterns/`
 
 ---
 
@@ -571,7 +577,7 @@ Each layer has a canonical template in `00_meta/templates/`:
 | 05_ml_engineering | `tpl_ml_system.md` |
 | 06_ai_engineering | `tpl_ai_system.md` |
 | 07_applications | `tpl_application.md` |
-| 08_reference_implementations | `tpl_reference_implementation.md` (implementations) or `tpl_end_to_end_example.md` |
+| 08_implementations | `tpl_reference_implementation.md` (implementations) or `tpl_end_to_end_example.md` |
 | 09_projects | `tpl_project_overview.md` |
 | 10_reading | `tpl_reading_note.md` |
 
@@ -610,9 +616,9 @@ The `## Links` section organizes wikilinks by source layer.
 
 To prevent silos:
 
-1. Every `08_reference_implementations` note must link to:
-   - At least one `03_modeling` note (conceptual counterpart)
+1. Every `08_implementations` note must link to:
    - At least one `05_ml_engineering` or `06_ai_engineering` note (system context)
+   - At least one `03_modeling` note where applicable (if the pattern has a model component)
 
 2. Every `03_modeling` note should link to:
    - At least one `01_foundations` note
