@@ -15,6 +15,8 @@ Defensive engineering patterns for secure-by-default software: filesystem sandbo
 ## Notes
 
 - [[filesystem_sandboxing|Filesystem Sandboxing]] — path traversal prevention, `os.path.commonpath`, chroot, and container isolation for LLM tool functions
+- [[auth_and_authorization|Authentication and Authorization]] — JWT validation, OAuth2 flows (client credentials, auth code + PKCE), API keys, RBAC, IDOR, token leakage
+- [[secrets_management|Secrets Management]] — .env patterns, CI/CD secret injection, HashiCorp Vault, AWS Secrets Manager, rotation strategies
 - [[github_permissions|GitHub Permissions]] — fine-grained PATs, GITHUB_TOKEN scopes, org/repo roles, environments and deployment gates
 
 ## Links

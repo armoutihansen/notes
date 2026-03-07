@@ -14,9 +14,7 @@ Navigation hub.
 
 **Foundations**
 
-- [[supervised_learning|Supervised Learning]] — task setup, loss functions, generalization
 - [[neural_network_notation|Neural Network Notation]] — layers, activations, forward pass notation
-- [[logistic_regression|Logistic Regression]] — binary classification, sigmoid, cross-entropy
 - [[activation_functions|Activation Functions]] — sigmoid, ReLU, GELU, Swish, universal approximation
 - [[weight_initialization|Weight Initialization]] — Xavier, Kaiming, symmetry breaking
 
@@ -46,6 +44,8 @@ Navigation hub.
 
 ## Links
 - [[01_foundations/index|Foundations]]
+- [[01_foundations/05_statistical_learning_theory/supervised_learning|Supervised Learning]] (→ 05_statistical_learning_theory)
+- [[01_foundations/03_probability_and_statistics/logistic_regression|Logistic Regression]] (→ 03_probability_and_statistics)
 
 ---
 

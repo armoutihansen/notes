@@ -15,6 +15,7 @@ Navigation hub.
 **Formal theory**
 
 - [[supervised_learning|Supervised Learning]] — task setup, loss functions, generalization
+- [[pac_learning|PAC Learning]] — probably approximately correct framework, sample complexity, agnostic PAC
 - [[vc_dimension|VC Dimension]] — shattering, growth function, fundamental theorem of statistical learning
 - [[generalization_bounds|Generalization Bounds and Rademacher Complexity]] — ERM bound, uniform convergence, SRM, PAC-Bayes
 

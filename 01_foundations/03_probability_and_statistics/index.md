@@ -15,7 +15,7 @@ Foundational probability theory and statistical inference. Answers the question:
 - [[probability_theory|Probability Theory]] — axioms, conditional probability, Bayes' theorem, random variables, expectation
 - [[probability_distributions|Probability Distributions]] — Bernoulli, Binomial, Poisson, Gaussian, Beta, Dirichlet, exponential family
 - [[bayesian_inference|Bayesian Inference]] — prior, likelihood, posterior, MLE vs MAP, conjugate priors, approximate inference
-- [[hypothesis_testing|Statistical Inference and Hypothesis Testing]] — p-values, t-test, chi-squared, confidence intervals, multiple testing
+- [[logistic_regression|Logistic Regression]] — binary classification, sigmoid, cross-entropy, MLE connection
 
 ## Links
 
