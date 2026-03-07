@@ -1,9 +1,6 @@
 ---
 layer: 03_modeling
 type: application
-domain: supervised-learning
-stakeholders: []
-regulatory: []
 status: growing
 tags: [algorithm, tabular, classification, regression]
 created: 2026-03-06

@@ -209,6 +209,11 @@ vllm serve ./merged-llama3-8b-domain \
 - Track: train_loss curve, perplexity, eval_loss
 - Compare runs: SFT baseline vs DPO-aligned
 
+## References
+
+- [HuggingFace TRL Documentation](https://huggingface.co/docs/trl)
+- [HuggingFace PEFT Documentation](https://huggingface.co/docs/peft)
+
 ## Links
 - [[finetuning_strategies|Fine-tuning Strategies]]
 - [[peft_and_lora|PEFT and LoRA]]

@@ -1,5 +1,5 @@
 ---
-layer: 08_implementations
+layer: 04_software_engineering
 type: application
 status: growing
 tags: [pattern, mlops]
@@ -161,6 +161,10 @@ Coverage gate → CI: must be ≥ 80% before merge
 - `@pytest.mark.integration` — skip in fast unit CI run; run in full CI and pre-merge
 - `@pytest.mark.slow` — skip by default in dev (`pytest -m "not slow"`)
 - `@pytest.mark.parametrize` — prefer over copy-paste; keep fixture setup outside the parametrized loop
+
+## References
+
+- [pytest Documentation](https://docs.pytest.org/)
 
 ## Links
 - [[testing_strategies|Testing Strategies]]

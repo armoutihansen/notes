@@ -1,3 +1,11 @@
+---
+layer: 00_meta
+type: index
+status: evergreen
+tags: []
+created: 2026-01-01
+---
+
 # Vault Conventions
 
 ## 1. Purpose of This Vault
@@ -200,10 +208,10 @@ General software engineering knowledge supporting all technical work.
 04_software_engineering/
 ├── 01_principles_and_patterns/
 ├── 02_programming_languages/
-│   ├── 01_python/
-│   ├── 02_go/
-│   ├── 03_javascript/
-│   └── 04_typescript/
+│   ├── 00_python/
+│   ├── 01_go/
+│   ├── 02_javascript/
+│   └── 03_typescript/
 ├── 03_system_design/
 ├── 04_apis_and_services/
 ├── 05_databases_and_storage/
@@ -591,13 +599,13 @@ title: "Note Title"
 tags: [tag1, tag2]
 type: concept
 layer: 02_data_science
-status: seed | growing | stable
+status: seed | growing | evergreen
 ---
 ```
 
-- `type`: `concept`, `algorithm`, `pattern`, `workflow`, `proof`, `example`
+- `type`: `concept`, `algorithm`, `model`, `pattern`, `workflow`, `proof`, `engineering`, `ai_system`, `application`, `project`, `index`
 - `layer`: the layer folder (e.g., `03_modeling`)
-- `status`: `seed` (stub), `growing` (substantive but incomplete), `stable` (complete, reviewed)
+- `status`: `seed` (stub), `growing` (substantive but incomplete), `evergreen` (complete, reviewed)
 
 ## Required Sections (all notes)
 
@@ -665,15 +673,7 @@ Folders encode *where a note belongs epistemically*. Tags encode *what kind of t
 
 ## Controlled Vocabulary
 
-All tags must come from the approved list in [[00_meta/tag_vocabulary|Tag Vocabulary]]. The vocabulary is organized into five orthogonal dimensions:
-
-| Dimension | Tags |
-|-----------|------|
-| **Concept type** | `algorithm`, `pattern`, `theory`, `workflow` |
-| **Lifecycle stage** | `data`, `feature-engineering`, `training`, `evaluation`, `deployment`, `monitoring` |
-| **Domain / modality** | `llm`, `nlp`, `vision`, `time-series`, `tabular`, `multimodal`, `recommendation` |
-| **Capability / task** | `classification`, `regression`, `clustering`, `generation`, `retrieval`, `reasoning`, `forecasting`, `anomaly-detection`, `interpretability` |
-| **Infra / system concern** | `mlops`, `llmops`, `distributed`, `quantization`, `fine-tuning`, `safety` |
+All tags must come from the approved list in [[00_meta/tag_vocabulary|Tag Vocabulary]]. See that document for the full controlled vocabulary organized by dimension. The key dimensions are: concept type, lifecycle stage, domain/modality, capability/task, and infra/system concern.
 
 ## Rules
 

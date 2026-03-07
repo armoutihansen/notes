@@ -154,6 +154,10 @@ model, optimizer, dataloader, scheduler = accelerator.prepare(
 )
 ```
 
+## References
+
+- [HuggingFace Accelerate Documentation](https://huggingface.co/docs/accelerate)
+
 ## Links
 - [[05_ml_engineering/05_model_development/distributed_training|Distributed Training]]
 - [[05_ml_engineering/05_model_development/experiment_tracking|Experiment Tracking]]

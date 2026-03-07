@@ -261,6 +261,8 @@ def churn_prediction_pipeline():
 churn_prediction_pipeline()
 ```
 
+## References
+
 ## Links
 - [[05_ml_engineering/01_principles_and_lifecycle/ml_lifecycle|ML Lifecycle]]
 - [[05_ml_engineering/02_data_engineering/data_pipeline_patterns|Data Pipeline Patterns]]

@@ -1,3 +1,11 @@
+---
+layer: 00_meta
+type: index
+status: evergreen
+tags: []
+created: 2026-01-01
+---
+
 # Dashboard
 
 ## Core Layers
@@ -12,7 +20,11 @@
 
 ## Applications & Implementations
 - [[07_applications/index|07 — Applications]]
-- [[08_implementations/index|08 — Reference Implementations]]
+- [[08_implementations/index|08 — Implementations]]
+
+## Reference
+- [[10_reading/index|10 — Reading]]
+- [[11_logs/index|11 — Logs]]
 
 ## Active Projects
 

@@ -173,6 +173,10 @@ def log_violation(content: str, category: str, source: str = "user"):
 - vLLM batch (A10 GPU): ~50–100 req/s
 - Pattern: run input classification synchronously; output classification asynchronously
 
+## References
+
+- [LlamaGuard: LLM-based Input-Output Safeguard for Human-AI Conversations (Meta AI)](https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/)
+
 ## Links
 - [[safety_and_content_moderation|Safety and Content Moderation]]
 - [[prompt_injection_and_guardrails|Prompt Injection and Guardrails]]

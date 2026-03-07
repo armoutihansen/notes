@@ -1,5 +1,5 @@
 ---
-layer: 03_modeling
+layer: 08_implementations
 type: application
 status: growing
 tags: [algorithm, training]
@@ -239,6 +239,8 @@ start_epoch = ckpt["epoch"] + 1
 | Early stopping | patience=5–10 epochs on val loss; restore best checkpoint |
 
 ---
+
+## References
 
 ## Links
 

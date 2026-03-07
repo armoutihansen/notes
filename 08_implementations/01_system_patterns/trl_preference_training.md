@@ -173,6 +173,10 @@ trainer.train()
 - GRPO: reward functions must return a `list[float]` of length equal to `len(completions)` — mismatch causes silent errors
 - Both: forgetting `pad_token = eos_token` for models without a native pad token (Llama family)
 
+## References
+
+- [HuggingFace TRL Documentation](https://huggingface.co/docs/trl)
+
 ## Links
 - [[rl_finetuning|RL Fine-tuning]]
 - [[alignment_and_rlhf|Alignment and RLHF]]

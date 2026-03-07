@@ -2,7 +2,7 @@
 layer: 07_applications
 type: application
 status: growing
-tags: [recommendation, ranking, tabular]
+tags: [recommendation, retrieval, tabular]
 created: 2026-03-11
 ---
 

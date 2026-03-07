@@ -196,6 +196,10 @@ torch.use_deterministic_algorithms(True)
 os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
 ```
 
+## References
+
+- [Docker Documentation](https://docs.docker.com/)
+
 ## Links
 - [[05_ml_engineering/09_infrastructure_and_platform/ml_environment_management|ML Environment Management]]
 - [[04_software_engineering/07_devops_and_infrastructure/docker_patterns|Docker Patterns]]

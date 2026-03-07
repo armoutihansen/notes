@@ -237,6 +237,10 @@ accelerate launch --num_machines 2 --num_processes 8 \
 
 ---
 
+## References
+
+- [HuggingFace Accelerate Documentation](https://huggingface.co/docs/accelerate)
+
 ## Links
 
 **Foundations**
@@ -249,7 +253,7 @@ accelerate launch --num_machines 2 --num_processes 8 \
 - [[03_modeling/04_deep_learning/03_sequence_models/recurrent_networks|Recurrent Networks]] — LSTM/GRU for sequence tasks
 
 **Model Implementations**
-- [[neural_network_implementation|Neural Network Implementation]] — standalone PyTorch training loop (without Accelerate)
+- [[deep_learning_training_patterns|Deep Learning Training Patterns]] — standalone PyTorch training loop (without Accelerate)
 
 **System Patterns**
 - [[distributed_training_with_accelerate|Distributed Training with Accelerate]] — Accelerate config, ZeRO, FSDP setup

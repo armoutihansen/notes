@@ -189,6 +189,8 @@ print(response)
 
 ---
 
+## References
+
 ## Links
 
 **AI Engineering**

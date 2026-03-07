@@ -135,3 +135,4 @@ TFT (Lim et al., 2021) is a multi-horizon attention-based architecture:
 - [[03_modeling/01_supervised_learning/02_tree_based_models/tree_ensembles|Tree Ensembles — gradient boosting backbone]]
 - [[03_modeling/04_deep_learning/03_sequence_models/recurrent_networks|Recurrent Networks — LSTM architecture]]
 - [[02_data_science/04_feature_engineering/feature_engineering|Feature Engineering — lag and rolling window features]]
+- [[01_foundations/06_deep_learning_theory/backpropagation_through_time|Backpropagation Through Time]] — gradient flow in RNNs and LSTMs used for sequence forecasting

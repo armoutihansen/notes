@@ -134,7 +134,7 @@ See [[07_applications/07_multimodal_systems/visual_inspection|Visual Inspection]
 - [[07_applications/03_detection_and_monitoring/anomaly_detection_operations|Anomaly Detection — Operations]]
 
 **Reference Implementations**
-- [[03_modeling/04_deep_learning/01_mlp_and_representation_learning/neural_network_implementation|Neural Network Implementation]]
+- [[08_implementations/01_system_patterns/deep_learning_training_patterns|Neural Network Implementation]]
 - [[03_modeling/02_unsupervised_learning/01_clustering/unsupervised_learning_implementation|Unsupervised Learning Implementation]]
 
 **Adjacent Applications**

@@ -207,6 +207,10 @@ python main.py "Write a pytest test for the predict endpoint"
 python main.py "Refactor UserService to use async/await throughout"
 ```
 
+## References
+
+- [Model Context Protocol Documentation](https://modelcontextprotocol.io/)
+
 ## Links
 - [[mcp_protocol|MCP Protocol]]
 - [[agentic_coding|Agentic Coding]]

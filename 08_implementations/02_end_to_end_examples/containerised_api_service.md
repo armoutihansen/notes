@@ -211,6 +211,11 @@ kubectl rollout status deployment/inference-api -n staging
 kubectl logs -l app=inference-api -n staging --tail=50
 ```
 
+## References
+
+- [Docker Documentation](https://docs.docker.com/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+
 ## Links
 - [[fastapi_patterns|FastAPI Patterns]]
 - [[docker_patterns|Docker Patterns]]

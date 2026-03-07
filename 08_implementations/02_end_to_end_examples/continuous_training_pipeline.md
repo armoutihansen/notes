@@ -299,6 +299,11 @@ def continuous_training():
 continuous_training()
 ```
 
+## References
+
+- [MLflow Documentation](https://mlflow.org/docs/latest/)
+- [DVC Documentation](https://dvc.org/doc)
+
 ## Links
 - [[05_ml_engineering/08_continual_learning/retraining_strategies|Retraining Strategies]]
 - [[05_ml_engineering/08_continual_learning/testing_in_production|Testing in Production]]

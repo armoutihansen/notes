@@ -213,6 +213,10 @@ Security boundary:
 - Always sandbox file system access — validate paths with `Path.resolve()` + prefix check
 - Keep tool implementations stateless where possible for safety
 
+## References
+
+- [Model Context Protocol Documentation](https://modelcontextprotocol.io/)
+
 ## Links
 - [[mcp_protocol|MCP Protocol]]
 - [[agentic_coding|Agentic Coding]]

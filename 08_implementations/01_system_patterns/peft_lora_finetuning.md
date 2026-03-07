@@ -177,6 +177,10 @@ axolotl train axolotl_config.yml
 - Not applying chat template when fine-tuning chat models → training distribution mismatch
 - `train_on_inputs=True` trains on the prompt tokens as well — usually incorrect for instruction tuning
 
+## References
+
+- [HuggingFace PEFT Documentation](https://huggingface.co/docs/peft)
+
 ## Links
 - [[peft_and_lora|PEFT and LoRA]]
 - [[finetuning_strategies|Fine-tuning Strategies]]

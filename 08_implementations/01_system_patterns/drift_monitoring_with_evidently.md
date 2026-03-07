@@ -169,6 +169,10 @@ def weekly_drift_check():
 weekly_drift_check()
 ```
 
+## References
+
+- [Evidently AI Documentation](https://docs.evidentlyai.com/)
+
 ## Links
 - [[05_ml_engineering/07_monitoring_and_observability/drift_detection|Drift Detection]]
 - [[05_ml_engineering/07_monitoring_and_observability/ml_observability|ML Observability]]

@@ -142,6 +142,10 @@ collection.delete(where={"source": {"$eq": "outdated_source"}})
 - Multi-tenant production SaaS → Pinecone (fully managed)
 - Existing PostgreSQL stack → `pgvector` extension
 
+## References
+
+- [Chroma Documentation](https://docs.trychroma.com/)
+
 ## Links
 
 **AI Engineering**

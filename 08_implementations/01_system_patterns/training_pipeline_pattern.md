@@ -180,6 +180,8 @@ with DAG("weekly_churn_pipeline",
 
 ---
 
+## References
+
 ## Links
 
 **ML Engineering**

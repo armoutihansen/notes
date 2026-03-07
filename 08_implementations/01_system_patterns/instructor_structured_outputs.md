@@ -195,6 +195,10 @@ result = client.chat.completions.create(
 - Keep models flat when possible; deeply nested models increase generation difficulty
 - For long batches, set `max_retries=1` to fail fast and log failures separately
 
+## References
+
+- [Instructor Documentation](https://python.useinstructor.com/)
+
 ## Links
 - [[structured_outputs|Structured Outputs]]
 - [[prompting_strategies|Prompting Strategies]]

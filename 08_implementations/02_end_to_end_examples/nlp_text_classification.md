@@ -258,6 +258,10 @@ uvicorn api:app --host 0.0.0.0 --port 8080 --workers 2
 
 ---
 
+## References
+
+- [HuggingFace PEFT Documentation](https://huggingface.co/docs/peft)
+
 ## Links
 
 **AI Engineering**
@@ -269,7 +273,7 @@ uvicorn api:app --host 0.0.0.0 --port 8080 --workers 2
 - [[03_modeling/04_deep_learning/04_transformers/transformer|Transformer Architecture]] — attention mechanism of the base model
 
 **Model Implementations**
-- [[transformer_finetuning_implementation|Transformer Fine-tuning Implementation]] — LoRA/QLoRA standalone fine-tuning reference
+- [[06_ai_engineering/05_finetuning/peft_and_lora|PEFT and LoRA]] — LoRA/QLoRA fine-tuning reference with SFTTrainer tips
 
 **System Patterns**
 - [[peft_lora_finetuning|PEFT LoRA Fine-tuning]] — LoRA + SFTTrainer production pattern

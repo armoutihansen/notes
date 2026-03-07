@@ -152,6 +152,10 @@ optimized_qa.save("models/qa_v1.json")
 qa.load("models/qa_v1.json")
 ```
 
+## References
+
+- [DSPy Documentation](https://dspy.ai/)
+
 ## Links
 - [[dspy_systematic_prompting|DSPy Systematic Prompting]]
 - [[rag_architecture|RAG Architecture]]

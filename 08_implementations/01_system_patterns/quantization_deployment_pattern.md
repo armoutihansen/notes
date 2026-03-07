@@ -217,6 +217,8 @@ print(outputs[0].outputs[0].text)
 
 ---
 
+## References
+
 ## Links
 
 **AI Engineering**

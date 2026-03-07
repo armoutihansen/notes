@@ -3,7 +3,7 @@ layer: 04_software_engineering
 type: engineering
 tool: python
 status: evergreen
-tags: [safety]
+tags: [pattern]
 created: 2026-03-02
 ---
 

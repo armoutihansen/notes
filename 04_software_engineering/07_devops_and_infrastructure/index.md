@@ -17,6 +17,7 @@ Container orchestration, CI/CD pipelines, ML framework tooling, Git internals, a
 - [[docker_patterns|Docker Patterns]] — Dockerfile best practices, layer caching, multi-stage builds, Docker Compose, ML-specific patterns
 - [[kubernetes_basics|Kubernetes Basics]] — control plane, core objects (Pod/Deployment/Service/Ingress), HPA, Helm, ML workloads
 - [[cicd_pipelines|CI/CD Pipelines]] — GitHub Actions pipeline patterns for testing, building, deploying, and ML retraining
+- [[kubernetes_deployment|Kubernetes Deployment]] — Deployment/Service/Ingress manifests, Helm charts, HPA, and rolling update patterns
 
 ## Git
 
@@ -31,7 +32,6 @@ Container orchestration, CI/CD pipelines, ML framework tooling, Git internals, a
 
 - [[github_actions|GitHub Actions]] — workflow YAML, job matrix, caching, Docker build/push, self-hosted runners, OIDC auth
 - [[github_workflows|GitHub Workflows]] — GitHub Flow, trunk-based development, PR best practices, branch protection, merge strategies
-- [[github_permissions|GitHub Permissions]] — fine-grained PATs, GITHUB_TOKEN scopes, org/repo roles, environments and deployment gates
 - [[github_repository_management|GitHub Repository Management]] — repo settings, issue/PR templates, releases, GitHub Packages, Dependabot
 
 ## Subdirectories

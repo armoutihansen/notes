@@ -163,6 +163,10 @@ mlflow.autolog()          # scikit-learn, XGBoost, LightGBM, PyTorch, Keras
 model.fit(X_train, y_train)
 ```
 
+## References
+
+- [MLflow Documentation](https://mlflow.org/docs/latest/)
+
 ## Links
 - [[05_ml_engineering/05_model_development/experiment_tracking|Experiment Tracking]]
 - [[05_ml_engineering/09_infrastructure_and_platform/ml_platform_architecture|ML Platform Architecture]]

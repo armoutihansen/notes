@@ -137,7 +137,7 @@ Processed document metadata stored (audit trail)
 
 **Reference Implementations**
 - [[08_implementations/01_system_patterns/instructor_structured_outputs|Instructor Structured Outputs]]
-- [[06_ai_engineering/05_finetuning/transformer_finetuning_implementation|Transformer Fine-tuning Implementation]]
+- [[06_ai_engineering/05_finetuning/peft_and_lora|PEFT and LoRA]]
 
 **Adjacent Applications**
 - [[visual_inspection|Visual Inspection]]

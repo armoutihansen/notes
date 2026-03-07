@@ -1,5 +1,5 @@
 ---
-layer: 08_implementations
+layer: 04_software_engineering
 type: application
 status: growing
 tags: [pattern, deployment]
@@ -248,6 +248,10 @@ Service (ClusterIP) → round-robin load balancing
 2. K8s creates new pod (maxSurge); waits for readiness probe to pass
 3. Old pod is terminated (maxUnavailable=0 means zero-downtime)
 4. Process repeats until all replicas are on new version
+
+## References
+
+- [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
 ## Links
 - [[kubernetes_basics|Kubernetes Basics]]

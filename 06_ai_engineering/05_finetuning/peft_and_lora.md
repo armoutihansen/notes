@@ -107,6 +107,11 @@ lora_target_modules:
 
 **LLaMA-Factory** provides a WebUI for LoRA/QLoRA configuration without writing code, supporting Llama, Qwen, Gemma, Mistral, and 100+ other architectures. Includes DPO and GRPO trainers; supports multimodal fine-tuning.
 
+**SFTTrainer key settings (TRL):**
+- `model.config.use_cache = False` — disable KV-cache during training (required; cache is incompatible with gradient checkpointing and wastes memory)
+- `packing=True` — concatenate short examples into fixed-length sequences for GPU utilisation; set `False` when training on long documents or when sequences are already near `max_seq_length`
+- `report_to` — pass `"mlflow"`, `"wandb"`, or `"tensorboard"` to route training metrics to the appropriate experiment tracker
+
 ## Trade-offs
 
 **LoRA vs full fine-tuning:**

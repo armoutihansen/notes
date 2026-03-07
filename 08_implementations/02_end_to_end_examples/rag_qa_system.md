@@ -172,6 +172,11 @@ def answer_traced(question: str) -> dict:
 - Context overflow: many long passages → budget context explicitly
 - Latency spike: reranker adds 200 ms → profile and cache common queries
 
+## References
+
+- [Chroma Documentation](https://docs.trychroma.com/)
+- [LangSmith Documentation](https://docs.smith.langchain.com/)
+
 ## Links
 - [[rag_architecture|RAG Architecture]]
 - [[vector_stores|Vector Stores]]

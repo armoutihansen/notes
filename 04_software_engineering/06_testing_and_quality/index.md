@@ -17,6 +17,7 @@ Strategies and techniques for software correctness, quality assurance, and test-
 - [[testing_strategies|Testing Strategies]] — pyramid, test doubles (mocks/stubs/fakes), pytest fixtures, coverage, and CI integration
 - [[test_driven_development|Test-Driven Development]] — red-green-refactor, London vs Chicago schools, BDD with pytest-bdd
 - [[property_based_testing|Property-Based Testing]] — Hypothesis strategies, stateful testing, invariant discovery, fuzzing
+- [[pytest_testing_patterns|pytest Testing Patterns]] — fixtures, parametrize, test doubles, async tests, and coverage CI integration
 
 ## Links
 - [[04_software_engineering/index|Software Engineering]]

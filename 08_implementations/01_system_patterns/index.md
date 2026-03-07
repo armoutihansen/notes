@@ -25,10 +25,10 @@ Each note covers the design, code structure, key configuration, and integration 
 **Model Serving**
 - [[model_serving_with_fastapi|Model Serving with FastAPI]] — REST inference API with Pydantic, background workers, health checks
 - [[vllm_serving|vLLM Serving]] — high-throughput LLM serving with PagedAttention and OpenAI-compatible API
-- [[grpc_service_implementation|gRPC Service Implementation]] — low-latency binary protocol inference service
 
 **Training & Fine-tuning**
 - [[distributed_training_with_accelerate|Distributed Training with Accelerate]] — multi-GPU/TPU training with Hugging Face Accelerate
+- [[deep_learning_training_patterns|Deep Learning Training Patterns (PyTorch)]] — MLP, CNN, LSTM training loops with early stopping, validation, and model serialisation
 - [[peft_lora_finetuning|PEFT LoRA Fine-tuning]] — parameter-efficient fine-tuning with LoRA/QLoRA
 - [[trl_preference_training|TRL Preference Training]] — DPO/RLHF/GRPO preference optimisation
 - [[quantization_deployment_pattern|Quantization Deployment Pattern]] — AWQ, GPTQ, GGUF quantization for inference
@@ -53,13 +53,10 @@ Each note covers the design, code structure, key configuration, and integration 
 **Infrastructure**
 - [[docker_ml_pipeline|Docker ML Pipeline]] — containerized training and serving images
 - [[cicd_for_ml|CI/CD for ML]] — automated testing, model evaluation, and deployment pipelines
-- [[kubernetes_deployment|Kubernetes Deployment]] — model serving on Kubernetes with HPA and GPU node pools
 - [[mcp_server_implementation|MCP Server Implementation]] — Model Context Protocol server for LLM tool integration
-- [[pytest_testing_patterns|Pytest Testing Patterns]] — unit, integration, and property-based testing for ML code
 
 ## Links
-- [[08_implementations/index|08 — Reference Implementations]]
-- [[08_implementations/index|Model Implementations]]
+- [[08_implementations/index|08 — Implementations]]
 - [[08_implementations/02_end_to_end_examples/index|End-to-End Examples]]
 - [[05_ml_engineering/index|05 — ML Engineering]]
 - [[06_ai_engineering/index|06 — AI Engineering]]

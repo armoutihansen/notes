@@ -231,6 +231,8 @@ print(f"Tool: {tool_call.function.name}, Args: {tool_call.function.arguments}")
 
 ---
 
+## References
+
 ## Links
 
 **AI Engineering**

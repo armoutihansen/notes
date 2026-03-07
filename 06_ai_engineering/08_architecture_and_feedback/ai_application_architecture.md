@@ -2,7 +2,7 @@
 layer: 06_ai_engineering
 type: ai_system
 status: growing
-tags: [pattern, llm]
+tags: [pattern]
 created: 2026-03-05
 ---
 # AI Application Architecture

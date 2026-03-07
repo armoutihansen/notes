@@ -1,9 +1,6 @@
 ---
 layer: 03_modeling
 type: application
-domain: unsupervised-learning
-stakeholders: []
-regulatory: []
 status: growing
 tags: [algorithm, clustering, anomaly-detection]
 created: 2026-03-06

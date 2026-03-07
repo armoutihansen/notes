@@ -216,6 +216,11 @@ services:
 | Fallback rate | < 1% | > 5% (vLLM health issue?) |
 | Cost per request p99 | < $0.01 | > $0.05 (runaway loop?) |
 
+## References
+
+- [vLLM Documentation](https://docs.vllm.ai/)
+- [LlamaGuard: LLM-based Input-Output Safeguard for Human-AI Conversations (Meta AI)](https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/)
+
 ## Links
 - [[serving_frameworks|LLM Serving Frameworks]]
 - [[vllm_serving|vLLM Serving]]

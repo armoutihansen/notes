@@ -185,6 +185,8 @@ sarima.update(new_train_obs)   # pmdarima supports incremental updates
 - LGBM features: scales to many series, supports covariates; requires adequate history for lag features.
 - Ensemble: combines strengths; evaluate if the average outperforms individual models on your walk-forward CV before deploying.
 
+## References
+
 ## Links
 
 - [[03_modeling/05_time_series/01_classical_forecasting/time_series_models|Time Series Models (theory)]]

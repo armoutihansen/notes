@@ -3,7 +3,7 @@ layer: 06_ai_engineering
 type: engineering
 tool: general
 status: growing
-tags: [safety, llm]
+tags: [safety]
 created: 2026-03-05
 ---
 

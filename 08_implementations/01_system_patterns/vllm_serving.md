@@ -163,6 +163,10 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 | Llama-3-70B-Instruct | BF16 (4×) | ~140 GB | <300 ms | ~800 tok/s |
 | Llama-3-70B-Instruct | AWQ-4bit (2×) | ~40 GB | <350 ms | ~700 tok/s |
 
+## References
+
+- [vLLM Documentation](https://docs.vllm.ai/)
+
 ## Links
 - [[serving_frameworks|LLM Serving Frameworks]]
 - [[quantization_overview|Quantization for LLMs]]

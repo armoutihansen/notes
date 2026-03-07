@@ -3,7 +3,7 @@ layer: 06_ai_engineering
 type: engineering
 tool: llamaguard
 status: growing
-tags: [safety, llm]
+tags: [safety]
 created: 2026-03-05
 ---
 # Safety and Content Moderation

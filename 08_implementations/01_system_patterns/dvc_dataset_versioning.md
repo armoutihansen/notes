@@ -173,6 +173,10 @@ jobs:
         run: dvc repro --dry-run   # check if any stage is out of date
 ```
 
+## References
+
+- [DVC Documentation](https://dvc.org/doc)
+
 ## Links
 - [[05_ml_engineering/03_training_data/dataset_versioning|Dataset Versioning and Lineage]]
 - [[05_ml_engineering/02_data_engineering/data_pipeline_patterns|Data Pipeline Patterns]]

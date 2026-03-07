@@ -1,9 +1,6 @@
 ---
 layer: 03_modeling
 type: application
-domain: supervised-learning
-stakeholders: []
-regulatory: []
 status: growing
 tags: [algorithm, tabular, classification, regression]
 created: 2026-03-06
@@ -86,9 +83,7 @@ model = xgb.XGBClassifier(
     colsample_bytree=0.8,
     min_child_weight=1,
     gamma=0,
-    use_label_encoder=False,
     eval_metric="logloss",
-    early_stopping_rounds=50,
     random_state=42
 )
 model.fit(
@@ -190,3 +185,4 @@ plt.tight_layout()
 - [[02_data_science/04_feature_engineering/feature_engineering|Feature Engineering]]
 - [[03_modeling/07_evaluation_and_model_selection/evaluation_and_validation|Evaluation and Validation]]
 - [[03_modeling/07_evaluation_and_model_selection/shap_and_feature_attribution|SHAP Feature Attribution]]
+- [[01_foundations/05_statistical_learning_theory/bias_variance_analysis|Bias-Variance Analysis]] — ensemble variance reduction and the bias-variance trade-off underlying boosting vs bagging

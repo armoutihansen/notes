@@ -195,6 +195,10 @@ def trigger_retraining():
 
 ---
 
+## References
+
+- [Evidently AI Documentation](https://docs.evidentlyai.com/)
+
 ## Links
 
 **ML Engineering**

@@ -119,7 +119,7 @@ def objective(trial):
         "subsample":     trial.suggest_float("subsample", 0.6, 1.0),
         "colsample_bytree": trial.suggest_float("colsample_bytree", 0.6, 1.0),
     }
-    model = xgb.XGBClassifier(**params, use_label_encoder=False, eval_metric="logloss", random_state=42)
+    model = xgb.XGBClassifier(**params, eval_metric="logloss", random_state=42)
     model.fit(X_train_p, y_train, eval_set=[(X_test_p, y_test)], verbose=False)
     return roc_auc_score(y_test, model.predict_proba(X_test_p)[:, 1])
 
@@ -129,7 +129,7 @@ study.optimize(objective, n_trials=50, show_progress_bar=True)
 # Final training run with best params
 with mlflow.start_run(run_name="challenger_best"):
     best_params = study.best_params
-    model = xgb.XGBClassifier(**best_params, use_label_encoder=False, eval_metric="logloss", random_state=42)
+    model = xgb.XGBClassifier(**best_params, eval_metric="logloss", random_state=42)
     model.fit(X_train_p, y_train)
     auc = roc_auc_score(y_test, model.predict_proba(X_test_p)[:, 1])
     mlflow.log_params(best_params)
@@ -239,6 +239,10 @@ if n_drifted > 2:
 | Monitoring | Evidently (open-source) | Fiddler, Arize (managed) |
 
 ---
+
+## References
+
+- [MLflow Documentation](https://mlflow.org/docs/latest/)
 
 ## Links
 

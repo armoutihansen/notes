@@ -3,7 +3,7 @@ layer: 06_ai_engineering
 type: engineering
 tool: general
 status: growing
-tags: [llm, evaluation]
+tags: [evaluation]
 created: 2026-03-05
 ---
 

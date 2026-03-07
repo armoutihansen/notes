@@ -196,6 +196,8 @@ def score_new_batch(X_new: np.ndarray, artefacts: dict) -> np.ndarray:
 - Ensemble: more robust to individual model failure; harder to explain to stakeholders.
 - When ground-truth labels become available, switch to a supervised model (XGBoost) trained on confirmed positives.
 
+## References
+
 ## Links
 
 - [[03_modeling/02_unsupervised_learning/01_clustering/unsupervised_learning|Unsupervised Learning (theory)]]

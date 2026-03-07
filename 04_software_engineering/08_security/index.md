@@ -15,6 +15,7 @@ Defensive engineering patterns for secure-by-default software: filesystem sandbo
 ## Notes
 
 - [[filesystem_sandboxing|Filesystem Sandboxing]] — path traversal prevention, `os.path.commonpath`, chroot, and container isolation for LLM tool functions
+- [[github_permissions|GitHub Permissions]] — fine-grained PATs, GITHUB_TOKEN scopes, org/repo roles, environments and deployment gates
 
 ## Links
 - [[04_software_engineering/index|Software Engineering]]

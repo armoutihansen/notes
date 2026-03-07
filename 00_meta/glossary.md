@@ -2,7 +2,7 @@
 layer: 00_meta
 type: index
 status: growing
-tags: [glossary, definitions, vocabulary]
+tags: []
 created: 2026-03-06
 ---
 

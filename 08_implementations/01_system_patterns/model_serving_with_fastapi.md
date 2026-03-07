@@ -206,6 +206,10 @@ curl -X POST http://localhost:8080/predict \
 - **CPU/GPU affinity**: For GPU models, request `nvidia.com/gpu: 1` per pod; for CPU-only models, request `requests.cpu: "2"` and `limits.cpu: "4"`.
 - **Latency SLA**: Set Kubernetes readiness probe to the `/ready` endpoint; configure HPA on `requests per second` or custom metric.
 
+## References
+
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+
 ## Links
 - [[05_ml_engineering/06_deployment_and_serving/serving_patterns|Model Serving Patterns]]
 - [[05_ml_engineering/06_deployment_and_serving/rollout_strategies|Model Rollout Strategies]]

@@ -3,7 +3,7 @@ layer: 06_ai_engineering
 type: engineering
 tool: general
 status: growing
-tags: [quantization, deployment, llm]
+tags: [quantization, deployment]
 created: 2026-03-05
 ---
 # Quantization for LLMs

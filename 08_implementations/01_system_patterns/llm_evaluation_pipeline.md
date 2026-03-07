@@ -230,6 +230,8 @@ if mean_faithfulness < args.fail_threshold:
 
 ---
 
+## References
+
 ## Links
 
 **AI Engineering**

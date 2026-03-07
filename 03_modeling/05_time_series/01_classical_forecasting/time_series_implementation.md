@@ -1,9 +1,6 @@
 ---
 layer: 03_modeling
 type: application
-domain: forecasting
-stakeholders: []
-regulatory: []
 status: growing
 tags: [algorithm, time-series, forecasting]
 created: 2026-03-06

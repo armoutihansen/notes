@@ -3,7 +3,7 @@ layer: 06_ai_engineering
 type: engineering
 tool: vllm
 status: growing
-tags: [deployment, llm]
+tags: [deployment]
 created: 2026-03-05
 ---
 # LLM Serving Frameworks

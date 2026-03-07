@@ -65,7 +65,7 @@ X, y = load_breast_cancer(return_X_y=True, as_frame=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Train model
-model = xgb.XGBClassifier(n_estimators=200, max_depth=5, use_label_encoder=False,
+model = xgb.XGBClassifier(n_estimators=200, max_depth=5,
                            eval_metric="logloss", random_state=42)
 model.fit(X_train, y_train)
 
@@ -192,6 +192,9 @@ plt.tight_layout()
 ---
 
 ## Links
+
+**Foundations**
+- [[01_foundations/05_statistical_learning_theory/generalization_bounds|Generalization Bounds]] — why model explanations matter: what a model learns vs. what it generalises to
 
 **Modeling**
 - [[03_modeling/07_evaluation_and_model_selection/shap_and_feature_attribution|SHAP and Feature Attribution]] — Shapley value theory and explainer variants

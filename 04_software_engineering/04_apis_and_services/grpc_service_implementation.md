@@ -1,5 +1,5 @@
 ---
-layer: 08_implementations
+layer: 04_software_engineering
 type: application
 status: growing
 tags: [pattern, deployment]
@@ -205,6 +205,10 @@ gRPC Server (Python ThreadPoolExecutor)
 - Public-facing APIs consumed by browsers (gRPC-Web adds complexity)
 - Teams that prioritise human-readable payloads for debugging
 - Simple request/response with no streaming requirements
+
+## References
+
+- [gRPC Documentation](https://grpc.io/docs/)
 
 ## Links
 - [[grpc_and_protobuf|gRPC and Protobuf]]

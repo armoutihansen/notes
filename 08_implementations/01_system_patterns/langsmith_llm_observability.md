@@ -159,6 +159,10 @@ LangchainInstrumentor().instrument()
 - Tool call success rate: < 95% warrants investigation
 - User rating ratio: baseline + weekly change detection
 
+## References
+
+- [LangSmith Documentation](https://docs.smith.langchain.com/)
+
 ## Links
 - [[llm_observability|LLM Observability]]
 - [[ai_application_architecture|AI Application Architecture]]

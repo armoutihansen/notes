@@ -12,7 +12,7 @@ created: 2026-03-11
 
 This layer captures **real-world use cases, business functions, and domain verticals** — the problems that ML and AI systems are built to solve. Notes frame the problem, describe the users and stakeholders, outline the data reality, and specify what success means in business terms.
 
-This layer does **not** contain code (→ `08_implementations`), model theory (→ `03_modeling`), or engineering patterns (→ `05_ml_engineering`, `06_ai_engineering`).
+This layer does **not** contain cross-layer executable reference architectures (→ `08_implementations`), concept-specific model implementations (→ home layer alongside the concept), model theory (→ `03_modeling`), or engineering patterns (→ `05_ml_engineering`, `06_ai_engineering`).
 
 ---
 
@@ -51,7 +51,7 @@ Industry-specific applications: insurance, finance, health, e-commerce, mobility
 05_ml_engineering/    → how the system is built and operated
 06_ai_engineering/    → if LLMs or foundation models are involved
 07_applications/      → WHY we build it, WHO uses it, WHAT success looks like
-08_implementations/ → HOW it is implemented in code
+08_implementations/ → HOW cross-layer executable patterns and end-to-end examples are implemented
 09_projects/          → actual execution instances
 ```
 
@@ -60,7 +60,7 @@ Application notes are the business specification layer. They inform engineering 
 ---
 
 ## Links
-- [[08_implementations/index|08 — Reference Implementations]]
+- [[08_implementations/index|08 — Implementations]]
 - [[03_modeling/index|03 — Modeling]]
 - [[05_ml_engineering/index|05 — ML Engineering]]
 - [[06_ai_engineering/index|06 — AI Engineering]]

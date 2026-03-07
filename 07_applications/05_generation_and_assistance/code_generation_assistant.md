@@ -143,7 +143,7 @@ Engineer copies code → tests → iterates
 **Reference Implementations**
 - [[08_implementations/02_end_to_end_examples/llm_coding_assistant|LLM Coding Assistant]]
 - [[08_implementations/01_system_patterns/rag_pipeline_pattern|RAG Pipeline Pattern]]
-- [[06_ai_engineering/05_finetuning/transformer_finetuning_implementation|Transformer Fine-tuning Implementation]]
+- [[06_ai_engineering/05_finetuning/peft_and_lora|PEFT and LoRA]]
 
 **Adjacent Applications**
 - [[document_summarization|Document Summarization]]
