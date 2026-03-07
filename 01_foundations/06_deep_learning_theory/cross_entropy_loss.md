@@ -54,6 +54,6 @@ Since $H(p)$ is fixed given the data, minimizing cross-entropy $H(p,q)$ is equiv
 
 ## Links
 
-- [[01_foundations/06_deep_learning_theory/logistic_regression]]
-- [[01_foundations/06_deep_learning_theory/supervised_learning]]
+- [[01_foundations/03_probability_and_statistics/logistic_regression]]
+- [[01_foundations/05_statistical_learning_theory/supervised_learning]]
 - [[01_foundations/06_deep_learning_theory/backpropagation]]
