@@ -22,7 +22,9 @@ Imagine standing on a hilly terrain in fog. You can only feel the slope under yo
 
 Given $f(\boldsymbol{\theta}) = \frac{1}{n}\sum_{i=1}^n \ell(\boldsymbol{\theta}; x_i)$, update:
 
-$$\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta \nabla_{\boldsymbol{\theta}} f(\boldsymbol{\theta}_t)$$
+$$
+\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \eta \nabla_{\boldsymbol{\theta}} f(\boldsymbol{\theta}_t)
+$$
 
 $\eta > 0$ is the **learning rate**. Computes gradient over the full dataset — expensive for large $n$.
 
