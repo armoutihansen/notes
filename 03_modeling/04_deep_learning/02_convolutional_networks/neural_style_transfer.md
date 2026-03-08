@@ -22,19 +22,25 @@ A pretrained CNN's intermediate activations capture both content (what objects a
 
 **Content cost:** at a deep layer $l$ (e.g., conv4_2 in VGG):
 
-$$J_\text{content}(C, G) = \frac{1}{2}\|A^{[l]}_C - A^{[l]}_G\|_F^2$$
+$$
+J_\text{content}(C, G) = \frac{1}{2}\|A^{[l]}_C - A^{[l]}_G\|_F^2
+$$
 
 Measures activation similarity.
 
 **Style cost:** uses Gram matrices $G^{[l]} = A^{[l]}(A^{[l]})^\top$ to capture channel co-activation patterns:
 
-$$J_\text{style} = \sum_l \lambda^{[l]} \|G^{[l]}_S - G^{[l]}_G\|_F^2$$
+$$
+J_\text{style} = \sum_l \lambda^{[l]} \|G^{[l]}_S - G^{[l]}_G\|_F^2
+$$
 
 Computed across multiple layers for rich style representation.
 
 **Total objective:**
 
-$$J(G) = \alpha J_\text{content}(C, G) + \beta J_\text{style}(S, G)$$
+$$
+J(G) = \alpha J_\text{content}(C, G) + \beta J_\text{style}(S, G)
+$$
 
 $\alpha/\beta$ ratio controls content-style balance.
 

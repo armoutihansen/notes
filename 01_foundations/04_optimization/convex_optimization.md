@@ -21,12 +21,16 @@ Convexity is the "nice" case of optimization: the loss landscape has no local mi
 ### Convex Sets and Functions
 
 **Convex set** $\mathcal{C} \subseteq \mathbb{R}^n$: for all $\mathbf{x}, \mathbf{y} \in \mathcal{C}$ and $\lambda \in [0,1]$:
-$$\lambda\mathbf{x} + (1-\lambda)\mathbf{y} \in \mathcal{C}$$
+$$
+\lambda\mathbf{x} + (1-\lambda)\mathbf{y} \in \mathcal{C}
+$$
 
 Examples: halfspaces, polyhedra, norm balls, the positive semidefinite cone.
 
 **Convex function** $f: \mathcal{C} \to \mathbb{R}$: for all $\mathbf{x}, \mathbf{y} \in \mathcal{C}$ and $\lambda \in [0,1]$:
-$$f(\lambda\mathbf{x} + (1-\lambda)\mathbf{y}) \leq \lambda f(\mathbf{x}) + (1-\lambda)f(\mathbf{y})$$
+$$
+f(\lambda\mathbf{x} + (1-\lambda)\mathbf{y}) \leq \lambda f(\mathbf{x}) + (1-\lambda)f(\mathbf{y})
+$$
 
 Equivalently (for differentiable $f$): $f(\mathbf{y}) \geq f(\mathbf{x}) + \nabla f(\mathbf{x})^\top(\mathbf{y} - \mathbf{x})$ (first-order condition).
 
@@ -43,7 +47,9 @@ For twice-differentiable $f$: $f$ is convex iff $\nabla^2 f(\mathbf{x}) \succeq 
 
 ### Convex Optimization Problem
 
-$$\min_{\mathbf{x}} f(\mathbf{x}) \quad \text{s.t.} \quad g_i(\mathbf{x}) \leq 0,\; h_j(\mathbf{x}) = 0$$
+$$
+\min_{\mathbf{x}} f(\mathbf{x}) \quad \text{s.t.} \quad g_i(\mathbf{x}) \leq 0,\; h_j(\mathbf{x}) = 0
+$$
 
 where $f, g_i$ are convex and $h_j$ are affine.
 
@@ -55,7 +61,9 @@ where $f, g_i$ are convex and $h_j$ are affine.
 
 For the problem $\min f(\mathbf{x})$ s.t. $g_i(\mathbf{x}) \leq 0$, $h_j(\mathbf{x}) = 0$, the **Lagrangian** is:
 
-$$\mathcal{L}(\mathbf{x}, \boldsymbol{\lambda}, \boldsymbol{\nu}) = f(\mathbf{x}) + \sum_i \lambda_i g_i(\mathbf{x}) + \sum_j \nu_j h_j(\mathbf{x})$$
+$$
+\mathcal{L}(\mathbf{x}, \boldsymbol{\lambda}, \boldsymbol{\nu}) = f(\mathbf{x}) + \sum_i \lambda_i g_i(\mathbf{x}) + \sum_j \nu_j h_j(\mathbf{x})
+$$
 
 **KKT necessary conditions** for optimality $(\mathbf{x}^*, \boldsymbol{\lambda}^*, \boldsymbol{\nu}^*)$:
 1. **Stationarity:** $\nabla f + \sum_i \lambda_i^* \nabla g_i + \sum_j \nu_j^* \nabla h_j = \mathbf{0}$

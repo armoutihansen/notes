@@ -26,19 +26,25 @@ Let $A$ be a protected attribute (e.g., race, gender), $Y$ the true outcome, and
 
 **Demographic Parity (Statistical Parity)**
 
-$$P(\hat Y = 1 \mid A = 0) = P(\hat Y = 1 \mid A = 1)$$
+$$
+P(\hat Y = 1 \mid A = 0) = P(\hat Y = 1 \mid A = 1)
+$$
 
 The positive prediction rate is equal across groups. Does not condition on true labels; can be satisfied even by a model that systematically misclassifies one group.
 
 **Equalized Odds** (Hardt et al., 2016)
 
-$$P(\hat Y = 1 \mid Y = y, A = 0) = P(\hat Y = 1 \mid Y = y, A = 1) \quad \forall\, y \in \{0, 1\}$$
+$$
+P(\hat Y = 1 \mid Y = y, A = 0) = P(\hat Y = 1 \mid Y = y, A = 1) \quad \forall\, y \in \{0, 1\}
+$$
 
 Both true positive rate (TPR) and false positive rate (FPR) are equal across groups. A weaker variant, **equal opportunity**, requires only equal TPR (group members who deserve a positive outcome get it equally).
 
 **Calibration (Predictive Parity)**
 
-$$P(Y = 1 \mid \hat P = p, A = 0) = P(Y = 1 \mid \hat P = p, A = 1) \quad \forall\, p$$
+$$
+P(Y = 1 \mid \hat P = p, A = 0) = P(Y = 1 \mid \hat P = p, A = 1) \quad \forall\, p
+$$
 
 Predicted probabilities mean the same thing regardless of group. Required for probability outputs used in decision support; critical in criminal risk assessment tools (COMPAS controversy).
 
@@ -50,7 +56,9 @@ Predicted probabilities mean the same thing regardless of group. Required for pr
 
 Proposed by Dwork et al. (2012): similar individuals (according to a task-specific similarity metric $d$) should receive similar predictions:
 
-$$d(x_i, x_j) < \epsilon \implies |\hat f(x_i) - \hat f(x_j)| < \delta$$
+$$
+d(x_i, x_j) < \epsilon \implies |\hat f(x_i) - \hat f(x_j)| < \delta
+$$
 
 Requires defining a domain-appropriate similarity metric, which is itself a normative choice. Difficult to operationalize but avoids the group homogeneity assumption.
 
@@ -60,7 +68,9 @@ Requires defining a domain-appropriate similarity metric, which is itself a norm
 
 A proxy metric from US employment law (80% rule): the selection rate for a protected group is at least 80% of the rate for the most-selected group. Used in EEOC guidelines and as a legal safe harbor.
 
-$$\frac{\min_a P(\hat Y=1 \mid A=a)}{\max_a P(\hat Y=1 \mid A=a)} \geq 0.8$$
+$$
+\frac{\min_a P(\hat Y=1 \mid A=a)}{\max_a P(\hat Y=1 \mid A=a)} \geq 0.8
+$$
 
 ---
 

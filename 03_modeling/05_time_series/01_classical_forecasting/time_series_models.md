@@ -60,9 +60,13 @@ Multiplicative seasonality is appropriate when seasonal fluctuations are proport
 
 ### State-Space Models (Local Linear Trend)
 
-$$y_t = H_t \mathbf{z}_t + \varepsilon_t \quad \text{(observation equation)}$$
+$$
+y_t = H_t \mathbf{z}_t + \varepsilon_t \quad \text{(observation equation)}
+$$
 
-$$\mathbf{z}_{t+1} = F_t \mathbf{z}_t + G_t \eta_t \quad \text{(state transition equation)}$$
+$$
+\mathbf{z}_{t+1} = F_t \mathbf{z}_t + G_t \eta_t \quad \text{(state transition equation)}
+$$
 
 The **Kalman filter** computes $P(\mathbf{z}_t | y_1,\ldots,y_t)$ analytically for linear-Gaussian systems.
 
@@ -70,7 +74,9 @@ The **Kalman filter** computes $P(\mathbf{z}_t | y_1,\ldots,y_t)$ analytically f
 
 Multivariate extension of AR for $K$ time series:
 
-$$\mathbf{y}_t = \sum_{i=1}^p A_i \mathbf{y}_{t-i} + \boldsymbol{\varepsilon}_t$$
+$$
+\mathbf{y}_t = \sum_{i=1}^p A_i \mathbf{y}_{t-i} + \boldsymbol{\varepsilon}_t
+$$
 
 Models cross-series dependencies. Used in macroeconomics; Granger causality tests check whether one series helps predict another.
 

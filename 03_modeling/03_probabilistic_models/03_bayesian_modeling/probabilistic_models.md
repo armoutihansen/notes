@@ -24,7 +24,9 @@ Unlike discriminative models that directly learn $P(y|\mathbf{x})$, generative p
 
 **Prediction:** apply Bayes' theorem:
 
-$$P(y|\mathbf{x}) \propto P(y)\prod_{j=1}^d P(x_j|y)$$
+$$
+P(y|\mathbf{x}) \propto P(y)\prod_{j=1}^d P(x_j|y)
+$$
 
 **Variants by feature type:**
 
@@ -43,19 +45,27 @@ $$P(y|\mathbf{x}) \propto P(y)\prod_{j=1}^d P(x_j|y)$$
 
 Models data as a mixture of $K$ Gaussians:
 
-$$p(\mathbf{x}) = \sum_{k=1}^K \pi_k\,\mathcal{N}(\mathbf{x};\boldsymbol{\mu}_k, \boldsymbol{\Sigma}_k), \qquad \sum_k \pi_k = 1, \quad \pi_k \geq 0$$
+$$
+p(\mathbf{x}) = \sum_{k=1}^K \pi_k\,\mathcal{N}(\mathbf{x};\boldsymbol{\mu}_k, \boldsymbol{\Sigma}_k), \qquad \sum_k \pi_k = 1, \quad \pi_k \geq 0
+$$
 
 **EM Algorithm for GMM:**
 
 *E-step:* compute responsibilities (posterior probability of each component given data point):
 
-$$r_{ik} = \frac{\pi_k\,\mathcal{N}(\mathbf{x}_i;\boldsymbol{\mu}_k,\boldsymbol{\Sigma}_k)}{\sum_j \pi_j\,\mathcal{N}(\mathbf{x}_i;\boldsymbol{\mu}_j,\boldsymbol{\Sigma}_j)}$$
+$$
+r_{ik} = \frac{\pi_k\,\mathcal{N}(\mathbf{x}_i;\boldsymbol{\mu}_k,\boldsymbol{\Sigma}_k)}{\sum_j \pi_j\,\mathcal{N}(\mathbf{x}_i;\boldsymbol{\mu}_j,\boldsymbol{\Sigma}_j)}
+$$
 
 *M-step:* update parameters using responsibilities as soft assignments:
 
-$$\pi_k^{\text{new}} = \frac{1}{n}\sum_i r_{ik}, \qquad \boldsymbol{\mu}_k^{\text{new}} = \frac{\sum_i r_{ik}\mathbf{x}_i}{\sum_i r_{ik}}$$
+$$
+\pi_k^{\text{new}} = \frac{1}{n}\sum_i r_{ik}, \qquad \boldsymbol{\mu}_k^{\text{new}} = \frac{\sum_i r_{ik}\mathbf{x}_i}{\sum_i r_{ik}}
+$$
 
-$$\boldsymbol{\Sigma}_k^{\text{new}} = \frac{\sum_i r_{ik}(\mathbf{x}_i - \boldsymbol{\mu}_k^{\text{new}})(\mathbf{x}_i - \boldsymbol{\mu}_k^{\text{new}})^\top}{\sum_i r_{ik}}$$
+$$
+\boldsymbol{\Sigma}_k^{\text{new}} = \frac{\sum_i r_{ik}(\mathbf{x}_i - \boldsymbol{\mu}_k^{\text{new}})(\mathbf{x}_i - \boldsymbol{\mu}_k^{\text{new}})^\top}{\sum_i r_{ik}}
+$$
 
 **Covariance types** (`covariance_type` in sklearn):
 
@@ -76,9 +86,13 @@ Places a Gaussian prior over weights: $\mathbf{w} \sim \mathcal{N}(\mathbf{0}, \
 
 With Gaussian likelihood, the posterior is Gaussian:
 
-$$\mathbf{w}|\mathcal{D} \sim \mathcal{N}\!\left(\boldsymbol{\mu}_n, \boldsymbol{\Sigma}_n\right)$$
+$$
+\mathbf{w}|\mathcal{D} \sim \mathcal{N}\!\left(\boldsymbol{\mu}_n, \boldsymbol{\Sigma}_n\right)
+$$
 
-$$\boldsymbol{\Sigma}_n = \left(\sigma_0^{-2}I + \sigma^{-2}X^\top X\right)^{-1}, \qquad \boldsymbol{\mu}_n = \sigma^{-2}\boldsymbol{\Sigma}_n X^\top\mathbf{y}$$
+$$
+\boldsymbol{\Sigma}_n = \left(\sigma_0^{-2}I + \sigma^{-2}X^\top X\right)^{-1}, \qquad \boldsymbol{\mu}_n = \sigma^{-2}\boldsymbol{\Sigma}_n X^\top\mathbf{y}
+$$
 
 The MAP estimate $\boldsymbol{\mu}_n$ is identical to ridge regression with $\lambda = \sigma^2/\sigma_0^2$. The full posterior gives predictive uncertainty that increases away from training data — richer than point estimates.
 

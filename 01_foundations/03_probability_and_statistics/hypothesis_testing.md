@@ -49,17 +49,23 @@ The **sample mean** $\bar{X} = \frac{1}{n}\sum_i X_i$ is an unbiased estimator o
 
 **One-sample $t$-test** — test whether $\mu = \mu_0$ when $\sigma^2$ is unknown:
 
-$$t = \frac{\bar{X} - \mu_0}{s/\sqrt{n}} \sim t_{n-1} \text{ under } H_0$$
+$$
+t = \frac{\bar{X} - \mu_0}{s/\sqrt{n}} \sim t_{n-1} \text{ under } H_0
+$$
 
 **Two-sample $t$-test (Welch)** — compare means of two independent groups:
 
-$$t = \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}$$
+$$
+t = \frac{\bar{X}_1 - \bar{X}_2}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}
+$$
 
 **Paired $t$-test** — for paired observations, test differences $D_i = X_{1i} - X_{2i}$ as a one-sample test.
 
 **Chi-squared test of independence** — test whether two categorical variables are independent:
 
-$$\chi^2 = \sum_{i,j} \frac{(O_{ij} - E_{ij})^2}{E_{ij}} \sim \chi^2_{(r-1)(c-1)} \text{ under } H_0$$
+$$
+\chi^2 = \sum_{i,j} \frac{(O_{ij} - E_{ij})^2}{E_{ij}} \sim \chi^2_{(r-1)(c-1)} \text{ under } H_0
+$$
 
 where $E_{ij} = (\text{row total}_i)(\text{col total}_j)/n$.
 
@@ -69,7 +75,9 @@ where $E_{ij} = (\text{row total}_i)(\text{col total}_j)/n$.
 
 A $95\%$ CI for $\mu$ with unknown $\sigma$:
 
-$$\bar{X} \pm t_{n-1,\,0.025} \cdot \frac{s}{\sqrt{n}}$$
+$$
+\bar{X} \pm t_{n-1,\,0.025} \cdot \frac{s}{\sqrt{n}}
+$$
 
 **Interpretation:** if the procedure were repeated many times, 95% of such intervals would contain the true $\mu$. It does **not** mean there is a 95% probability that $\mu$ lies in any one specific interval (a common misconception).
 

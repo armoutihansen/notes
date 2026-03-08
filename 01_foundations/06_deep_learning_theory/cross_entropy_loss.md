@@ -20,23 +20,33 @@ The log penalizes confident wrong predictions heavily — if the model assigns n
 
 **Binary CE** (paired with sigmoid output):
 
-$$\ell(\hat y, y) = -\bigl[y\log\hat y + (1-y)\log(1-\hat y)\bigr]$$
+$$
+\ell(\hat y, y) = -\bigl[y\log\hat y + (1-y)\log(1-\hat y)\bigr]
+$$
 
 **Multi-class CE** (paired with softmax):
 
-$$\ell(\hat y, y) = -\sum_{k=1}^K y_k\log\hat y_k, \qquad \hat y = \text{softmax}(z), \quad \text{softmax}(z)_k = \frac{e^{z_k}}{\sum_j e^{z_j}}$$
+$$
+\ell(\hat y, y) = -\sum_{k=1}^K y_k\log\hat y_k, \qquad \hat y = \text{softmax}(z), \quad \text{softmax}(z)_k = \frac{e^{z_k}}{\sum_j e^{z_j}}
+$$
 
 **Combined gradient (softmax + CE):** unusually clean — the upstream gradient is simply the residual:
 
-$$\frac{\partial\ell}{\partial z_k} = \hat y_k - y_k$$
+$$
+\frac{\partial\ell}{\partial z_k} = \hat y_k - y_k
+$$
 
 **Dataset loss:**
 
-$$J = \frac{1}{m}\sum_{i=1}^m \ell(\hat y^{(i)}, y^{(i)})$$
+$$
+J = \frac{1}{m}\sum_{i=1}^m \ell(\hat y^{(i)}, y^{(i)})
+$$
 
 **Connection to KL divergence:**
 
-$$H(p, q) = H(p) + D_{\mathrm{KL}}(p \| q)$$
+$$
+H(p, q) = H(p) + D_{\mathrm{KL}}(p \| q)
+$$
 
 Since $H(p)$ is fixed given the data, minimizing cross-entropy $H(p,q)$ is equivalent to minimizing $D_{\mathrm{KL}}(p \| q)$ — i.e., making the model distribution close to the true distribution.
 

@@ -18,7 +18,9 @@ Representation learning discovers compact, informative encodings of raw data tha
 
 An autoencoder comprises an **encoder** $f_\phi: \mathbb{R}^d \to \mathbb{R}^k$ ($k \ll d$) and a **decoder** $g_\theta: \mathbb{R}^k \to \mathbb{R}^d$, trained to minimise reconstruction error:
 
-$$\mathcal{L} = \frac{1}{n}\sum_{i=1}^n \|g_\theta(f_\phi(\mathbf{x}_i)) - \mathbf{x}_i\|^2$$
+$$
+\mathcal{L} = \frac{1}{n}\sum_{i=1}^n \|g_\theta(f_\phi(\mathbf{x}_i)) - \mathbf{x}_i\|^2
+$$
 
 The bottleneck layer $\mathbf{z} = f_\phi(\mathbf{x}) \in \mathbb{R}^k$ is the **latent representation**.
 
@@ -49,7 +51,9 @@ The VAE places a prior $p(\mathbf{z}) = \mathcal{N}(\mathbf{0}, I)$ on the laten
 
 **Evidence Lower BOund (ELBO):**
 
-$$\mathcal{L}_{\text{VAE}} = \underbrace{\mathbb{E}_{q_\phi(\mathbf{z}|\mathbf{x})}[\log p_\theta(\mathbf{x}|\mathbf{z})]}_{\text{reconstruction}} - \underbrace{D_{\text{KL}}(q_\phi(\mathbf{z}|\mathbf{x}) \| p(\mathbf{z}))}_{\text{regularisation}}$$
+$$
+\mathcal{L}_{\text{VAE}} = \underbrace{\mathbb{E}_{q_\phi(\mathbf{z}|\mathbf{x})}[\log p_\theta(\mathbf{x}|\mathbf{z})]}_{\text{reconstruction}} - \underbrace{D_{\text{KL}}(q_\phi(\mathbf{z}|\mathbf{x}) \| p(\mathbf{z}))}_{\text{regularisation}}
+$$
 
 The KL term forces the posterior to match the prior, regularising the latent space. Reparameterisation trick enables backprop through the sampling step: $\mathbf{z} = \boldsymbol{\mu} + \boldsymbol{\sigma} \odot \boldsymbol{\epsilon}$, $\boldsymbol{\epsilon} \sim \mathcal{N}(\mathbf{0}, I)$.
 
@@ -59,7 +63,9 @@ Learns representations such that similar (positive) pairs have nearby embeddings
 
 **InfoNCE / NT-Xent loss** (SimCLR):
 
-$$\mathcal{L} = -\log \frac{\exp(\text{sim}(\mathbf{z}_i, \mathbf{z}_j) / \tau)}{\sum_{k \neq i} \exp(\text{sim}(\mathbf{z}_i, \mathbf{z}_k) / \tau)}$$
+$$
+\mathcal{L} = -\log \frac{\exp(\text{sim}(\mathbf{z}_i, \mathbf{z}_j) / \tau)}{\sum_{k \neq i} \exp(\text{sim}(\mathbf{z}_i, \mathbf{z}_k) / \tau)}
+$$
 
 where $\text{sim}(\mathbf{u}, \mathbf{v}) = \mathbf{u}^\top \mathbf{v} / (\|\mathbf{u}\|\|\mathbf{v}\|)$ and $\tau$ is a temperature parameter.
 

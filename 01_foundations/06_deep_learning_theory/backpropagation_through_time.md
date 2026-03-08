@@ -20,11 +20,15 @@ An RNN unrolled over $T$ steps is a deep network of depth $T$, where all time st
 
 **Unrolled RNN:** at each step $t$:
 
-$$a^{\langle t \rangle} = g\!\left(W_{aa}\,a^{\langle t-1 \rangle} + W_{ax}\,x^{\langle t \rangle} + b_a\right), \qquad J = \sum_t \ell^{\langle t \rangle}$$
+$$
+a^{\langle t \rangle} = g\!\left(W_{aa}\,a^{\langle t-1 \rangle} + W_{ax}\,x^{\langle t \rangle} + b_a\right), \qquad J = \sum_t \ell^{\langle t \rangle}
+$$
 
 **Gradient of $W_{aa}$** involves products of Jacobians across all time steps:
 
-$$\frac{\partial a^{\langle T \rangle}}{\partial a^{\langle 0 \rangle}} = \prod_{t=1}^T W_{aa}^\top \operatorname{diag}\!\left(g'\!\left(z^{\langle t \rangle}\right)\right)$$
+$$
+\frac{\partial a^{\langle T \rangle}}{\partial a^{\langle 0 \rangle}} = \prod_{t=1}^T W_{aa}^\top \operatorname{diag}\!\left(g'\!\left(z^{\langle t \rangle}\right)\right)
+$$
 
 **Vanishing gradient:** when $\|W_{aa}\| < 1$ repeatedly, the product shrinks exponentially → early time steps receive near-zero gradient → model cannot learn long-range dependencies.
 

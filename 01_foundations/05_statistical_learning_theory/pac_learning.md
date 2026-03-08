@@ -34,11 +34,15 @@ Think of it as a contract: the learner doesn't know the true concept $c$ or the 
 
 **Realizable PAC learning:** assumes $\exists h^* \in \mathcal{H}$ with $L_\mathcal{D}(h^*) = 0$ (target in the class). Standard result: for finite $|\mathcal{H}|$, empirical risk minimization (ERM) satisfies the PAC bound with
 
-$$m \geq \frac{1}{\epsilon}\left(\ln|\mathcal{H}| + \ln\frac{1}{\delta}\right)$$
+$$
+m \geq \frac{1}{\epsilon}\left(\ln|\mathcal{H}| + \ln\frac{1}{\delta}\right)
+$$
 
 **Agnostic PAC learning:** no assumption that $\mathcal{H}$ contains a perfect hypothesis. Goal: find $h \in \mathcal{H}$ satisfying
 
-$$L_\mathcal{D}(h) \leq \min_{h' \in \mathcal{H}} L_\mathcal{D}(h') + \epsilon$$
+$$
+L_\mathcal{D}(h) \leq \min_{h' \in \mathcal{H}} L_\mathcal{D}(h') + \epsilon
+$$
 
 Agnostic PAC is strictly harder; sample complexity depends on VC dimension (see [[vc_dimension]]).
 

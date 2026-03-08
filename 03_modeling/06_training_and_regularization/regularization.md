@@ -22,11 +22,15 @@ Overfitting happens when the model memorizes training examples rather than learn
 
 Adds a penalty term to the loss:
 
-$$J_{\text{reg}} = J + \frac{\lambda}{2m}\sum_l \|W^{[l]}\|_F^2$$
+$$
+J_{\text{reg}} = J + \frac{\lambda}{2m}\sum_l \|W^{[l]}\|_F^2
+$$
 
 Backprop becomes:
 
-$$dW^{[l]} \leftarrow dW^{[l]} + \frac{\lambda}{m}W^{[l]}$$
+$$
+dW^{[l]} \leftarrow dW^{[l]} + \frac{\lambda}{m}W^{[l]}
+$$
 
 Equivalent to multiplying weights by $(1 - \alpha\lambda/m)$ each step (hence "weight decay"). Encourages small weights → smoother, less complex function. $\lambda$ controls regularization strength.
 

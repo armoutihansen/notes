@@ -20,43 +20,57 @@ A linear layer computes a linear combination of inputs. Stacking many linear lay
 
 **Sigmoid:**
 
-$$\sigma(z) = \frac{1}{1 + e^{-z}} \in (0,1)$$
+$$
+\sigma(z) = \frac{1}{1 + e^{-z}} \in (0,1)
+$$
 
 Output bounded in $(0,1)$ — historically used for binary classification output and LSTMs. Saturates for $|z| \gg 0$, causing vanishing gradients in deep networks.
 
 **Tanh:**
 
-$$\tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}} \in (-1,1)$$
+$$
+\tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}} \in (-1,1)
+$$
 
 Zero-centred (better than sigmoid for hidden units); still saturates. $\tanh(z) = 2\sigma(2z) - 1$.
 
 **ReLU (Rectified Linear Unit):**
 
-$$\text{ReLU}(z) = \max(0, z)$$
+$$
+\text{ReLU}(z) = \max(0, z)
+$$
 
 Currently the most widely used. Advantages: sparse activations, no saturation for $z > 0$, cheap to compute. Problem: **dying ReLU** — if $z$ is always negative (e.g., large negative bias), the gradient is always zero and the neuron never updates. Can be mitigated by careful initialization.
 
 **Leaky ReLU:**
 
-$$\text{LeakyReLU}(z) = \max(\alpha z, z), \quad \alpha \approx 0.01$$
+$$
+\text{LeakyReLU}(z) = \max(\alpha z, z), \quad \alpha \approx 0.01
+$$
 
 Allows a small gradient for $z < 0$, addressing dying ReLU. Parametric ReLU (PReLU) learns $\alpha$.
 
 **ELU (Exponential Linear Unit):**
 
-$$\text{ELU}(z) = \begin{cases} z & z \geq 0 \\ \alpha(e^z - 1) & z < 0 \end{cases}$$
+$$
+\text{ELU}(z) = \begin{cases} z & z \geq 0 \\ \alpha(e^z - 1) & z < 0 \end{cases}
+$$
 
 Smooth, negative-side saturation pushes mean activations towards zero, speeding up learning.
 
 **GELU (Gaussian Error Linear Unit):**
 
-$$\text{GELU}(z) = z \cdot \Phi(z) \approx 0.5z\!\left(1 + \tanh\!\left[\sqrt{2/\pi}(z + 0.044715z^3)\right]\right)$$
+$$
+\text{GELU}(z) = z \cdot \Phi(z) \approx 0.5z\!\left(1 + \tanh\!\left[\sqrt{2/\pi}(z + 0.044715z^3)\right]\right)
+$$
 
 where $\Phi$ is the Gaussian CDF. Smooth, non-monotone; used in BERT, GPT, and most modern transformers. Outperforms ReLU on many benchmarks.
 
 **Swish / SiLU:**
 
-$$\text{Swish}(z) = z \cdot \sigma(z)$$
+$$
+\text{Swish}(z) = z \cdot \sigma(z)
+$$
 
 Self-gated, smooth, unbounded above; used in EfficientNet, some LLMs. Very close to GELU empirically.
 
@@ -64,7 +78,9 @@ Self-gated, smooth, unbounded above; used in EfficientNet, some LLMs. Very close
 
 **Softmax** (output layer, multi-class):
 
-$$\text{softmax}(\mathbf{z})_i = \frac{e^{z_i}}{\sum_j e^{z_j}}$$
+$$
+\text{softmax}(\mathbf{z})_i = \frac{e^{z_i}}{\sum_j e^{z_j}}
+$$
 
 Converts logits to a probability simplex. For numerical stability, compute $\text{softmax}(\mathbf{z} - \max(\mathbf{z}))$.
 

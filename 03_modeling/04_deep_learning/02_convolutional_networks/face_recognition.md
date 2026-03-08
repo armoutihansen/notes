@@ -26,7 +26,9 @@ Training a separate classifier per identity requires retraining when new identit
 
 **Triplet loss:** anchor-positive-negative triplets with margin $\alpha$:
 
-$$\mathcal{L} = \sum_i \left[\|f(A_i) - f(P_i)\|^2 - \|f(A_i) - f(N_i)\|^2 + \alpha\right]_+$$
+$$
+\mathcal{L} = \sum_i \left[\|f(A_i) - f(P_i)\|^2 - \|f(A_i) - f(N_i)\|^2 + \alpha\right]_+
+$$
 
 Hard triplet mining (selecting difficult negatives) is critical for convergence.
 

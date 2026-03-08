@@ -18,7 +18,9 @@ Density estimation constructs an estimate $\hat{p}(\mathbf{x})$ of the underlyin
 
 Non-parametric: places a kernel $K$ centred at each training point and sums:
 
-$$\hat{p}(\mathbf{x}) = \frac{1}{n h^d} \sum_{i=1}^n K\left(\frac{\mathbf{x} - \mathbf{x}_i}{h}\right)$$
+$$
+\hat{p}(\mathbf{x}) = \frac{1}{n h^d} \sum_{i=1}^n K\left(\frac{\mathbf{x} - \mathbf{x}_i}{h}\right)
+$$
 
 where $h > 0$ is the **bandwidth** and $d$ is the dimensionality.
 
@@ -41,7 +43,9 @@ anomaly_mask = log_density < np.percentile(log_density, 5)  # bottom 5%
 
 Parametric: models the data as a mixture of $K$ Gaussian components:
 
-$$p(\mathbf{x}) = \sum_{k=1}^K \pi_k \, \mathcal{N}(\mathbf{x}; \boldsymbol{\mu}_k, \Sigma_k)$$
+$$
+p(\mathbf{x}) = \sum_{k=1}^K \pi_k \, \mathcal{N}(\mathbf{x}; \boldsymbol{\mu}_k, \Sigma_k)
+$$
 
 Parameters: mixing weights $\pi_k \geq 0$, $\sum_k \pi_k = 1$; means $\boldsymbol{\mu}_k$; covariances $\Sigma_k$.
 

@@ -24,7 +24,9 @@ A **Bayesian network** (Belief Network) is a DAG where each node $X_i$ has a con
 
 **Joint distribution factorises as:**
 
-$$P(X_1, \ldots, X_d) = \prod_{i=1}^d P(X_i \mid \text{Pa}(X_i))$$
+$$
+P(X_1, \ldots, X_d) = \prod_{i=1}^d P(X_i \mid \text{Pa}(X_i))
+$$
 
 **D-separation:** a criterion for reading off conditional independence from the graph structure. Key patterns:
 
@@ -42,7 +44,9 @@ $$P(X_1, \ldots, X_d) = \prod_{i=1}^d P(X_i \mid \text{Pa}(X_i))$$
 
 Nodes connected by edges encoding potential functions:
 
-$$P(\mathbf{x}) = \frac{1}{Z}\prod_{C \in \mathcal{C}} \psi_C(\mathbf{x}_C)$$
+$$
+P(\mathbf{x}) = \frac{1}{Z}\prod_{C \in \mathcal{C}} \psi_C(\mathbf{x}_C)
+$$
 
 where $\mathcal{C}$ are cliques and $Z = \sum_\mathbf{x}\prod_C \psi_C$ is the partition function.
 
@@ -67,7 +71,9 @@ where $\mathcal{C}$ are cliques and $Z = \sum_\mathbf{x}\prod_C \psi_C$ is the p
 
 A sequential Bayesian network with latent states $z_1,\ldots,z_T$ and observations $x_1,\ldots,x_T$:
 
-$$P(\mathbf{x},\mathbf{z}) = P(z_1)\prod_{t=2}^T P(z_t|z_{t-1})\prod_{t=1}^T P(x_t|z_t)$$
+$$
+P(\mathbf{x},\mathbf{z}) = P(z_1)\prod_{t=2}^T P(z_t|z_{t-1})\prod_{t=1}^T P(x_t|z_t)
+$$
 
 **Key algorithms:**
 - **Forward-backward (Baum-Welch):** E-step for EM; computes $P(z_t|\mathbf{x})$.

@@ -25,7 +25,9 @@ Consistent notation prevents shape bugs and makes it straightforward to verify i
 
 **Activations and pre-activations:**
 
-$$z^{[l]} = W^{[l]}a^{[l-1]} + b^{[l]}, \qquad a^{[l]} = g^{[l]}(z^{[l]})$$
+$$
+z^{[l]} = W^{[l]}a^{[l-1]} + b^{[l]}, \qquad a^{[l]} = g^{[l]}(z^{[l]})
+$$
 
 with $a^{[0]} = x$ (the input).
 

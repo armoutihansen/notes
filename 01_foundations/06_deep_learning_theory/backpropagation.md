@@ -20,23 +20,35 @@ The computation graph records every operation during the forward pass. Gradients
 
 **Computation graph:** a DAG where nodes are operations or values. If $u = g(v)$, then:
 
-$$\frac{\partial J}{\partial v} = \frac{\partial J}{\partial u} \cdot g'(v) \quad \text{(upstream gradient × local gradient)}$$
+$$
+\frac{\partial J}{\partial v} = \frac{\partial J}{\partial u} \cdot g'(v) \quad \text{(upstream gradient × local gradient)}
+$$
 
 For nodes with multiple outputs, contributions from all downstream paths are summed.
 
 **Forward pass for layer $l$:**
 
-$$z^{[l]} = W^{[l]}a^{[l-1]} + b^{[l]}, \qquad a^{[l]} = g^{[l]}(z^{[l]})$$
+$$
+z^{[l]} = W^{[l]}a^{[l-1]} + b^{[l]}, \qquad a^{[l]} = g^{[l]}(z^{[l]})
+$$
 
 **Backward pass for layer $l$:**
 
-$$dz^{[l]} = da^{[l]} \odot g'^{[l]}(z^{[l]})$$
+$$
+dz^{[l]} = da^{[l]} \odot g'^{[l]}(z^{[l]})
+$$
 
-$$dW^{[l]} = \frac{1}{m}\,dz^{[l]}\,(a^{[l-1]})^\top$$
+$$
+dW^{[l]} = \frac{1}{m}\,dz^{[l]}\,(a^{[l-1]})^\top
+$$
 
-$$db^{[l]} = \frac{1}{m}\sum dz^{[l]}$$
+$$
+db^{[l]} = \frac{1}{m}\sum dz^{[l]}
+$$
 
-$$da^{[l-1]} = (W^{[l]})^\top dz^{[l]}$$
+$$
+da^{[l-1]} = (W^{[l]})^\top dz^{[l]}
+$$
 
 **Computational complexity:** one backward pass costs approximately the same as one forward pass. Forward-mode AD would require one pass per input dimension — infeasible for models with millions of parameters.
 

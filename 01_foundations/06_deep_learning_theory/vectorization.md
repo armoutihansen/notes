@@ -20,9 +20,13 @@ Python loops are 10–1000× slower than equivalent NumPy/BLAS operations due to
 
 **Vectorized logistic regression** (over $m$ examples, $W \in \mathbb{R}^{n_x}$, $X \in \mathbb{R}^{n_x \times m}$):
 
-$$Z = W^\top X + b, \qquad A = \sigma(Z)$$
+$$
+Z = W^\top X + b, \qquad A = \sigma(Z)
+$$
 
-$$dW = \frac{1}{m}X(A-Y)^\top, \qquad db = \frac{1}{m}\sum(A-Y)$$
+$$
+dW = \frac{1}{m}X(A-Y)^\top, \qquad db = \frac{1}{m}\sum(A-Y)
+$$
 
 Here $b \in \mathbb{R}$ broadcasts across all $m$ examples automatically.
 

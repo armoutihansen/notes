@@ -22,9 +22,13 @@ The core algorithmic challenge is **inference**: computing the posterior $p(\mat
 
 **EM iterates:**
 - **E-step:** compute expected complete-data log-likelihood:
-  $$Q(\theta \mid \theta^{(t)}) = \mathbb{E}_{\mathbf{z} \mid \mathbf{x}, \theta^{(t)}}[\log p(\mathbf{x}, \mathbf{z} \mid \theta)]$$
+  $$
+  Q(\theta \mid \theta^{(t)}) = \mathbb{E}_{\mathbf{z} \mid \mathbf{x}, \theta^{(t)}}[\log p(\mathbf{x}, \mathbf{z} \mid \theta)]
+  $$
 - **M-step:** update parameters:
-  $$\theta^{(t+1)} = \arg\max_\theta Q(\theta \mid \theta^{(t)})$$
+  $$
+  \theta^{(t+1)} = \arg\max_\theta Q(\theta \mid \theta^{(t)})
+  $$
 
 EM is guaranteed to monotonically increase $\log p(\mathbf{x} \mid \theta)$ at each iteration and converges to a local maximum.
 
@@ -32,7 +36,9 @@ EM is guaranteed to monotonically increase $\log p(\mathbf{x} \mid \theta)$ at e
 
 An HMM models a sequence $\mathbf{x}_{1:T} = (x_1, \ldots, x_T)$ by positing a hidden Markov chain $z_{1:T}$:
 
-$$p(\mathbf{x}, \mathbf{z}) = p(z_1) \prod_{t=2}^T p(z_t \mid z_{t-1}) \prod_{t=1}^T p(x_t \mid z_t)$$
+$$
+p(\mathbf{x}, \mathbf{z}) = p(z_1) \prod_{t=2}^T p(z_t \mid z_{t-1}) \prod_{t=1}^T p(x_t \mid z_t)
+$$
 
 **Parameters:**
 - **Initial distribution** $\pi_k = P(z_1 = k)$

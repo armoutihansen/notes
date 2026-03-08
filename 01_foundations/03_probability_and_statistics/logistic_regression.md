@@ -20,23 +20,33 @@ The sigmoid "squashes" the linear score into a probability in $(0, 1)$. Training
 
 **Model:**
 
-$$z = w^\top x + b, \qquad \hat y = \sigma(z) = \frac{1}{1+e^{-z}}$$
+$$
+z = w^\top x + b, \qquad \hat y = \sigma(z) = \frac{1}{1+e^{-z}}
+$$
 
 **Loss per example (binary cross-entropy):**
 
-$$\ell(\hat y, y) = -\bigl[y\log\hat y + (1-y)\log(1-\hat y)\bigr]$$
+$$
+\ell(\hat y, y) = -\bigl[y\log\hat y + (1-y)\log(1-\hat y)\bigr]
+$$
 
 **Gradients:**
 
-$$\frac{\partial\ell}{\partial w} = (\hat y - y)\,x, \qquad \frac{\partial\ell}{\partial b} = \hat y - y$$
+$$
+\frac{\partial\ell}{\partial w} = (\hat y - y)\,x, \qquad \frac{\partial\ell}{\partial b} = \hat y - y
+$$
 
 The gradient has a clean form: residual × input.
 
 **Vectorized batch form** (columns are examples):
 
-$$Z = W^\top X + b, \quad A = \sigma(Z)$$
+$$
+Z = W^\top X + b, \quad A = \sigma(Z)
+$$
 
-$$dW = \frac{1}{m}X(A-Y)^\top, \qquad db = \frac{1}{m}\mathbf{1}^\top(A-Y)$$
+$$
+dW = \frac{1}{m}X(A-Y)^\top, \qquad db = \frac{1}{m}\mathbf{1}^\top(A-Y)
+$$
 
 ## Applications
 

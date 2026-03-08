@@ -26,13 +26,17 @@ Objective: maximize $\sum \log P(\text{context} \mid \text{center})$; embedding 
 
 **Negative sampling:** approximate the full softmax over $|V|$ words by sampling $k$ negative words for each positive context pair:
 
-$$\mathcal{L} = \log\sigma(u_{c_0}^\top v_w) + \sum_{j=1}^k \log\sigma(-u_{c_j}^\top v_w)$$
+$$
+\mathcal{L} = \log\sigma(u_{c_0}^\top v_w) + \sum_{j=1}^k \log\sigma(-u_{c_j}^\top v_w)
+$$
 
 $k = 5$–$20$ for small datasets; reduces computation from $O(|V|)$ to $O(k)$.
 
 **GloVe:** factorize the global co-occurrence matrix $X$:
 
-$$\sum_{i,j} f(X_{ij})(w_i^\top \tilde w_j + b_i + \tilde b_j - \log X_{ij})^2$$
+$$
+\sum_{i,j} f(X_{ij})(w_i^\top \tilde w_j + b_i + \tilde b_j - \log X_{ij})^2
+$$
 
 where $f$ is a weighting function; captures global statistics directly; typically faster to train on large corpora.
 

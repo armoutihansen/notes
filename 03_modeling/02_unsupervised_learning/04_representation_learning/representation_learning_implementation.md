@@ -108,7 +108,9 @@ print(f"Autoencoder anomalies (top 5% recon error): {anomalies.sum()}")
 The VAE encoder outputs `mu` and `log_var` (log variance) rather than a point estimate of `z`. The **reparameterisation trick** enables gradients to flow through the sampling step: $\mathbf{z} = \boldsymbol{\mu} + \boldsymbol{\epsilon} \cdot \exp(\frac{1}{2}\log\boldsymbol{\sigma}^2)$, $\boldsymbol{\epsilon} \sim \mathcal{N}(\mathbf{0}, I)$.
 
 **ELBO loss:**
-$$\mathcal{L} = \underbrace{\|x - \hat{x}\|^2}_{\text{reconstruction}} + \underbrace{\frac{1}{2}\sum_j(1 + \log\sigma_j^2 - \mu_j^2 - \sigma_j^2)}_{\text{KL term (negative)}}$$
+$$
+\mathcal{L} = \underbrace{\|x - \hat{x}\|^2}_{\text{reconstruction}} + \underbrace{\frac{1}{2}\sum_j(1 + \log\sigma_j^2 - \mu_j^2 - \sigma_j^2)}_{\text{KL term (negative)}}
+$$
 
 The KL term regularises the posterior toward $\mathcal{N}(\mathbf{0}, I)$.
 

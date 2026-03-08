@@ -12,11 +12,15 @@ created: 2026-03-06
 
 **Jacobian:** the matrix of all first-order partial derivatives of a vector-valued function $\mathbf{f}: \mathbb{R}^n \to \mathbb{R}^m$:
 
-$$J_\mathbf{f}(\mathbf{x}) = \frac{\partial \mathbf{f}}{\partial \mathbf{x}} \in \mathbb{R}^{m \times n}, \qquad (J_\mathbf{f})_{ij} = \frac{\partial f_i}{\partial x_j}$$
+$$
+J_\mathbf{f}(\mathbf{x}) = \frac{\partial \mathbf{f}}{\partial \mathbf{x}} \in \mathbb{R}^{m \times n}, \qquad (J_\mathbf{f})_{ij} = \frac{\partial f_i}{\partial x_j}
+$$
 
 **Hessian:** the matrix of all second-order partial derivatives of a scalar function $f: \mathbb{R}^n \to \mathbb{R}$:
 
-$$H_f(\mathbf{x}) = \nabla^2 f(\mathbf{x}) \in \mathbb{R}^{n \times n}, \qquad H_{ij} = \frac{\partial^2 f}{\partial x_i\, \partial x_j}$$
+$$
+H_f(\mathbf{x}) = \nabla^2 f(\mathbf{x}) \in \mathbb{R}^{n \times n}, \qquad H_{ij} = \frac{\partial^2 f}{\partial x_i\, \partial x_j}
+$$
 
 When $f$ has continuous second derivatives (Schwarz's theorem), $H$ is symmetric: $H_{ij} = H_{ji}$.
 
@@ -30,7 +34,9 @@ When $f$ has continuous second derivatives (Schwarz's theorem), $H$ is symmetric
 
 **Jacobian: vector chain rule.** If $\mathbf{h} = \mathbf{f}(\mathbf{g}(\mathbf{x}))$, then:
 
-$$J_\mathbf{h} = J_\mathbf{f}(g(\mathbf{x}))\, J_\mathbf{g}(\mathbf{x}) \in \mathbb{R}^{p \times n}$$
+$$
+J_\mathbf{h} = J_\mathbf{f}(g(\mathbf{x}))\, J_\mathbf{g}(\mathbf{x}) \in \mathbb{R}^{p \times n}
+$$
 
 This is the multivariable chain rule; it underlies backpropagation's layer-by-layer gradient computation.
 
@@ -38,7 +44,9 @@ This is the multivariable chain rule; it underlies backpropagation's layer-by-la
 
 **Second-order Taylor expansion:**
 
-$$f(\mathbf{x} + \delta) \approx f(\mathbf{x}) + \nabla f(\mathbf{x})^\top \delta + \frac{1}{2} \delta^\top H_f(\mathbf{x})\, \delta$$
+$$
+f(\mathbf{x} + \delta) \approx f(\mathbf{x}) + \nabla f(\mathbf{x})^\top \delta + \frac{1}{2} \delta^\top H_f(\mathbf{x})\, \delta
+$$
 
 **Stationary points:** at a critical point $\nabla f(\mathbf{x}^*) = 0$, the Hessian classifies the point:
 
@@ -51,7 +59,9 @@ $$f(\mathbf{x} + \delta) \approx f(\mathbf{x}) + \nabla f(\mathbf{x})^\top \delt
 
 **Newton's method** uses the Hessian for faster convergence than gradient descent:
 
-$$\mathbf{x}_{t+1} = \mathbf{x}_t - H_f(\mathbf{x}_t)^{-1}\, \nabla f(\mathbf{x}_t)$$
+$$
+\mathbf{x}_{t+1} = \mathbf{x}_t - H_f(\mathbf{x}_t)^{-1}\, \nabla f(\mathbf{x}_t)
+$$
 
 Converges quadratically near a minimum but costs $O(n^3)$ per step (Hessian inversion); impractical for large $n$ (e.g., neural network parameters). Quasi-Newton methods (L-BFGS) approximate $H^{-1}$ without explicitly computing it.
 

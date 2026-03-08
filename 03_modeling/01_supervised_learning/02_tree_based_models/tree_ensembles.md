@@ -24,11 +24,15 @@ Greedily partitions feature space by choosing splits that maximise a purity crit
 
 **Gini impurity** (for classification):
 
-$$G = 1 - \sum_k p_k^2$$
+$$
+G = 1 - \sum_k p_k^2
+$$
 
 **Entropy:**
 
-$$H = -\sum_k p_k \log_2 p_k$$
+$$
+H = -\sum_k p_k \log_2 p_k
+$$
 
 **MSE** (for regression): choose split minimising weighted average of child variances.
 
@@ -56,7 +60,9 @@ For $T$ trees:
 
 Sequentially builds $T$ trees where tree $t$ fits the **pseudo-residuals** of the current ensemble:
 
-$$F_t(\mathbf{x}) = F_{t-1}(\mathbf{x}) + \nu \cdot h_t(\mathbf{x})$$
+$$
+F_t(\mathbf{x}) = F_{t-1}(\mathbf{x}) + \nu \cdot h_t(\mathbf{x})
+$$
 
 where $h_t$ is fit to $-\partial L / \partial F_{t-1}(\mathbf{x}_i)$ (the negative gradient of the loss).
 
@@ -69,13 +75,17 @@ For log-loss: pseudo-residuals = $y_i - \sigma(F_{t-1}(\mathbf{x}_i))$ (error in
 
 XGBoost adds a **second-order (Newton) approximation** and explicit regularisation:
 
-$$\mathcal{L}^{(t)} \approx \sum_i [g_i f_t(\mathbf{x}_i) + \frac{1}{2}h_i f_t^2(\mathbf{x}_i)] + \Omega(f_t)$$
+$$
+\mathcal{L}^{(t)} \approx \sum_i [g_i f_t(\mathbf{x}_i) + \frac{1}{2}h_i f_t^2(\mathbf{x}_i)] + \Omega(f_t)
+$$
 
 where $g_i = \partial_{\hat{y}}\ell(y_i, \hat{y})$, $h_i = \partial^2_{\hat{y}}\ell$, and $\Omega(f) = \gamma T + \frac{1}{2}\lambda\|\mathbf{w}\|^2$ penalises tree complexity.
 
 Optimal leaf weight: $w_j^* = -G_j / (H_j + \lambda)$; optimal split gain:
 
-$$\text{Gain} = \frac{1}{2}\left[\frac{G_L^2}{H_L+\lambda} + \frac{G_R^2}{H_R+\lambda} - \frac{(G_L+G_R)^2}{H_L+H_R+\lambda}\right] - \gamma$$
+$$
+\text{Gain} = \frac{1}{2}\left[\frac{G_L^2}{H_L+\lambda} + \frac{G_R^2}{H_R+\lambda} - \frac{(G_L+G_R)^2}{H_L+H_R+\lambda}\right] - \gamma
+$$
 
 ### LightGBM
 

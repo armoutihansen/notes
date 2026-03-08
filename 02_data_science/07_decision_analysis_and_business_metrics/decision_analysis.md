@@ -31,11 +31,15 @@ If the model is not calibrated, the probabilities cannot be interpreted as true 
 
 At threshold $\tau$, predict $\hat{y} = 1$ iff $\hat{p} \geq \tau$. The **expected value per prediction** is:
 
-$$EV(\tau) = B_{TP} \cdot P(\hat{y}=1, y=1) - C_{FP} \cdot P(\hat{y}=1, y=0) - C_{FN} \cdot P(\hat{y}=0, y=1)$$
+$$
+EV(\tau) = B_{TP} \cdot P(\hat{y}=1, y=1) - C_{FP} \cdot P(\hat{y}=1, y=0) - C_{FN} \cdot P(\hat{y}=0, y=1)
+$$
 
 Expanded using the confusion matrix probabilities:
 
-$$EV(\tau) = B_{TP} \cdot \text{TPR}(\tau) \cdot \pi - C_{FP} \cdot \text{FPR}(\tau) \cdot (1-\pi) - C_{FN} \cdot (1-\text{TPR}(\tau)) \cdot \pi$$
+$$
+EV(\tau) = B_{TP} \cdot \text{TPR}(\tau) \cdot \pi - C_{FP} \cdot \text{FPR}(\tau) \cdot (1-\pi) - C_{FN} \cdot (1-\text{TPR}(\tau)) \cdot \pi
+$$
 
 The **optimal threshold** maximises $EV(\tau)$; it generally differs from 0.5.
 
@@ -89,7 +93,9 @@ Choose the primary evaluation metric to match the deployment decision:
 
 When comparing Model A vs Model B, compute:
 
-$$\Delta EV = EV_A(\tau^*_A) - EV_B(\tau^*_B)$$
+$$
+\Delta EV = EV_A(\tau^*_A) - EV_B(\tau^*_B)
+$$
 
 Both models should be evaluated at their own optimal thresholds, not a shared one.
 

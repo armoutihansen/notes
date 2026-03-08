@@ -18,17 +18,25 @@ Instance-based (or memory-based) methods make predictions by finding the trainin
 
 Given a query point $\mathbf{x}^*$ and training set $\{(\mathbf{x}_i, y_i)\}_{i=1}^n$, identify the $k$ training points closest under distance $d$:
 
-$$\mathcal{N}_k(\mathbf{x}^*) = \text{top-}k \text{ points by } d(\mathbf{x}_i, \mathbf{x}^*)$$
+$$
+\mathcal{N}_k(\mathbf{x}^*) = \text{top-}k \text{ points by } d(\mathbf{x}_i, \mathbf{x}^*)
+$$
 
 **Classification:** majority vote over neighbours:
 
-$$\hat{y} = \text{mode}\{y_i : \mathbf{x}_i \in \mathcal{N}_k(\mathbf{x}^*)\}$$
+$$
+\hat{y} = \text{mode}\{y_i : \mathbf{x}_i \in \mathcal{N}_k(\mathbf{x}^*)\}
+$$
 
 **Regression:** mean (or distance-weighted mean) over neighbours:
 
-$$\hat{y} = \frac{1}{k}\sum_{\mathbf{x}_i \in \mathcal{N}_k(\mathbf{x}^*)} y_i \qquad \text{(uniform)}$$
+$$
+\hat{y} = \frac{1}{k}\sum_{\mathbf{x}_i \in \mathcal{N}_k(\mathbf{x}^*)} y_i \qquad \text{(uniform)}
+$$
 
-$$\hat{y} = \frac{\sum_i w_i y_i}{\sum_i w_i}, \quad w_i = \frac{1}{d(\mathbf{x}^*, \mathbf{x}_i)^2} \qquad \text{(distance-weighted)}$$
+$$
+\hat{y} = \frac{\sum_i w_i y_i}{\sum_i w_i}, \quad w_i = \frac{1}{d(\mathbf{x}^*, \mathbf{x}_i)^2} \qquad \text{(distance-weighted)}
+$$
 
 ### Distance Metrics
 

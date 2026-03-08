@@ -18,7 +18,9 @@ Multimodal models jointly encode and align information from two or more data mod
 
 CLIP (Radford et al., 2021) trains an image encoder $f_I$ and a text encoder $f_T$ on $N$ (image, text) pairs using InfoNCE loss:
 
-$$\mathcal{L} = -\frac{1}{N} \sum_{i=1}^N \left[\log \frac{\exp(\text{sim}(f_I(\mathbf{v}_i), f_T(\mathbf{t}_i)) / \tau)}{\sum_{j=1}^N \exp(\text{sim}(f_I(\mathbf{v}_i), f_T(\mathbf{t}_j)) / \tau)}\right]$$
+$$
+\mathcal{L} = -\frac{1}{N} \sum_{i=1}^N \left[\log \frac{\exp(\text{sim}(f_I(\mathbf{v}_i), f_T(\mathbf{t}_i)) / \tau)}{\sum_{j=1}^N \exp(\text{sim}(f_I(\mathbf{v}_i), f_T(\mathbf{t}_j)) / \tau)}\right]
+$$
 
 where $\text{sim}(\mathbf{u}, \mathbf{v}) = \mathbf{u}^\top \mathbf{v} / (\|\mathbf{u}\|\|\mathbf{v}\|)$ and $\tau$ is a learnable temperature.
 
@@ -29,11 +31,15 @@ After pre-training, zero-shot classification is performed by computing cosine si
 **Early fusion:** concatenate raw inputs or low-level features before processing.
 
 **Late fusion:** process each modality independently and combine final representations:
-$$\hat{y} = g(f_I(\mathbf{v}), f_T(\mathbf{t}))$$
+$$
+\hat{y} = g(f_I(\mathbf{v}), f_T(\mathbf{t}))
+$$
 where $g$ is a learned combiner (e.g., MLP, cross-attention).
 
 **Cross-attention fusion:** one modality attends to the other:
-$$\text{Attn}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$$
+$$
+\text{Attn}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+$$
 with $Q$ from one modality and $K, V$ from another. Used in Visual Question Answering (VQA) models.
 
 ### Visual Question Answering (VQA)

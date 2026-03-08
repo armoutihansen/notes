@@ -52,7 +52,9 @@ Linear warmup (ramp $\alpha$ from 0 over the first few thousand steps) is standa
 
 ### Momentum
 
-$$v_t \leftarrow \beta_1 v_{t-1} + (1-\beta_1)\, g_t, \qquad \theta \leftarrow \theta - \alpha\, v_t$$
+$$
+v_t \leftarrow \beta_1 v_{t-1} + (1-\beta_1)\, g_t, \qquad \theta \leftarrow \theta - \alpha\, v_t
+$$
 
 Typical $\beta_1 = 0.9$. Initialise $v_0 = 0$.
 
@@ -60,7 +62,9 @@ Typical $\beta_1 = 0.9$. Initialise $v_0 = 0$.
 
 ### RMSProp
 
-$$s_t \leftarrow \beta_2 s_{t-1} + (1-\beta_2)\, g_t^2, \qquad \theta \leftarrow \theta - \alpha\, \frac{g_t}{\sqrt{s_t + \epsilon}}$$
+$$
+s_t \leftarrow \beta_2 s_{t-1} + (1-\beta_2)\, g_t^2, \qquad \theta \leftarrow \theta - \alpha\, \frac{g_t}{\sqrt{s_t + \epsilon}}
+$$
 
 Typical $\beta_2 = 0.999$, $\epsilon = 10^{-8}$.
 
@@ -70,13 +74,21 @@ Typical $\beta_2 = 0.999$, $\epsilon = 10^{-8}$.
 
 Maintain 1st (momentum) and 2nd (RMSProp) moment estimates with bias correction:
 
-$$v_t \leftarrow \beta_1 v_{t-1} + (1-\beta_1)\, g_t$$
+$$
+v_t \leftarrow \beta_1 v_{t-1} + (1-\beta_1)\, g_t
+$$
 
-$$s_t \leftarrow \beta_2 s_{t-1} + (1-\beta_2)\, g_t^2$$
+$$
+s_t \leftarrow \beta_2 s_{t-1} + (1-\beta_2)\, g_t^2
+$$
 
-$$\hat v_t = \frac{v_t}{1-\beta_1^t}, \quad \hat s_t = \frac{s_t}{1-\beta_2^t}$$
+$$
+\hat v_t = \frac{v_t}{1-\beta_1^t}, \quad \hat s_t = \frac{s_t}{1-\beta_2^t}
+$$
 
-$$\theta \leftarrow \theta - \alpha\, \frac{\hat v_t}{\sqrt{\hat s_t} + \epsilon}$$
+$$
+\theta \leftarrow \theta - \alpha\, \frac{\hat v_t}{\sqrt{\hat s_t} + \epsilon}
+$$
 
 **Default hyperparameters:** $\beta_1 = 0.9$, $\beta_2 = 0.999$, $\epsilon = 10^{-8}$, $\alpha = 10^{-3}$.
 

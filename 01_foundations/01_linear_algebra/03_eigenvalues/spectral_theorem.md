@@ -12,7 +12,9 @@ created: 2026-03-06
 
 A real symmetric matrix $A = A^\top \in \mathbb{R}^{n \times n}$ is always orthogonally diagonalisable:
 
-$$A = Q \Lambda Q^\top$$
+$$
+A = Q \Lambda Q^\top
+$$
 
 where $Q$ is orthogonal ($Q^\top Q = I$, columns are orthonormal eigenvectors) and $\Lambda = \text{diag}(\lambda_1, \ldots, \lambda_n)$ contains real eigenvalues. This is the **spectral theorem** for real symmetric matrices.
 
@@ -24,7 +26,9 @@ Symmetric matrices arise whenever a quantity is "self-adjoint" — e.g., covaria
 
 **Spectral decomposition:**
 
-$$A = \sum_{i=1}^n \lambda_i\, q_i q_i^\top$$
+$$
+A = \sum_{i=1}^n \lambda_i\, q_i q_i^\top
+$$
 
 The outer products $q_i q_i^\top$ are rank-1 orthogonal projection matrices. $A$ is a weighted sum of projections onto its eigendirections, with eigenvalues as weights.
 
@@ -43,13 +47,17 @@ $A$ is PSD if $\mathbf{x}^\top A \mathbf{x} \geq 0$ for all $\mathbf{x} \in \mat
 
 **Functions of symmetric matrices:** via spectral decomposition, matrix functions are well-defined:
 
-$$f(A) = Q\,\text{diag}(f(\lambda_1), \ldots, f(\lambda_n))\,Q^\top$$
+$$
+f(A) = Q\,\text{diag}(f(\lambda_1), \ldots, f(\lambda_n))\,Q^\top
+$$
 
 Examples: $A^{1/2} = Q \Lambda^{1/2} Q^\top$ (matrix square root), $e^A = Q e^\Lambda Q^\top$.
 
 **Rayleigh quotient:**
 
-$$R(A, \mathbf{x}) = \frac{\mathbf{x}^\top A \mathbf{x}}{\mathbf{x}^\top \mathbf{x}}$$
+$$
+R(A, \mathbf{x}) = \frac{\mathbf{x}^\top A \mathbf{x}}{\mathbf{x}^\top \mathbf{x}}
+$$
 
 $\lambda_{\min} \leq R(A,\mathbf{x}) \leq \lambda_{\max}$; the maximum is attained at the leading eigenvector (used in power iteration and PCA).
 

@@ -12,7 +12,9 @@ created: 2026-03-06
 
 Every real matrix $A \in \mathbb{R}^{m \times n}$ can be factorised as
 
-$$A = U \Sigma V^\top$$
+$$
+A = U \Sigma V^\top
+$$
 
 where $U \in \mathbb{R}^{m \times m}$ and $V \in \mathbb{R}^{n \times n}$ are orthogonal matrices and $\Sigma \in \mathbb{R}^{m \times n}$ is a diagonal matrix with non-negative entries $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > 0$ (the **singular values**), $r = \text{rank}(A)$.
 
@@ -26,31 +28,43 @@ This is the most general matrix factorisation: it always exists, requires no spe
 
 **Thin (economy) SVD:** keep only the $r$ non-zero singular values:
 
-$$A = U_r \Sigma_r V_r^\top \qquad U_r \in \mathbb{R}^{m \times r},\ \Sigma_r \in \mathbb{R}^{r \times r},\ V_r \in \mathbb{R}^{n \times r}$$
+$$
+A = U_r \Sigma_r V_r^\top \qquad U_r \in \mathbb{R}^{m \times r},\ \Sigma_r \in \mathbb{R}^{r \times r},\ V_r \in \mathbb{R}^{n \times r}
+$$
 
 **Relationship to eigendecomposition:**
 
-$$A^\top A = V \Sigma^\top \Sigma V^\top \qquad (\text{eigendecomp of } A^\top A)$$
+$$
+A^\top A = V \Sigma^\top \Sigma V^\top \qquad (\text{eigendecomp of } A^\top A)
+$$
 
-$$A A^\top = U \Sigma \Sigma^\top U^\top \qquad (\text{eigendecomp of } A A^\top)$$
+$$
+A A^\top = U \Sigma \Sigma^\top U^\top \qquad (\text{eigendecomp of } A A^\top)
+$$
 
 The singular values are $\sigma_i = \sqrt{\lambda_i(A^\top A)}$; the columns of $V$ are eigenvectors of $A^\top A$ (right singular vectors); columns of $U$ are eigenvectors of $A A^\top$ (left singular vectors).
 
 **Rank-$k$ approximation (Eckart-Young theorem):**
 
-$$A_k = U_k \Sigma_k V_k^\top = \sum_{i=1}^k \sigma_i\, u_i v_i^\top$$
+$$
+A_k = U_k \Sigma_k V_k^\top = \sum_{i=1}^k \sigma_i\, u_i v_i^\top
+$$
 
 minimises $\|A - B\|_F$ (Frobenius) and $\|A - B\|_2$ (spectral) over all rank-$k$ matrices $B$. The approximation error is $\|A - A_k\|_F^2 = \sum_{i=k+1}^r \sigma_i^2$.
 
 **Moore-Penrose pseudoinverse:**
 
-$$A^+ = V \Sigma^+ U^\top$$
+$$
+A^+ = V \Sigma^+ U^\top
+$$
 
 where $\Sigma^+$ replaces each non-zero $\sigma_i$ by $1/\sigma_i$. Gives the minimum-norm least-squares solution to $A\mathbf{x} = \mathbf{b}$: $\hat{\mathbf{x}} = A^+\mathbf{b}$.
 
 **Condition number:**
 
-$$\kappa(A) = \frac{\sigma_{\max}}{\sigma_{\min}}$$
+$$
+\kappa(A) = \frac{\sigma_{\max}}{\sigma_{\min}}
+$$
 
 A large condition number indicates a near-singular (ill-conditioned) matrix; small perturbations in $\mathbf{b}$ can cause large changes in $\hat{\mathbf{x}}$.
 

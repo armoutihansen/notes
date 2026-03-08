@@ -20,7 +20,9 @@ Related tasks share useful low-level structure; learning them jointly forces the
 
 **Architecture:** shared encoder/backbone + separate task-specific heads; loss is a weighted sum:
 
-$$J = \sum_{k=1}^K w_k J_k$$
+$$
+J = \sum_{k=1}^K w_k J_k
+$$
 
 **Hard parameter sharing:** shared hidden layers with separate output heads (standard approach).
 

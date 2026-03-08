@@ -20,7 +20,9 @@ The fixed-size context vector in vanilla seq2seq is an information bottleneck fo
 
 At decoder step $t$, compute alignment score with each encoder state $a^{<t'>}$:
 
-$$e_{t,t'} = \text{score}(s^{<t-1>}, a^{<t'>})$$
+$$
+e_{t,t'} = \text{score}(s^{<t-1>}, a^{<t'>})
+$$
 
 Common score functions:
 - **Dot product:** $s^\top a$
@@ -29,11 +31,15 @@ Common score functions:
 
 Attention weights (softmax):
 
-$$\alpha_{t,t'} = \frac{\exp(e_{t,t'})}{\sum_{j} \exp(e_{t,j})}, \qquad \sum_{t'} \alpha_{t,t'} = 1$$
+$$
+\alpha_{t,t'} = \frac{\exp(e_{t,t'})}{\sum_{j} \exp(e_{t,j})}, \qquad \sum_{t'} \alpha_{t,t'} = 1
+$$
 
 Context vector:
 
-$$c^{<t>} = \sum_{t'} \alpha_{t,t'} a^{<t'>}$$
+$$
+c^{<t>} = \sum_{t'} \alpha_{t,t'} a^{<t'>}
+$$
 
 Fed to decoder along with previous output $y^{<t-1>}$.
 

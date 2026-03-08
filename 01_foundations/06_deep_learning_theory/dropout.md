@@ -24,7 +24,9 @@ Think of it as training a team where no member knows who else will show up: ever
 
 During training, for each layer activation $\mathbf{a}$:
 
-$$\tilde{a}_i = \begin{cases} a_i / (1-p) & \text{with probability } 1-p \\ 0 & \text{with probability } p \end{cases}$$
+$$
+\tilde{a}_i = \begin{cases} a_i / (1-p) & \text{with probability } 1-p \\ 0 & \text{with probability } p \end{cases}
+$$
 
 The $1/(1-p)$ scaling keeps the expected value of $\tilde{a}_i$ equal to $a_i$, so no test-time correction is needed.
 
@@ -56,7 +58,9 @@ class MLP(nn.Module):
 
 **MC Dropout (Monte Carlo Dropout):** leaving dropout active at test time and running $T$ forward passes:
 
-$$p(y|\mathbf{x}) \approx \frac{1}{T} \sum_{t=1}^T p(y|\mathbf{x}, \hat{\theta}_t)$$
+$$
+p(y|\mathbf{x}) \approx \frac{1}{T} \sum_{t=1}^T p(y|\mathbf{x}, \hat{\theta}_t)
+$$
 
 The variance across passes estimates **epistemic uncertainty** (uncertainty about model parameters). Used in Bayesian deep learning for uncertainty quantification.
 

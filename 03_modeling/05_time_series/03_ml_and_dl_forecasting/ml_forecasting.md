@@ -20,7 +20,9 @@ This contrasts with classical statistical methods (ARIMA, ETS) which model the t
 
 Transform a univariate time series $y_1, y_2, \ldots, y_T$ into a supervised dataset by windowing:
 
-$$(\mathbf{x}_t, y_t), \quad \mathbf{x}_t = [y_{t-1}, y_{t-2}, \ldots, y_{t-p}, \text{calendar features}, \text{static covariates}]$$
+$$
+(\mathbf{x}_t, y_t), \quad \mathbf{x}_t = [y_{t-1}, y_{t-2}, \ldots, y_{t-p}, \text{calendar features}, \text{static covariates}]
+$$
 
 This is the **lag feature** approach. Gradient boosting (XGBoost, LightGBM) excels here due to its robustness to scale, handling of missing lags, and built-in non-linearity.
 

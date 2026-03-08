@@ -22,13 +22,19 @@ In the original feature space, the data may not be linearly separable. Mapping t
 
 Find the hyperplane $\mathbf{w}^\top\mathbf{x} + b = 0$ with maximum margin $2/\|\mathbf{w}\|$:
 
-$$\min_{\mathbf{w},b} \frac{1}{2}\|\mathbf{w}\|^2 \quad \text{s.t.} \quad y_i(\mathbf{w}^\top\mathbf{x}_i + b) \geq 1 \; \forall i$$
+$$
+\min_{\mathbf{w},b} \frac{1}{2}\|\mathbf{w}\|^2 \quad \text{s.t.} \quad y_i(\mathbf{w}^\top\mathbf{x}_i + b) \geq 1 \; \forall i
+$$
 
 **Dual problem** (via Lagrangian):
 
-$$\max_{\boldsymbol{\alpha}} \sum_i \alpha_i - \frac{1}{2}\sum_{i,j}\alpha_i\alpha_j y_i y_j \mathbf{x}_i^\top\mathbf{x}_j$$
+$$
+\max_{\boldsymbol{\alpha}} \sum_i \alpha_i - \frac{1}{2}\sum_{i,j}\alpha_i\alpha_j y_i y_j \mathbf{x}_i^\top\mathbf{x}_j
+$$
 
-$$\text{s.t.} \quad \sum_i \alpha_i y_i = 0, \quad \alpha_i \geq 0$$
+$$
+\text{s.t.} \quad \sum_i \alpha_i y_i = 0, \quad \alpha_i \geq 0
+$$
 
 **Support vectors:** training points with $\alpha_i > 0$ (on the margin boundaries). All other $\alpha_i = 0$.
 
@@ -38,7 +44,9 @@ $$\text{s.t.} \quad \sum_i \alpha_i y_i = 0, \quad \alpha_i \geq 0$$
 
 Introduces slack variables $\xi_i \geq 0$ to allow margin violations:
 
-$$\min_{\mathbf{w},b,\boldsymbol{\xi}} \frac{1}{2}\|\mathbf{w}\|^2 + C\sum_i \xi_i \quad \text{s.t.} \quad y_i(\mathbf{w}^\top\mathbf{x}_i+b) \geq 1-\xi_i,\; \xi_i \geq 0$$
+$$
+\min_{\mathbf{w},b,\boldsymbol{\xi}} \frac{1}{2}\|\mathbf{w}\|^2 + C\sum_i \xi_i \quad \text{s.t.} \quad y_i(\mathbf{w}^\top\mathbf{x}_i+b) \geq 1-\xi_i,\; \xi_i \geq 0
+$$
 
 $C > 0$ controls the trade-off: large $C$ → low tolerance for misclassifications → narrower margin; small $C$ → wide margin, more misclassifications.
 
@@ -48,7 +56,9 @@ Dual with box constraints: $0 \leq \alpha_i \leq C$.
 
 Replace $\mathbf{x}_i^\top\mathbf{x}_j$ with a **kernel function** $k(\mathbf{x}_i, \mathbf{x}_j) = \phi(\mathbf{x}_i)^\top\phi(\mathbf{x}_j)$:
 
-$$\hat{y} = \mathrm{sign}\!\left(\sum_i \alpha_i y_i k(\mathbf{x}_i, \mathbf{x}) + b\right)$$
+$$
+\hat{y} = \mathrm{sign}\!\left(\sum_i \alpha_i y_i k(\mathbf{x}_i, \mathbf{x}) + b\right)
+$$
 
 **Common kernels:**
 

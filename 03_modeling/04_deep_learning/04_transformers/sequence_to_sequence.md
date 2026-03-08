@@ -22,7 +22,9 @@ The encoder summarizes the input sequence into a context representation; the dec
 
 **Machine translation as conditional LM:**
 
-$$P(y_1, \ldots, y_{T_y} \mid x_1, \ldots, x_{T_x}) = \prod_{t=1}^{T_y} P(y^{<t>} \mid y^{<1:t-1>}, x)$$
+$$
+P(y_1, \ldots, y_{T_y} \mid x_1, \ldots, x_{T_x}) = \prod_{t=1}^{T_y} P(y^{<t>} \mid y^{<1:t-1>}, x)
+$$
 
 Training: teacher forcing (feed ground-truth previous tokens); inference: autoregressive decoding.
 
@@ -30,7 +32,9 @@ Training: teacher forcing (feed ground-truth previous tokens); inference: autore
 
 **BLEU score** (Bilingual Evaluation Understudy): measures n-gram precision against reference translations:
 
-$$\text{BLEU} = \text{BP} \cdot \exp\!\left(\sum_{n=1}^N w_n \log p_n\right)$$
+$$
+\text{BLEU} = \text{BP} \cdot \exp\!\left(\sum_{n=1}^N w_n \log p_n\right)
+$$
 
 where $p_n$ = modified n-gram precision, $\text{BP}$ = brevity penalty, $w_n = 1/N$ typically; BLEU-4 (up to 4-grams) is most common.
 

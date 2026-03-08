@@ -22,7 +22,9 @@ A partial dependence plot asks: "If I fix all other features and vary only featu
 
 For feature(s) $X_S$ and model $\hat f$:
 
-$$\hat f_S(x_S) = E_{X_C}[\hat f(x_S, X_C)] \approx \frac{1}{n}\sum_{i=1}^n \hat f(x_S, x_C^{(i)})$$
+$$
+\hat f_S(x_S) = E_{X_C}[\hat f(x_S, X_C)] \approx \frac{1}{n}\sum_{i=1}^n \hat f(x_S, x_C^{(i)})
+$$
 
 where $X_C$ are the complement features. Implementation: grid over $x_S$ values; for each grid value, replace $X_S$ for all training instances, compute predictions, average. Two-way PDPs show interaction effects between two features.
 
@@ -37,7 +39,9 @@ where $X_C$ are the complement features. Implementation: grid over $x_S$ values;
 
 Plot one line per training instance: how does the prediction for instance $i$ change as $X_j$ varies? The PDP is the mean of all ICE curves.
 
-$$\hat f_j^{(i)}(x_j) = \hat f(x_j, x_{-j}^{(i)})$$
+$$
+\hat f_j^{(i)}(x_j) = \hat f(x_j, x_{-j}^{(i)})
+$$
 
 **Centered ICE (c-ICE)**: subtract each curve's value at a reference point $x_j^0$ to highlight interaction effects: $\tilde f_j^{(i)}(x_j) = \hat f_j^{(i)}(x_j) - \hat f_j^{(i)}(x_j^0)$.
 
@@ -49,7 +53,9 @@ ICE reveals when the PDP average masks heterogeneous effects (some instances hav
 
 ALE avoids the unrealistic combinations problem by estimating feature effects using local differences within narrow data-conditional intervals:
 
-$$\hat{\text{ALE}}_j(x) = \sum_{k=1}^{k_x} \frac{1}{|N_j(k)|}\sum_{i \in N_j(k)} \left[\hat f(z_{k,j}, x_{-j}^{(i)}) - \hat f(z_{k-1,j}, x_{-j}^{(i)})\right]$$
+$$
+\hat{\text{ALE}}_j(x) = \sum_{k=1}^{k_x} \frac{1}{|N_j(k)|}\sum_{i \in N_j(k)} \left[\hat f(z_{k,j}, x_{-j}^{(i)}) - \hat f(z_{k-1,j}, x_{-j}^{(i)})\right]
+$$
 
 where $z_{k-1,j}$ and $z_{k,j}$ are the interval boundaries and $N_j(k)$ is the set of training instances falling in interval $k$. ALE accumulates these local differences (hence the name) and centers the result to have zero mean.
 

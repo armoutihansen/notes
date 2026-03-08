@@ -50,9 +50,13 @@ Fold 2: Train [t=0..t110],  Test [t=111..t120]
 
 **Confusion matrix:** TP, FP, TN, FN.
 
-$$\text{Precision} = \frac{TP}{TP+FP}, \quad \text{Recall} = \frac{TP}{TP+FN}$$
+$$
+\text{Precision} = \frac{TP}{TP+FP}, \quad \text{Recall} = \frac{TP}{TP+FN}
+$$
 
-$$\text{F1} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}, \quad F_\beta = \frac{(1+\beta^2)\text{PR}}{{\beta^2 P + R}}$$
+$$
+\text{F1} = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}, \quad F_\beta = \frac{(1+\beta^2)\text{PR}}{{\beta^2 P + R}}
+$$
 
 Use $F_\beta > 1$ to prioritise recall (e.g., disease detection); $F_\beta < 1$ to prioritise precision (e.g., spam filtering).
 

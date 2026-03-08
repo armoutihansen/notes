@@ -20,13 +20,17 @@ Convolution detects local patterns (edges, textures) using shared weights, makin
 
 **Convolution (cross-correlation in practice):** output element $(i,j)$ is computed as:
 
-$$\sum_{r=0}^{f-1}\sum_{c=0}^{f-1} W_{rc} \cdot X_{i\cdot s+r,\, j\cdot s+c}$$
+$$
+\sum_{r=0}^{f-1}\sum_{c=0}^{f-1} W_{rc} \cdot X_{i\cdot s+r,\, j\cdot s+c}
+$$
 
 Filter $W \in \mathbb{R}^{f \times f \times C_\text{in}}$ is shared across all spatial positions.
 
 **Output size:**
 
-$$n_\text{out} = \left\lfloor\frac{n + 2p - f}{s}\right\rfloor + 1$$
+$$
+n_\text{out} = \left\lfloor\frac{n + 2p - f}{s}\right\rfloor + 1
+$$
 
 where $n$ = input size, $p$ = padding, $f$ = filter size, $s$ = stride.
 

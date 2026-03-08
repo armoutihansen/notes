@@ -50,7 +50,9 @@ stat, p_value = ks_2samp(train['age'], new_data['age'])
 
 **Population Stability Index (PSI)** — widely used in banking/insurance:
 
-$$\text{PSI} = \sum_{i=1}^B (A_i - E_i) \ln\frac{A_i}{E_i}$$
+$$
+\text{PSI} = \sum_{i=1}^B (A_i - E_i) \ln\frac{A_i}{E_i}
+$$
 
 where $A_i$ and $E_i$ are actual and expected proportions in bin $i$.
 

@@ -29,17 +29,25 @@ Probability formalises the intuition that some outcomes are more likely than oth
 
 **Derived rules**
 
-$$P(A^c) = 1 - P(A)$$
+$$
+P(A^c) = 1 - P(A)
+$$
 
-$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+$$
+P(A \cup B) = P(A) + P(B) - P(A \cap B)
+$$
 
 **Conditional probability**
 
-$$P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \qquad P(B) > 0$$
+$$
+P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \qquad P(B) > 0
+$$
 
 **Chain rule** (product rule):
 
-$$P(A \cap B) = P(A \mid B)\,P(B) = P(B \mid A)\,P(A)$$
+$$
+P(A \cap B) = P(A \mid B)\,P(B) = P(B \mid A)\,P(A)
+$$
 
 For $n$ events: $P(A_1 \cap \cdots \cap A_n) = P(A_1)\,P(A_2 \mid A_1)\cdots P(A_n \mid A_1,\ldots,A_{n-1})$
 
@@ -47,11 +55,15 @@ For $n$ events: $P(A_1 \cap \cdots \cap A_n) = P(A_1)\,P(A_2 \mid A_1)\cdots P(A
 
 Given a partition $\{B_i\}$ of $\Omega$:
 
-$$P(A) = \sum_i P(A \mid B_i)\,P(B_i)$$
+$$
+P(A) = \sum_i P(A \mid B_i)\,P(B_i)
+$$
 
 **Bayes' theorem**
 
-$$P(B_i \mid A) = \frac{P(A \mid B_i)\,P(B_i)}{\sum_j P(A \mid B_j)\,P(B_j)}$$
+$$
+P(B_i \mid A) = \frac{P(A \mid B_i)\,P(B_i)}{\sum_j P(A \mid B_j)\,P(B_j)}
+$$
 
 This is the engine of Bayesian inference: $P(B_i \mid A)$ is the **posterior**, $P(B_i)$ is the **prior**, $P(A \mid B_i)$ is the **likelihood**.
 
@@ -71,9 +83,13 @@ A random variable $X: \Omega \to \mathbb{R}$ maps outcomes to real numbers.
 
 **Expected value and variance**
 
-$$\mathbb{E}[X] = \sum_x x\,p(x) \quad \text{or} \quad \int x\,f(x)\,dx$$
+$$
+\mathbb{E}[X] = \sum_x x\,p(x) \quad \text{or} \quad \int x\,f(x)\,dx
+$$
 
-$$\operatorname{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$$
+$$
+\operatorname{Var}(X) = \mathbb{E}[(X - \mathbb{E}[X])^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
+$$
 
 **Linearity of expectation:** $\mathbb{E}[aX + bY] = a\,\mathbb{E}[X] + b\,\mathbb{E}[Y]$ (no independence required).
 

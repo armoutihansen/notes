@@ -20,7 +20,9 @@ Instead of classifying into predefined categories, the network learns a geometry
 
 Given anchor $a$, positive $p$, negative $n$:
 
-$$\ell(a, p, n) = \max\!\left(0,\; \|f(a) - f(p)\|_2^2 - \|f(a) - f(n)\|_2^2 + \alpha\right)$$
+$$
+\ell(a, p, n) = \max\!\left(0,\; \|f(a) - f(p)\|_2^2 - \|f(a) - f(n)\|_2^2 + \alpha\right)
+$$
 
 **Margin $\alpha > 0$** prevents the trivial solution of collapsing all embeddings to the same point (which would satisfy $\|f(a)-f(p)\|^2 = \|f(a)-f(n)\|^2$).
 

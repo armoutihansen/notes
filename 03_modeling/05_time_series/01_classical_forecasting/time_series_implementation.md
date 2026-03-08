@@ -125,7 +125,9 @@ forecast = ets_fit.forecast(12)
 
 Prophet (Meta/Facebook, 2017) uses an additive decomposition model:
 
-$$y(t) = \text{trend}(t) + \text{seasonality}(t) + \text{holidays}(t) + \varepsilon_t$$
+$$
+y(t) = \text{trend}(t) + \text{seasonality}(t) + \text{holidays}(t) + \varepsilon_t
+$$
 
 Strengths: handles missing data, multiple seasonalities, and changepoints without manual tuning. Best for business time series with strong seasonality and known calendar effects.
 

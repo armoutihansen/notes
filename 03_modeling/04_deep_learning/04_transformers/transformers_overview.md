@@ -20,7 +20,9 @@ Before Transformers, sequence models (RNNs, LSTMs) processed tokens one at a tim
 
 **Core building block — self-attention:**
 
-$$\text{Attention}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$$
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+$$
 
 All tokens are processed in parallel; queries, keys, and values are learned linear projections of the input.
 

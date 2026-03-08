@@ -12,7 +12,9 @@ created: 2026-03-06
 
 **Layer Normalization (LN)** normalises each sample's activations across the feature dimension. For an activation vector $\mathbf{x} \in \mathbb{R}^d$ within a single sample:
 
-$$\text{LN}(\mathbf{x}) = \gamma \odot \frac{\mathbf{x} - \mu}{\sqrt{\sigma^2 + \epsilon}} + \beta$$
+$$
+\text{LN}(\mathbf{x}) = \gamma \odot \frac{\mathbf{x} - \mu}{\sqrt{\sigma^2 + \epsilon}} + \beta
+$$
 
 where $\mu = \frac{1}{d}\sum_{i=1}^d x_i$ is the mean, $\sigma^2 = \frac{1}{d}\sum_{i=1}^d (x_i - \mu)^2$ is the variance, $\gamma, \beta \in \mathbb{R}^d$ are learned scale and shift parameters, and $\epsilon$ is a small constant for numerical stability.
 
@@ -43,7 +45,9 @@ Modern large language models (GPT-3, LLaMA, Mistral) typically use **Pre-LN** wi
 
 **RMSNorm (Root Mean Square Layer Normalization):** simplifies LN by removing the mean-centering step:
 
-$$\text{RMSNorm}(\mathbf{x}) = \gamma \odot \frac{\mathbf{x}}{\text{RMS}(\mathbf{x}) + \epsilon}, \qquad \text{RMS}(\mathbf{x}) = \sqrt{\frac{1}{d}\sum_{i=1}^d x_i^2}$$
+$$
+\text{RMSNorm}(\mathbf{x}) = \gamma \odot \frac{\mathbf{x}}{\text{RMS}(\mathbf{x}) + \epsilon}, \qquad \text{RMS}(\mathbf{x}) = \sqrt{\frac{1}{d}\sum_{i=1}^d x_i^2}
+$$
 
 Computationally cheaper (no mean computation), and empirically matches LN on most benchmarks. Used in LLaMA, Gemma, Mistral.
 

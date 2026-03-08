@@ -75,7 +75,9 @@ The p-value is the probability of observing a test statistic at least as extreme
 
 Let $p_c$, $p_t$ be control and treatment conversion rates, $n$ total sample size (equal split assumed).
 
-$$z = \frac{\hat{p}_t - \hat{p}_c}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{2}{n/2}\right)}}$$
+$$
+z = \frac{\hat{p}_t - \hat{p}_c}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{2}{n/2}\right)}}
+$$
 
 where $\hat{p} = (\hat{p}_c + \hat{p}_t)/2$ is the pooled estimate.
 
@@ -119,7 +121,9 @@ reject, pvals_corrected, _, _ = multipletests(p_values, alpha=0.05, method='fdr_
 
 ### Sample size for a two-proportion test
 
-$$n = \frac{(z_{\alpha/2} + z_\beta)^2 \cdot 2p(1-p)}{\delta^2}$$
+$$
+n = \frac{(z_{\alpha/2} + z_\beta)^2 \cdot 2p(1-p)}{\delta^2}
+$$
 
 where:
 - $p$ = baseline conversion rate
@@ -163,7 +167,9 @@ Set the MDE from historical data and business thresholds:
 
 ### Runtime estimation
 
-$$\text{days} = \frac{2n}{\text{daily traffic per arm}}$$
+$$
+\text{days} = \frac{2n}{\text{daily traffic per arm}}
+$$
 
 Accounts for both arms. Traffic allocation other than 50/50 increases required total n.
 
@@ -174,7 +180,9 @@ Accounts for both arms. Traffic allocation other than 50/50 increases required t
 Classical tests assume a fixed sample size decided before peeking. Repeated peeking and stopping early on significance inflates the actual Type I error rate far above α.
 
 **Alpha spending (Lan-DeMets):** pre-allocate the Type I error budget across pre-planned looks. At look $k$ out of $K$:
-$$\alpha(t_k) = 2\left(1 - \Phi\left(\frac{z_{\alpha/2}}{\sqrt{t_k}}\right)\right)$$
+$$
+\alpha(t_k) = 2\left(1 - \Phi\left(\frac{z_{\alpha/2}}{\sqrt{t_k}}\right)\right)
+$$
 where $t_k = n_k/N$ is the information fraction.
 
 **Sequential Probability Ratio Test (SPRT):** continuously computes a likelihood ratio; stops when it crosses an upper bound (reject H₀) or lower bound (accept H₀). Fully sequential, no pre-planned maximum n, but requires specifying H₁ explicitly.

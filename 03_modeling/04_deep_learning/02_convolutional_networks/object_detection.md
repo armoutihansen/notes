@@ -22,7 +22,9 @@ Unlike classification (one label per image), detection must find where each obje
 
 **Intersection over Union (IoU):**
 
-$$\text{IoU}(B_1, B_2) = \frac{\text{area}(B_1 \cap B_2)}{\text{area}(B_1 \cup B_2)} \in [0,1]$$
+$$
+\text{IoU}(B_1, B_2) = \frac{\text{area}(B_1 \cap B_2)}{\text{area}(B_1 \cup B_2)} \in [0,1]
+$$
 
 Threshold typically 0.5 for "correct" detection; used in loss and NMS.
 

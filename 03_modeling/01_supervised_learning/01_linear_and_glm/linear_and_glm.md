@@ -42,11 +42,15 @@ Model: $\hat{y} = \mathbf{w}^\top \mathbf{x} + b$
 
 Binary classification via the logistic function:
 
-$$P(y=1|\mathbf{x}) = \sigma(\mathbf{w}^\top\mathbf{x}) = \frac{1}{1+e^{-\mathbf{w}^\top\mathbf{x}}}$$
+$$
+P(y=1|\mathbf{x}) = \sigma(\mathbf{w}^\top\mathbf{x}) = \frac{1}{1+e^{-\mathbf{w}^\top\mathbf{x}}}
+$$
 
 Training: minimise negative log-likelihood (log-loss):
 
-$$\mathcal{L} = -\frac{1}{n}\sum_i [y_i \log \hat{p}_i + (1-y_i)\log(1-\hat{p}_i)]$$
+$$
+\mathcal{L} = -\frac{1}{n}\sum_i [y_i \log \hat{p}_i + (1-y_i)\log(1-\hat{p}_i)]
+$$
 
 No closed form; solved via gradient descent or iteratively reweighted least squares (IRLS). The decision boundary $\{\mathbf{x}: \mathbf{w}^\top\mathbf{x} = 0\}$ is a hyperplane.
 

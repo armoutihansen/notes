@@ -22,23 +22,31 @@ Style is captured by co-activation patterns across channels — which texture pa
 
 **Gram matrix:** 
 
-$$G^{[l]} = A^{[l]}\left(A^{[l]}\right)^\top \in \mathbb{R}^{n_C^{[l]} \times n_C^{[l]}}$$
+$$
+G^{[l]} = A^{[l]}\left(A^{[l]}\right)^\top \in \mathbb{R}^{n_C^{[l]} \times n_C^{[l]}}
+$$
 
 Entry $G^{[l]}_{ij}$ is the inner product between feature maps $i$ and $j$, capturing how correlated those two channel activations are across all spatial locations.
 
 **Style cost for layer $l$:**
 
-$$J_\text{style}^{[l]} = \frac{1}{\left(2\, n_C^{[l]}\, n_H^{[l]}\, n_W^{[l]}\right)^2} \left\|G^{[l]}_S - G^{[l]}_G\right\|_F^2$$
+$$
+J_\text{style}^{[l]} = \frac{1}{\left(2\, n_C^{[l]}\, n_H^{[l]}\, n_W^{[l]}\right)^2} \left\|G^{[l]}_S - G^{[l]}_G\right\|_F^2
+$$
 
 where $S$ = style image, $G$ = generated image.
 
 **Total style cost** (weighted sum over layers):
 
-$$J_\text{style} = \sum_l \lambda^{[l]}\, J_\text{style}^{[l]}$$
+$$
+J_\text{style} = \sum_l \lambda^{[l]}\, J_\text{style}^{[l]}
+$$
 
 **Combined NST objective:**
 
-$$J = \alpha\, J_\text{content} + \beta\, J_\text{style}$$
+$$
+J = \alpha\, J_\text{content} + \beta\, J_\text{style}
+$$
 
 Optimize the pixel values of the generated image (not network weights) via gradient descent.
 

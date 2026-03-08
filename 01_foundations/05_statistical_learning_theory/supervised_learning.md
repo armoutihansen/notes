@@ -22,7 +22,9 @@ Find parameters that best explain the training labels; generalization is the key
 
 **Empirical risk minimization:**
 
-$$\hat\theta = \arg\min_\theta \frac{1}{m}\sum_{i=1}^m \ell(f_\theta(x^{(i)}), y^{(i)}) + R(\theta)$$
+$$
+\hat\theta = \arg\min_\theta \frac{1}{m}\sum_{i=1}^m \ell(f_\theta(x^{(i)}), y^{(i)}) + R(\theta)
+$$
 
 where $\ell$ is the task loss and $R(\theta)$ is an optional regularizer.
 
@@ -37,7 +39,9 @@ where $\ell$ is the task loss and $R(\theta)$ is an optional regularizer.
 
 **Bias-variance decomposition:**
 
-$$\mathbb{E}[\text{error}] = \text{bias}^2 + \text{variance} + \text{irreducible noise}$$
+$$
+\mathbb{E}[\text{error}] = \text{bias}^2 + \text{variance} + \text{irreducible noise}
+$$
 
 High bias → underfitting (model too simple); high variance → overfitting (model too complex). Regularization, more data, and architectural choices all shift this tradeoff.
 

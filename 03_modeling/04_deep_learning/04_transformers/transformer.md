@@ -20,7 +20,9 @@ RNNs process tokens sequentially — information from early tokens must "pass th
 
 **Scaled dot-product attention:**
 
-$$\text{Attention}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$$
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+$$
 
 where $Q \in \mathbb{R}^{T \times d_k}$, $K \in \mathbb{R}^{T \times d_k}$, $V \in \mathbb{R}^{T \times d_v}$; scaling by $\sqrt{d_k}$ prevents softmax saturation for large $d_k$.
 
@@ -28,7 +30,9 @@ where $Q \in \mathbb{R}^{T \times d_k}$, $K \in \mathbb{R}^{T \times d_k}$, $V \
 
 **Multi-head attention:** $h$ parallel attention heads with separate projection matrices $W^Q_i, W^K_i, W^V_i \in \mathbb{R}^{d_\text{model} \times d_k}$:
 
-$$\text{MultiHead}(Q,K,V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O$$
+$$
+\text{MultiHead}(Q,K,V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O
+$$
 
 Different heads specialize in different relation types (syntax, coreference, positional).
 
@@ -36,7 +40,9 @@ Different heads specialize in different relation types (syntax, coreference, pos
 
 **Positional encoding:** since self-attention is permutation-equivariant, inject position information; sinusoidal:
 
-$$\text{PE}(pos, 2i) = \sin(pos / 10000^{2i/d}), \quad \text{PE}(pos, 2i+1) = \cos(\ldots)$$
+$$
+\text{PE}(pos, 2i) = \sin(pos / 10000^{2i/d}), \quad \text{PE}(pos, 2i+1) = \cos(\ldots)
+$$
 
 or learned positional embeddings (BERT/GPT style).
 

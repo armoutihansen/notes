@@ -19,10 +19,14 @@ The canonical form is the **Linear Gaussian State-Space Model** (LGSSM), solvabl
 ### Linear Gaussian State-Space Model
 
 **State transition:**
-$$\mathbf{z}_t = F \mathbf{z}_{t-1} + \mathbf{q}_t, \qquad \mathbf{q}_t \sim \mathcal{N}(\mathbf{0}, Q)$$
+$$
+\mathbf{z}_t = F \mathbf{z}_{t-1} + \mathbf{q}_t, \qquad \mathbf{q}_t \sim \mathcal{N}(\mathbf{0}, Q)
+$$
 
 **Observation model:**
-$$\mathbf{x}_t = H \mathbf{z}_t + \mathbf{r}_t, \qquad \mathbf{r}_t \sim \mathcal{N}(\mathbf{0}, R)$$
+$$
+\mathbf{x}_t = H \mathbf{z}_t + \mathbf{r}_t, \qquad \mathbf{r}_t \sim \mathcal{N}(\mathbf{0}, R)
+$$
 
 where:
 - $\mathbf{z}_t \in \mathbb{R}^m$ is the hidden state
@@ -35,13 +39,23 @@ where:
 The Kalman filter computes the posterior $p(\mathbf{z}_t \mid \mathbf{x}_{1:t})$ recursively.
 
 **Predict step:**
-$$\mathbf{z}_{t|t-1} = F \mathbf{z}_{t-1|t-1}$$
-$$P_{t|t-1} = F P_{t-1|t-1} F^\top + Q$$
+$$
+\mathbf{z}_{t|t-1} = F \mathbf{z}_{t-1|t-1}
+$$
+$$
+P_{t|t-1} = F P_{t-1|t-1} F^\top + Q
+$$
 
 **Update step (incorporate observation $\mathbf{x}_t$):**
-$$K_t = P_{t|t-1} H^\top (H P_{t|t-1} H^\top + R)^{-1} \qquad \text{(Kalman gain)}$$
-$$\mathbf{z}_{t|t} = \mathbf{z}_{t|t-1} + K_t (\mathbf{x}_t - H \mathbf{z}_{t|t-1})$$
-$$P_{t|t} = (I - K_t H) P_{t|t-1}$$
+$$
+K_t = P_{t|t-1} H^\top (H P_{t|t-1} H^\top + R)^{-1} \qquad \text{(Kalman gain)}
+$$
+$$
+\mathbf{z}_{t|t} = \mathbf{z}_{t|t-1} + K_t (\mathbf{x}_t - H \mathbf{z}_{t|t-1})
+$$
+$$
+P_{t|t} = (I - K_t H) P_{t|t-1}
+$$
 
 The Kalman filter is the optimal linear estimator under Gaussian noise.
 
@@ -53,7 +67,9 @@ Computes the full posterior $p(\mathbf{z}_t \mid \mathbf{x}_{1:T})$ using the **
 
 STMs decompose a time series into interpretable components using the SSM framework:
 
-$$y_t = \mu_t + \gamma_t + \varepsilon_t$$
+$$
+y_t = \mu_t + \gamma_t + \varepsilon_t
+$$
 
 - $\mu_t$: **trend** (local level or local linear trend)
 - $\gamma_t$: **seasonality** (trigonometric or dummy encoding)
@@ -61,7 +77,9 @@ $$y_t = \mu_t + \gamma_t + \varepsilon_t$$
 
 Each component is modelled as a state with its own transition and noise equations. Parameters are estimated by maximum likelihood via the Kalman filter's prediction error decomposition:
 
-$$\log L = -\frac{T}{2}\log 2\pi - \frac{1}{2}\sum_{t=1}^T \left(\log |S_t| + v_t^\top S_t^{-1} v_t\right)$$
+$$
+\log L = -\frac{T}{2}\log 2\pi - \frac{1}{2}\sum_{t=1}^T \left(\log |S_t| + v_t^\top S_t^{-1} v_t\right)
+$$
 
 where $v_t = x_t - H\mathbf{z}_{t|t-1}$ are the innovations.
 

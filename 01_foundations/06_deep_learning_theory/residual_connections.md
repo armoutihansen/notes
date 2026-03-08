@@ -12,7 +12,9 @@ created: 2026-03-06
 
 A **residual connection** (skip connection) adds the input of a sub-layer directly to its output:
 
-$$\mathbf{y} = F(\mathbf{x}) + \mathbf{x}$$
+$$
+\mathbf{y} = F(\mathbf{x}) + \mathbf{x}
+$$
 
 where $F(\mathbf{x})$ is the sub-layer transformation (e.g., a convolutional block or a transformer FFN) and $\mathbf{x}$ is the identity shortcut. The block learns the **residual** $F(\mathbf{x}) = \mathbf{y} - \mathbf{x}$ rather than a direct mapping.
 
@@ -26,21 +28,31 @@ The "residual" framing is also conceptually appealing: if the identity is alread
 
 **ResNet block (He et al., 2016):**
 
-$$\mathbf{y} = F(\mathbf{x}; W_1, W_2) + \mathbf{x}$$
+$$
+\mathbf{y} = F(\mathbf{x}; W_1, W_2) + \mathbf{x}
+$$
 
-$$F(\mathbf{x}) = W_2\, \text{ReLU}(W_1\, \mathbf{x})$$
+$$
+F(\mathbf{x}) = W_2\, \text{ReLU}(W_1\, \mathbf{x})
+$$
 
 When dimensions don't match (different channel/feature sizes), a projection shortcut $\mathbf{x}' = W_s \mathbf{x}$ is used:
 
-$$\mathbf{y} = F(\mathbf{x}) + W_s \mathbf{x}$$
+$$
+\mathbf{y} = F(\mathbf{x}) + W_s \mathbf{x}
+$$
 
 **Gradient flow analysis:** backpropagation through a residual block:
 
-$$\frac{\partial \mathcal{L}}{\partial \mathbf{x}} = \frac{\partial \mathcal{L}}{\partial \mathbf{y}} \cdot \frac{\partial \mathbf{y}}{\partial \mathbf{x}} = \frac{\partial \mathcal{L}}{\partial \mathbf{y}} \left(1 + \frac{\partial F}{\partial \mathbf{x}}\right)$$
+$$
+\frac{\partial \mathcal{L}}{\partial \mathbf{x}} = \frac{\partial \mathcal{L}}{\partial \mathbf{y}} \cdot \frac{\partial \mathbf{y}}{\partial \mathbf{x}} = \frac{\partial \mathcal{L}}{\partial \mathbf{y}} \left(1 + \frac{\partial F}{\partial \mathbf{x}}\right)
+$$
 
 The "1" term means gradient flows to layer $l$ directly from any deeper layer $L$ without multiplicative shrinkage:
 
-$$\frac{\partial \mathcal{L}}{\partial \mathbf{x}_l} = \frac{\partial \mathcal{L}}{\partial \mathbf{x}_L} \prod_{i=l}^{L-1}\left(1 + \frac{\partial F_i}{\partial \mathbf{x}_i}\right)$$
+$$
+\frac{\partial \mathcal{L}}{\partial \mathbf{x}_l} = \frac{\partial \mathcal{L}}{\partial \mathbf{x}_L} \prod_{i=l}^{L-1}\left(1 + \frac{\partial F_i}{\partial \mathbf{x}_i}\right)
+$$
 
 The product can no longer vanish as long as the individual $\partial F_i / \partial \mathbf{x}_i$ terms are small.
 
@@ -58,13 +70,17 @@ Every transformer block has two residual connections: one around the attention s
 
 **Dense connections (DenseNet):** every layer receives input from all previous layers:
 
-$$\mathbf{x}_l = H_l([\mathbf{x}_0, \mathbf{x}_1, \ldots, \mathbf{x}_{l-1}])$$
+$$
+\mathbf{x}_l = H_l([\mathbf{x}_0, \mathbf{x}_1, \ldots, \mathbf{x}_{l-1}])
+$$
 
 More extreme form of skip connections; useful for tasks requiring multi-scale features (segmentation, detection).
 
 **Highway networks:** learned gating of the skip connection:
 
-$$\mathbf{y} = T(\mathbf{x}) \cdot F(\mathbf{x}) + (1 - T(\mathbf{x})) \cdot \mathbf{x}$$
+$$
+\mathbf{y} = T(\mathbf{x}) \cdot F(\mathbf{x}) + (1 - T(\mathbf{x})) \cdot \mathbf{x}
+$$
 
 where $T(\mathbf{x}) = \sigma(W_T \mathbf{x} + b_T)$ is a trainable gate. Precursor to ResNets; less popular because ungated residuals work equally well.
 

@@ -22,7 +22,9 @@ Early layers learn low-level features (edges, colors); middle layers combine the
 
 **Feature map dimensions:** as depth increases, $H \times W$ decreases (via pooling/stride) while $C$ increases; a typical progression:
 
-$$224 \times 224 \times 3 \;\to\; 112 \times 112 \times 64 \;\to\; \cdots \;\to\; 7 \times 7 \times 512 \;\to\; 4096 \;\to\; K$$
+$$
+224 \times 224 \times 3 \;\to\; 112 \times 112 \times 64 \;\to\; \cdots \;\to\; 7 \times 7 \times 512 \;\to\; 4096 \;\to\; K
+$$
 
 **Why convolutions work:**
 - **Parameter sharing:** the same filter detects the same pattern everywhere → massive parameter reduction vs. FC
@@ -31,7 +33,9 @@ $$224 \times 224 \times 3 \;\to\; 112 \times 112 \times 64 \;\to\; \cdots \;\to\
 
 **Residual (skip) connections (ResNet):**
 
-$$y = F(x, \{W_i\}) + x$$
+$$
+y = F(x, \{W_i\}) + x
+$$
 
 where $F$ is a stack of convolutions. If $F \approx 0$, the block reduces to identity — making it easy for optimization to preserve input. Enables training networks with 50–1000+ layers without vanishing gradients.
 

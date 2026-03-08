@@ -22,7 +22,9 @@ Given $n$ data points with no labels, clustering surfaces natural groupings. The
 
 Partitions $n$ points into $K$ clusters by minimising within-cluster sum of squares (WCSS):
 
-$$\min_{\{C_k\}} \sum_{k=1}^K \sum_{\mathbf{x} \in C_k} \|\mathbf{x} - \boldsymbol{\mu}_k\|^2$$
+$$
+\min_{\{C_k\}} \sum_{k=1}^K \sum_{\mathbf{x} \in C_k} \|\mathbf{x} - \boldsymbol{\mu}_k\|^2
+$$
 
 **Algorithm (Lloyd's):**
 1. Initialise $K$ centroids — k-means++ samples the first centroid uniformly, then picks each subsequent centroid with probability proportional to $d(\mathbf{x}, \text{nearest centroid})^2$, dramatically reducing the chance of a bad initialisation.
@@ -38,7 +40,9 @@ Guaranteed to converge but only to a local minimum; set `n_init ≥ 10` in sklea
 - *Gap statistic:* compare within-cluster dispersion to that of a reference random distribution.
 
 **Silhouette coefficient** for point $i$:
-$$s_i = \frac{b_i - a_i}{\max(a_i, b_i)}$$
+$$
+s_i = \frac{b_i - a_i}{\max(a_i, b_i)}
+$$
 where $a_i$ = mean intra-cluster distance, $b_i$ = mean distance to nearest other cluster. Range: $[-1, 1]$; values near 1 indicate well-separated clusters.
 
 **Limitations:** assumes spherical, equal-variance clusters; sensitive to outliers and feature scaling; $K$ must be specified.
@@ -87,7 +91,9 @@ Ward linkage is the default in sklearn and usually gives the most interpretable 
 
 A **Gaussian Mixture Model** assigns each point a *soft* probability of belonging to each of $K$ Gaussian components, rather than a hard label. K-Means is a degenerate GMM in the limit of zero covariance within clusters.
 
-$$p(\mathbf{x}) = \sum_{k=1}^K \pi_k \, \mathcal{N}(\mathbf{x}; \boldsymbol{\mu}_k, \Sigma_k)$$
+$$
+p(\mathbf{x}) = \sum_{k=1}^K \pi_k \, \mathcal{N}(\mathbf{x}; \boldsymbol{\mu}_k, \Sigma_k)
+$$
 
 GMM handles ellipsoidal clusters (non-spherical covariance) and produces probabilistic assignments via `predict_proba()`. Select $K$ via BIC/AIC. Full theory is in [[03_modeling/03_probabilistic_models/03_bayesian_modeling/probabilistic_models|Probabilistic Models]].
 

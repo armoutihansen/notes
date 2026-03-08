@@ -22,7 +22,9 @@ Jumping directly to model selection is a common mistake. The right problem formu
 
 Given a dataset $\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^n$ where $\mathbf{x}_i \in \mathcal{X}$ and $y_i \in \mathcal{Y}$, find a function $f: \mathcal{X} \to \mathcal{Y}$ that minimizes expected risk:
 
-$$R(f) = \mathbb{E}_{(\mathbf{x},y) \sim P}[\ell(f(\mathbf{x}), y)]$$
+$$
+R(f) = \mathbb{E}_{(\mathbf{x},y) \sim P}[\ell(f(\mathbf{x}), y)]
+$$
 
 **Problem types by output space:**
 

@@ -22,7 +22,9 @@ Imagine a model's prediction as the payoff in a game. Each feature is a "player"
 
 For a model $f$ and input $x$ with $n$ features, the Shapley value of feature $i$ is:
 
-$$\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|!(n-|S|-1)!}{n!} \left[ f(x_{S \cup \{i\}}) - f(x_S) \right]$$
+$$
+\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|!(n-|S|-1)!}{n!} \left[ f(x_{S \cup \{i\}}) - f(x_S) \right]
+$$
 
 where $F$ is the full feature set and $x_S$ denotes the prediction with only features in $S$ active (others replaced by baseline/marginal values). Shapley values satisfy four axioms: **efficiency** (values sum to $f(x) - E[f]$), **symmetry**, **dummy** (zero contribution for irrelevant features), and **linearity**.
 
@@ -48,7 +50,9 @@ SHAP defines a local linear explanation $g(z') = \phi_0 + \sum_i \phi_i z'_i$ in
 
 An alternative attribution method for differentiable models:
 
-$$\text{IG}_i(x) = (x_i - x_i') \int_0^1 \frac{\partial f(x' + \alpha(x-x'))}{\partial x_i}\, d\alpha$$
+$$
+\text{IG}_i(x) = (x_i - x_i') \int_0^1 \frac{\partial f(x' + \alpha(x-x'))}{\partial x_i}\, d\alpha
+$$
 
 Integrates the gradient along a straight path from baseline $x'$ to input $x$. Satisfies completeness: $\sum_i \text{IG}_i(x) = f(x) - f(x')$. Standard for image and text attribution in neural networks.
 

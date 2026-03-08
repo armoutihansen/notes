@@ -12,7 +12,9 @@ created: 2026-03-06
 
 The **Vapnik-Chervonenkis (VC) dimension** of a hypothesis class $\mathcal{H}$ over input space $\mathcal{X}$ is the size of the largest set $S \subseteq \mathcal{X}$ that $\mathcal{H}$ **shatters**:
 
-$$\text{VCdim}(\mathcal{H}) = \max\{|S| : S \subseteq \mathcal{X},\ \mathcal{H} \text{ shatters } S\}$$
+$$
+\text{VCdim}(\mathcal{H}) = \max\{|S| : S \subseteq \mathcal{X},\ \mathcal{H} \text{ shatters } S\}
+$$
 
 A set $S$ is **shattered** by $\mathcal{H}$ if every possible binary labelling of $S$ is realised by some $h \in \mathcal{H}$.
 
@@ -26,17 +28,23 @@ Higher VC dimension = more expressive = needs more data to learn without overfit
 
 **Growth function $\Pi_\mathcal{H}(m)$:** the maximum number of distinct labellings that $\mathcal{H}$ can produce on any $m$ points:
 
-$$\Pi_\mathcal{H}(m) = \max_{S \subseteq \mathcal{X},|S|=m} |\{(h(x_1),\ldots,h(x_m)) : h \in \mathcal{H}\}|$$
+$$
+\Pi_\mathcal{H}(m) = \max_{S \subseteq \mathcal{X},|S|=m} |\{(h(x_1),\ldots,h(x_m)) : h \in \mathcal{H}\}|
+$$
 
 **Sauer-Shelah lemma:** if $\text{VCdim}(\mathcal{H}) = d < \infty$, then:
 
-$$\Pi_\mathcal{H}(m) \leq \sum_{i=0}^d \binom{m}{i} = O(m^d)$$
+$$
+\Pi_\mathcal{H}(m) \leq \sum_{i=0}^d \binom{m}{i} = O(m^d)
+$$
 
 This transitions from exponential growth ($2^m$, when $m \leq d$) to polynomial growth. The key insight: once you have more data than the VC dimension, the class is "effectively finite", enabling generalisation.
 
 **Fundamental theorem of statistical learning:** $\mathcal{H}$ is agnostic PAC learnable if and only if $\text{VCdim}(\mathcal{H}) < \infty$. The sample complexity is:
 
-$$m \asymp \frac{d + \log(1/\delta)}{\epsilon^2} \quad \text{(agnostic)} \qquad m \asymp \frac{d + \log(1/\delta)}{\epsilon} \quad \text{(realizable)}$$
+$$
+m \asymp \frac{d + \log(1/\delta)}{\epsilon^2} \quad \text{(agnostic)} \qquad m \asymp \frac{d + \log(1/\delta)}{\epsilon} \quad \text{(realizable)}
+$$
 
 where $d = \text{VCdim}(\mathcal{H})$.
 
@@ -54,7 +62,9 @@ where $d = \text{VCdim}(\mathcal{H})$.
 
 **VC bound:** with $m$ samples and $\mathcal{H}$ with $\text{VCdim}(\mathcal{H}) = d$, with probability $\geq 1-\delta$:
 
-$$L_\mathcal{D}(h) \leq L_S(h) + \sqrt{\frac{8d\ln(2m/d) + 8\ln(4/\delta)}{m}}$$
+$$
+L_\mathcal{D}(h) \leq L_S(h) + \sqrt{\frac{8d\ln(2m/d) + 8\ln(4/\delta)}{m}}
+$$
 
 ## Applications
 

@@ -12,7 +12,9 @@ created: 2026-03-06
 
 The **gradient** of a scalar field $f: \mathbb{R}^n \to \mathbb{R}$ at a point $\mathbf{x}$ is the vector of partial derivatives:
 
-$$\nabla f(\mathbf{x}) = \begin{pmatrix} \partial f/\partial x_1 \\ \vdots \\ \partial f/\partial x_n \end{pmatrix} \in \mathbb{R}^n$$
+$$
+\nabla f(\mathbf{x}) = \begin{pmatrix} \partial f/\partial x_1 \\ \vdots \\ \partial f/\partial x_n \end{pmatrix} \in \mathbb{R}^n
+$$
 
 It points in the direction of steepest ascent of $f$ at $\mathbf{x}$, with magnitude equal to the rate of steepest ascent.
 
@@ -26,11 +28,15 @@ The directional derivative answers: "how fast does $f$ change if I walk in direc
 
 **Partial derivative:** fix all variables except $x_i$ and differentiate:
 
-$$\frac{\partial f}{\partial x_i}(\mathbf{x}) = \lim_{h \to 0} \frac{f(\mathbf{x} + h\mathbf{e}_i) - f(\mathbf{x})}{h}$$
+$$
+\frac{\partial f}{\partial x_i}(\mathbf{x}) = \lim_{h \to 0} \frac{f(\mathbf{x} + h\mathbf{e}_i) - f(\mathbf{x})}{h}
+$$
 
 **Directional derivative** in direction $\mathbf{u}$ ($\|\mathbf{u}\|=1$):
 
-$$D_\mathbf{u} f(\mathbf{x}) = \lim_{h \to 0} \frac{f(\mathbf{x} + h\mathbf{u}) - f(\mathbf{x})}{h} = \nabla f(\mathbf{x}) \cdot \mathbf{u}$$
+$$
+D_\mathbf{u} f(\mathbf{x}) = \lim_{h \to 0} \frac{f(\mathbf{x} + h\mathbf{u}) - f(\mathbf{x})}{h} = \nabla f(\mathbf{x}) \cdot \mathbf{u}
+$$
 
 The directional derivative equals the dot product of the gradient with the unit direction. Maximised when $\mathbf{u} = \nabla f / \|\nabla f\|$, giving steepest ascent. Zero when $\mathbf{u} \perp \nabla f$ (moving along a level set).
 
@@ -38,19 +44,25 @@ The directional derivative equals the dot product of the gradient with the unit 
 
 **First-order Taylor approximation:**
 
-$$f(\mathbf{x} + \delta) \approx f(\mathbf{x}) + \nabla f(\mathbf{x})^\top \delta \qquad \text{for small } \delta$$
+$$
+f(\mathbf{x} + \delta) \approx f(\mathbf{x}) + \nabla f(\mathbf{x})^\top \delta \qquad \text{for small } \delta
+$$
 
 This is the linear approximation; the gradient is the coefficient vector.
 
 **Chain rule for scalar composition:** if $g: \mathbb{R}^n \to \mathbb{R}^m$ and $f: \mathbb{R}^m \to \mathbb{R}$:
 
-$$\nabla_\mathbf{x}(f \circ g) = J_g(\mathbf{x})^\top \nabla_\mathbf{y} f(g(\mathbf{x}))$$
+$$
+\nabla_\mathbf{x}(f \circ g) = J_g(\mathbf{x})^\top \nabla_\mathbf{y} f(g(\mathbf{x}))
+$$
 
 where $J_g$ is the Jacobian of $g$ (see [[jacobian_and_hessian]]).
 
 **Gradient in Cartesian coordinates** ($n = 3$):
 
-$$\nabla f = \frac{\partial f}{\partial x}\mathbf{i} + \frac{\partial f}{\partial y}\mathbf{j} + \frac{\partial f}{\partial z}\mathbf{k}$$
+$$
+\nabla f = \frac{\partial f}{\partial x}\mathbf{i} + \frac{\partial f}{\partial y}\mathbf{j} + \frac{\partial f}{\partial z}\mathbf{k}
+$$
 
 ## Applications
 
