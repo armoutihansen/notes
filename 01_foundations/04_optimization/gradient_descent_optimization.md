@@ -89,6 +89,7 @@ $$\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\hat{\ma
 Defaults: $\beta_1 = 0.9$, $\beta_2 = 0.999$, $\epsilon = 10^{-8}$, $\eta = 10^{-3}$.
 
 **AdamW**: decouples weight decay from the gradient update (correct form):
+
 $$\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t - \frac{\eta}{\sqrt{\hat{\mathbf{v}}}+\epsilon}\hat{\mathbf{m}} - \eta\lambda\boldsymbol{\theta}_t$$
 
 ### Learning Rate Schedules
